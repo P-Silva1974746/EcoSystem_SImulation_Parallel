@@ -1,10 +1,34 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "aux_func.h"
 #include <string.h>
 
+Cell **allocate_matrix(int rows, int cols) {
+    Cell **M = malloc(rows * sizeof(Cell *));
+    Cell *data = malloc(rows * cols * sizeof(Cell));
+    for (int i = 0; i < rows; i++) {
+        M[i] = &data[i * cols];
+    }
 
+    for (int i = 0; i < rows * cols; i++) {
+        data[i].type   = EMPTY;
+        data[i].age    = 0;
+        data[i].hunger = 0;
+    }
+    
+    return M;
+}
 
-void print_ecosystem(char **M, int rows, int cols){
+char symbol (CellType type) {
+     switch(type){
+        case EMPTY: return ' ';
+        case RABBIT: return 'R';
+        case FOX: return 'F';
+        case ROCK: return '*';
+    }
+}
+
+void print_ecosystem(Cell **M, int rows, int cols){
     for (int  i = 0; i < cols+2; i++)printf("-");
     printf("\n");
     for (int i = 0; i < rows; i++)
@@ -12,8 +36,7 @@ void print_ecosystem(char **M, int rows, int cols){
         printf("|");
         for (int  j = 0; j < cols; j++)
         {   
-            if (j==cols-1)printf("%c", M[i][j]);
-            else printf("%c", M[i][j]);  
+            printf("%c", symbol((M[i][j]).type));
         }
         printf("|\n"); 
     }
@@ -21,48 +44,211 @@ void print_ecosystem(char **M, int rows, int cols){
     printf("\n");
 }
 
-char **read_input(int *gen_proc_rabbits, int *gen_proc_foxes, int *gen_food_rabbits, int *n_gen, int *rows, int *cols, int  *n){
-    int * temp[]= {gen_proc_rabbits, gen_proc_foxes, gen_food_rabbits, n_gen, rows, cols, n};
-
-    for (int i = 0; i < sizeof(temp)/sizeof(temp[0]); i++)
-    {
-        if (scanf("%d", temp[i])!=1)
-        {
-            printf("Invalid input: argument number %d was not read properly\n", i+1);
-            exit(EXIT_FAILURE);
-        }
-    }
-
-    char **M = malloc(*rows * sizeof(char *));
-    for (int i = 0; i < *rows; i++) {
-        M[i] = malloc(*cols * sizeof(char));
-        memset(M[i], ' ', *cols);  // initialize
-    }
-
-    for (int i = 0; i < *n; i++)
-    {
-        char str[7];
-        if (scanf("%7s", str)!=1)
-        {
-            printf("Invalid input: argument number %d was not read properly", i+1);
-            exit(EXIT_FAILURE);
-        }
-        int r,c;
-        scanf("%d %d", &r, &c);
-
-        if(strcmp(str, "FOX") == 0) M[r][c]='F';
-        else if (strcmp(str, "RABBIT") == 0) M[r][c]='R';
-        else if(strcmp(str, "ROCK") == 0) M[r][c]='*';
-    }
-    
-    print_ecosystem(M, *rows, *cols);
-    return M;
+void free_matrix(Cell **M) {
+    if (!M) return;
+    free(M[0]);
+    free(M);
 }
 
-// Uncomment if want to debug something in this file
-// int main (int agrc, char *argv[]){
-//     int gen_proc_rabbits, gen_proc_foxes, gen_food_rabbits, n_gen, rows, cols, n;
-//     char **M = read_input(&gen_proc_rabbits, &gen_proc_foxes, &gen_food_rabbits, &n_gen, &rows, &cols, &n);
+Cell **copy_matrix(Cell **src, int rows, int cols) {
+    Cell **dst = allocate_matrix(rows, cols);
 
+    // this copies an continous memory block it works as an copy since the alloca_matrix puts everything in the one contious block (data)
+    memcpy(dst[0], src[0], rows * cols * sizeof(Cell));
+
+    return dst;
+}
+
+
+
+//usar na funçao choose_adjacent para garantir casas validas
+static int is_valid(int x, int y, int rows, int cols){
+    return x>=0 && x<rows && y>=0 && y<cols;
+}
+
+//coloca as coordenadas da célula escolhida seguindo a regra (G+X+Y) mod P em *n_row e *n_col
+static void choose_adjacent(CellType target, Cell **world, int r, int c, int *n_row, int *n_col, int rows, int cols, int gen){
+    int directions [4][2] = {-1,0, 0,1, 1,0, 0,-1};
+    int valid_dirs [4][2];
+
+    int valid_count = 0;
+    for (int i = 0; i < 4; i++)
+    {
+        if (is_valid(r+directions[i][0], c+directions[i][1], rows, cols) && world[r+directions[i][0]][c+directions[i][1]].type==target){
+            valid_dirs[valid_count][0] = r+directions[i][0];
+            valid_dirs[valid_count][1] = c+directions[i][1];
+            valid_count++;
+            
+        }
+    }
+
+    if (valid_count>0){
+        *n_row = valid_dirs[(gen+r+c)%valid_count][0];
+        *n_col = valid_dirs[(gen+r+c)%valid_count][1];
+    }else{
+        *n_row = r;
+        *n_col = c;
+    } 
+}
+
+
+static void move_rabbits(Cell **world, Cell **new_world, int rows, int cols, int gen, int GEN_PROC_RABBITS){
+    for(int i=0; i<rows; i++){
+        for(int j=0; j<cols; j++){
+            if(world[i][j].type==ROCK) new_world[i][j] = world[i][j];            
+            else if(world[i][j].type == RABBIT){
+                //printf("ITERATION %d %d\n", i,j);
+                int new_x, new_y;
+                choose_adjacent(EMPTY, world, i, j, &new_x, &new_y, rows, cols, gen);
+                //printf("CHOOSEN ADJACENT %d %d\n", new_x, new_y);
+
+                //conflito: mantem o coelho mais velho
+                if(new_world[new_x][new_y].type==RABBIT){
+                    if(world[i][j].age < (new_world[new_x][new_y].age-1)) continue; // in this case where it is younger than the one already in that position we  
+                                                                                // skip this iteration and it dies since it world[i][j] is not copied 
+                                                                                // to a position in new_world
+                                                                                // int the case where it is older we continue the iteration and overwrite
+                                                                                // the values in new_world[new_x][new_y] making so that the that was there
+                                                                                // dies
+                }
+
+                //move o coelho
+                new_world[new_x][new_y] = world[i][j];
+                new_world[new_x][new_y].age++;
+                //printf("Age: %d\n", world[i][j].age);
+
+                //procriação
+                if(world[i][j].age >= GEN_PROC_RABBITS && !(new_x==i && new_y==j)){
+                    //printf("Procreated\n");
+                    new_world[i][j].type = RABBIT;
+                    new_world[i][j].age = 0;
+                    new_world[i][j].hunger = 0;
+                    new_world[new_x][new_y].age = 0;
+                }
+            }
+        }
+    }
+}
+
+static void move_foxes(Cell **world, Cell **new_world, int rows, int cols, int gen, int GEN_PROC_FOXES, int GEN_FOOD_FOXES){
+    //printf("-----------CALCULATING GEN %d----------- \n", gen+1);
+    for(int i=0;i<rows;i++){
+        for(int j=0;j<cols;j++){
+            if(world[i][j].type == FOX){
+                //printf("ITERATION %d %d\n", i,j);
+                Cell fox = world[i][j];
+                fox.age++;
+                fox.hunger++;
+
+                //printf("Age:%d Hunger:%d\n",fox.age, fox.hunger);
+
+                int new_x, new_y;
+                // chose one adjacent cell that has a RABBIT in the world, this is because all foxes move at the same time as such their percetion has 
+                // to be of the world before any fox moves conflicts will then be resolved
+                //printf("Before calculating adjacent col with a RABBIT in world\n");
+                choose_adjacent(RABBIT,world, i, j, &new_x, &new_y, rows, cols, gen);
+                //printf("After calculating adjacent col with a RABBIT in world\n");
+                //printf("CHOOSEN ADJACENT %d %d\n", new_x, new_y);
+
+                //morre de fome
+                if(fox.hunger >= GEN_FOOD_FOXES && (new_x==i && new_y==j)) continue;
+
+
+                // if there is no adjacent cell of the type target choose_adjacent will just put the current coordenates in *new_x and *new_y
+                // so if they aren't the same it means there was one RABBIT adjacent  
+                if ( !(new_x==i && new_y==j)){
+
+                    //come o coelho
+                    fox.hunger = 0;
+
+                    //TODO: perguntar ao professor o que acontece quando existir um conflito entre FOX's numa posicao onde tinha um RABBIT,
+                    //      a fome pode ser ignorada uma vez que ela seria resetada de qualquer das formas dps da FOX comer o RABBIT independentemente
+                    //      de qual for, assim sendo a unica coisa importante e a idade
+                    //conflito: mantém raposa mais velha ou com menos fome
+                        if(new_world[new_x][new_y].type==FOX){
+
+                            // the current fox moving is younger than the one already in position so we skip the iteration and it dies
+                            if (fox.age < new_world[new_x][new_y].age) continue;
+                            else if(fox.age == new_world[new_x][new_y].age && fox.hunger > new_world[new_x][new_y].hunger) continue;
+                        }
+                    
+                    // move of the oldest fox
+                    new_world[new_x][new_y] = fox;
+
+                    //procriação
+                    if(world[i][j].age >= GEN_PROC_FOXES){
+                        new_world[i][j].type = FOX;
+                        new_world[i][j].age = 0;
+                        new_world[i][j].hunger = 0;
+                        new_world[new_x][new_y].age = 0;
+                    }
+                } else {
+                    //printf("Before calculating adjacent col with a EMPTY in world\n");
+                    choose_adjacent(EMPTY,world, i, j, &new_x, &new_y, rows, cols, gen);
+                    //printf("After calculating adjacent col with a EMPTY in world\n");
+
+                    //printf("CHOOSEN ADJACENT %d %d\n", new_x, new_y);
+
+                    if( !(new_x==i && new_y==j)){
+
+                        //conflito: mantém raposa mais velha ou com menos fome
+                        if(new_world[new_x][new_y].type==FOX){
+                            if (fox.age < new_world[new_x][new_y].age) continue;
+                            else if(fox.age == new_world[new_x][new_y].age && fox.hunger > new_world[new_x][new_y].hunger) continue;
+                        }
+
+                        new_world[new_x][new_y] = fox;
+
+                        //prociação
+                        if(world[i][j].age >= GEN_PROC_FOXES && !(new_x==i && new_y==j)){
+                            new_world[i][j].type = FOX;
+                            new_world[i][j].age = 0;
+                            new_world[i][j].hunger = 0;
+                            new_world[new_x][new_y].age = 0;
+                        }
+
+                    } else {
+                        //printf("There is nowhere to go \n");
+                        new_world[i][j] = fox; //fica no lugar
+                    }
+                }
+                //printf("\n");
+            }
+        }
+    }
+}
+
+//funçao principal - calcula a matriz inteira da proxima geraçao
+Cell **next_gen(Cell **world, int rows, int cols, int gen, int GEN_PROC_RABBITS, int GEN_PROC_FOXES, int GEN_FOOD_FOXES){
+    Cell **new_world = allocate_matrix(rows, cols);
+    //printf("Before moving rabbits\n");
+    //mover coelhos primeiro (aqui tambem copia todas as rochas)
+    move_rabbits(world, new_world, rows, cols, gen, GEN_PROC_RABBITS);
+    //printf("After moving rabbits\n");
+
+
+    // copies the RABBITS after positions so that the foxes can perceive the current position of the RABBITS
+    Cell **world_after_rabbits_move = copy_matrix(new_world, rows, cols);
+
+    // we need to also put the FOX's in the correct position according to world
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < cols; j++)
+        {
+            if(world[i][j].type==FOX) world_after_rabbits_move[i][j]=world[i][j];
+        }
+        
+    }
     
-// }
+
+    //printf("After rabbits move\n");
+    //print_ecosystem(world_after_rabbits_move, rows,cols);
+    //printf("\n");
+    //mover raposas depois (veem as novas posições dos coelhos, acho que é assim idfk help)
+    //printf("Moving foxes\n");
+    move_foxes(world_after_rabbits_move, new_world, rows, cols, gen, GEN_PROC_FOXES, GEN_FOOD_FOXES);
+    //printf("After moving foxes\n");
+
+    free_matrix(world_after_rabbits_move);
+    return new_world;
+}
