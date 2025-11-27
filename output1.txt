@@ -1,26 +1,3 @@
-Generation 0
-----------------------
-|    R  RR        RR |
-|   * R R R    *  *  |
-|   R R   RF R    F R|
-|   F R   *      *R  |
-| F   *   * R  F     |
-|      R             |
-|  F    *       F   R|
-| *RR R*R*   R  R    |
-|          RR F*  R  |
-|    R         FR    |
-|         RR R    R  |
-| FR     *  R      F |
-|     R   F   RF     |
-|       R R       R  |
-|   R    R  *  F R   |
-|    R*  R F      FR |
-| * RRR R   R    *   |
-|      *  R   R RR   |
-| *RRF    R RRF      |
-|F    F        *     |
-----------------------
 
 Generation 1
 ----------------------
@@ -20930,8 +20907,8 @@ Generation 872
 ----------------------
 |   F   RR   F  RR  R|
 |   *RF  R RR  *  * R|
-| F  R R R RF RR  F R|
-|RR    R  *R  R  *  F|
+| F  R R R RR FR  F R|
+|RR    R  *R RR  *  F|
 |     *   *R  RRR   R|
 | R FRRRRR RR  RR   R|
 |RR  RR *RR  RR R    |
@@ -20954,8 +20931,8 @@ Generation 873
 ----------------------
 |    F R  R F  R  RR |
 |   *   R R    *  *R |
-|F  R F R R  R  R  FF|
-|  R  R   * F  R *   |
+|F  R F R R  F  R  FF|
+|  R  R   * R  R *   |
 |R  FR* R * RR   R R |
 |R    R   R   R  R   |
 |  R   R*R RR  R  R R|
@@ -20979,7 +20956,7 @@ Generation 874
 |       R  F  R  R  R|
 |   *FFRRR     *  * F|
 |  RR    RRRF     F  |
-|F   R  R *     R*   |
+|F   R  R *RR   R*   |
 | RF  *   *   RRR R  |
 | R  R   R  RR    R  |
 | R  RR * R     RR   |
@@ -21003,8 +20980,8 @@ Generation 875
 |      R     R  R  RF|
 |   *  F  RF   *  *  |
 | R  F RR  F    RF   |
-|   R R  R*   RR *   |
-|F    *   *  R     R |
+|   R R  R*  RRR *   |
+|F    *   *R R     R |
 |  F  R R  R    RR   |
 |R      *  R        R|
 | *F R * * R R  RR   |
@@ -21026,10 +21003,10 @@ Generation 876
 ----------------------
 |     RF  R RR RR RF |
 |   *     F    *  *  |
-|     R R F   R F    |
+|     R R F  R  F    |
 |FR  FRRRR*   RRR*   |
-|     *  R* RR     RR|
-|     RRR RR    RR  R|
+|     *  R* RRR    RR|
+|     RRR  RR   RR  R|
 |R F    * RR    RR  R|
 |R*  RR* * RRR  RR  R|
 |F FRR    RR RR*RF  F|
@@ -21049,12 +21026,12 @@ Generation 876
 Generation 877
 ----------------------
 |    R  FR R  R  R  F|
-|   *   R  F  R*F *  |
-|F     R F           |
-|  R  F   * R    *  R|
-|     *RR *   RRR    |
-|R F     R  R     RR |
-|     RR*R  R  R  RR |
+|   *   R  F   *F *  |
+|F     R F    R      |
+|  R  F   *  R   *  R|
+|     *RR *R   RR    |
+|R F     RR  RR   RR |
+|     RR*   R  R  RR |
 |F* R  * *R   RR  RRF|
 |     R  R  R  *R    |
 |RRF R   R   RF  F   |
@@ -21072,13 +21049,13 @@ Generation 877
 
 Generation 878
 ----------------------
-|   R  F  RF   RF    |
-|F  *    R   R *  * F|
-|     FRF            |
-|  R    R *R  R  * R |
-|R F  *   *        R |
-|     RRR  R   RRR   |
-|       * R  RR  R  F|
+|   R  F  RF R  F    |
+|F  *    R    R*  * F|
+|     FRF    R       |
+|  R    R *R R   * R |
+|R F  *   *R R     R |
+|     RRR      RRR   |
+|       * R   R  R  F|
 | *R   * *  R   RR   |
 |F F    R R    *   R |
 |     R   R  F       |
@@ -21096,13 +21073,13 @@ Generation 878
 
 Generation 879
 ----------------------
-|F R     R  F RF     |
-|   *  FF   R  *  *  |
-|      F   R        F|
-|R FR    R*      *R  |
-|     * R *   RRR   R|
-|           R R   R F|
-|     RR*  RR   R R  |
+|F R     R  F  F     |
+|   *  FF      *  *  |
+|      F      R     F|
+|R FR    R* R    *R  |
+|     * R * R RRR   R|
+|                 R F|
+|     RR*  RR  RR R  |
 | *FR  * *         R |
 | F   R  R R   * R   |
 |    R     RF    F   |
@@ -21120,14 +21097,14 @@ Generation 879
 
 Generation 880
 ----------------------
-|FFR   FFR  F FF     |
-|   *  FF   FRR*  *  |
-|R FR FF  RR        F|
-|R F    RR*   R  *R F|
-|     * R *   RRRRR R|
-|      RR   RRRRR RFF|
-|    RRR*  RRR  RRRR |
-| *FFRR* * R     R R |
+|FFR   FFR FF FF     |
+|   *  FF      *  *  |
+|R FR FF      R     F|
+|R F    RR*R  R  *R F|
+|     * R *  RRRRRR R|
+|      RR      RR RFF|
+|    RRR*  RR RRRRRR |
+| *FFRR* * RR    R R |
 | FF RR  R R   * F   |
 |  R R   RRFF    F   |
 |  R       F  R      |
@@ -21144,14 +21121,14 @@ Generation 880
 
 Generation 881
 ----------------------
-|   R F  FRF F  F    |
-|FF * F        *  *  |
-| F  F  FR  FRR   RF |
-|   F     *  R RR*   |
-|R    *R R* RR     FF|
-|    RR  R R     R   |
-|  F   R*     RR    F|
-| *  FR* *R R   R R  |
+|   R F  FF  F  F    |
+|FF * F     F  *  *  |
+| F  F  F      R  RF |
+|   F     *    RR*   |
+|R    *R R*RR      FF|
+|    RR  R R  R  R   |
+|  F   R*    R      F|
+| *  FR* *R  R RR R  |
 |   F     R F  *  F  |
 | F R R R F   R F    |
 |   R       F  RR    |
@@ -21168,14 +21145,14 @@ Generation 881
 
 Generation 882
 ----------------------
-|F   F      F  F     |
-|  F*F   FR  F *  *  |
-|F  F               F|
-|R F   RF * F R  *RFF|
-|     * R *R   RR    |
-|   R     R  RR     F|
-|   FFR *       RR   |
-| * F  * * R   R R   |
+|F   F  F  FF  F     |
+|  F*F       F *  *  |
+|F  F         R     F|
+|R F   RF *R     *RFF|
+|     * R *RR  RR    |
+|   R     R RR      F|
+|   FFR *   R  RRR   |
+| * F  * * R  R  R   |
 |     R    F   *     |
 |  F R   F   R   FF  |
 |    R       FR  R   |
@@ -21192,15 +21169,15 @@ Generation 882
 
 Generation 883
 ----------------------
-| FF  F    F    F    |
-|   *   F  RF  *  *  |
-|    F RF   F     RF |
-|FF       *    R *   |
-|R    *R  *   R  R  F|
-|  R     R RR   RR   |
-|  F  F *      R     |
+| FF  F         F    |
+|   *   F  FF  *  *  |
+|    F RF      R  RF |
+|FF       * R  R *   |
+|R    *R  *  R   R  F|
+|  R     R R     R   |
+|  F  F *  R RR      |
 | *   R* *RF    R    |
-|   FR       R *     |
+|   FR       RR*     |
 |   F R F    F       |
 |   F           RFF  |
 |R    R  *   FR    R |
@@ -21216,15 +21193,15 @@ Generation 883
 
 Generation 884
 ----------------------
-|      F             |
-| FF*  F   F   *F *  |
-|     FF   F   R  F  |
-|         *   RR *R F|
-|FF   *R R*   R RR   |
-|RRF   R R RR   RRR  |
-|       *  FR RR     |
-| *  RF* *R  R  RR   |
-|    FR   R  F *     |
+|      F   F         |
+| FF*  F     F *F *  |
+|     FF      RR  F  |
+|         *  R RR*R F|
+|FF   *R R* R   RR   |
+|RRF   R R  R    R   |
+|       * RF RR  R   |
+| *  RF* *R  RR RR   |
+|    FR   R RFR*     |
 |  F  RF             |
 |R F           RF  F |
 |R R RR  *    FR   R |
@@ -21240,16 +21217,16 @@ Generation 884
 
 Generation 885
 ----------------------
-|       F            |
-|   * F     F  *  *  |
-| FF      F   R F  F |
-|F     F R*      * F |
-|  F  *   * R  R  R  |
-| F       R   R      |
-|RR    R* F  R  RR   |
-| * RF * *  RF    R  |
-|      F       *     |
-|R  F     R    R   F |
+|       F   F        |
+|   * F        *  *  |
+| FF         F  F  F |
+|F     F R* R R  * F |
+|  F  *   *R   R  R  |
+| F       R  R  R    |
+|RR    R*R     RR R  |
+| * RF * * FRF R     |
+|      F       * R   |
+|R  F     R   RR   F |
 | F   R          F   |
 | R R    *   F   R   |
 |R  R  R  RF   R  RR |
@@ -21264,17 +21241,17 @@ Generation 885
 
 Generation 886
 ----------------------
-|                    |
-| F *F  F    FR*  *  |
-|F       F        F  |
-|       F * R   F*  F|
-| F   *   *   R      |
-|F       RF  R  R R  |
-|  R FR *   RF    R  |
-|R*    * *         R |
-|R  F F        *   F |
-| F   R  R    R      |
-|            F  F    |
+|          F         |
+| F *F  F      *  *  |
+|F          F     F  |
+|       F *RR  RF*  F|
+| F   *   *R  R      |
+|F       R R R R  R  |
+|  R FR * R  FR  R   |
+|R*    * *      R    |
+|R  F F    FR  *  RF |
+| F   R  R      R    |
+|            FR F    |
 |R R     *R       RR |
 |    RR   F   R  R   |
 |F      R F  R  R   R|
@@ -21288,16 +21265,16 @@ Generation 886
 
 Generation 887
 ----------------------
-|    F        R      |
-|F  *    F  F  *  *  |
-|       F   R    F   |
-|         *      * F |
-|     *   *  R  F    |
-|    FR R  FRF   R   |
-|F      *       R  R |
-| *R   * *        RF |
-| F  F        R*     |
-|      RR    F       |
+|    F               |
+|F  *          *  *  |
+|       F  F   R F   |
+|         *  R   * F |
+|     *   * RR  F R  |
+|    FR R    F  RR   |
+|F      *  R    R    |
+| *R   * * F  R    F |
+| F  F         * R   |
+|      RR   RFR  R   |
 |R        R    F   R |
 | R   R  *       R   |
 |   R      F R      R|
@@ -21312,17 +21289,17 @@ Generation 887
 
 Generation 888
 ----------------------
-|F    F  F    RR     |
+|F    F              |
 |   *   F      *  *  |
-|           FR  F  F |
-|         *  R   *   |
-|     *   *  F   F   |
-|     FRR   F   RR   |
-|     R *   R   R RF |
-|F*R   * *       RR  |
-|  FF   R    FR*     |
-|R    RRR            |
-|R        R   F   RR |
+|         F    RF    |
+|         * R    *F  |
+|     *   *R FR   R  |
+|     FRR  R   RFR   |
+|     R *  F   RRR F |
+|F*R   * *   RR      |
+|  FF   R     R*RR   |
+|R    RRR   R F  RR  |
+|R        R R F   RR |
 |RR  RR  *R      R  R|
 |   R       RR   R  R|
 |   R   F  FR  R RR  |
@@ -21336,17 +21313,17 @@ Generation 888
 
 Generation 889
 ----------------------
-| F  F  F    R  R    |
-|   *        R *  *F |
-|                F   |
-|         * FF   *   |
-|     * R * F   F    |
-|                    |
-|    RFR*  R     R   |
-| * F  *R*   F  R  F |
-|F             *     |
-| RF R   R    F   R  |
-| R  R R   R     R  R|
+| F  F  F            |
+|   *          *  *  |
+|        F       F   |
+|         *R   R *   |
+|     * R * F   F FR |
+|         RF  R   R  |
+|    RFR*     R   F  |
+| * F  *R*     RRR   |
+|F           R *  R  |
+| RF R   R R   FR    |
+| R  R R   R F   R  R|
 |   R  R * R R       |
 |R      F  F   R  RR |
 |            R  R    |
@@ -21360,18 +21337,18 @@ Generation 889
 
 Generation 890
 ----------------------
-|      FF   R        |
-|   *       R  *R *F |
-|                  F |
-|       R *FFFF F*   |
-|     *   * F   F    |
-|     FR    F        |
-|   F F *   RF  R    |
-| * F  * *   F R   F |
-|F      R      *   F |
-|F FF      R FF  R  R|
-|  R  R  R   R  R    |
-|  R    F*  R     R  |
+|      FF            |
+|   *          *  *  |
+|       FF       FF  |
+|       R *R     *   |
+|     *   *FF  FF F  |
+|     FR R F   R RFR |
+|   F F *    R R FF  |
+| * F  * *           |
+|F      R     R*R    |
+|F FF     R    FFRR R|
+|  R  R  RR FF  R    |
+|  R    F*  R R   R  |
 | R     F FF  R     R|
 | F       R R    R R |
 | F    RR   *  R R   |
@@ -21384,19 +21361,19 @@ Generation 890
 
 Generation 891
 ----------------------
-|          R    R    |
-|   *  FF  R   *  * F|
-|       R   F F F    |
-|         *      *   |
-|     *   *F F   F   |
-|      FR    F       |
-|  F    *  RF  R   F |
-|F*  FF* *    F      |
-|        R     *    F|
-|           F   R    |
-|F FF  RF   R FR     |
-| R R    *          R|
-|        F   R    R  |
+|                    |
+|   *  FF      * F*  |
+|      F             |
+|        F*FF    *F  |
+|     *   *   F  F   |
+|      FR F  RR FF FR|
+|  F    *            |
+|F*  FF* *     R  F  |
+|        R   R * R  R|
+|        R    F    R |
+|F FF  RF  F    FR   |
+| R R    *F  F      R|
+|        F     R  R  |
 |  F       F      R R|
 |F  R       *     R R|
 |F    *RR R   RRR    |
@@ -21408,19 +21385,19 @@ Generation 891
 
 Generation 892
 ----------------------
-|         RR    RR   |
-|   *     RRF  *F *F |
-|       FR           |
-|         *   F  *   |
-|     *   *   F F    |
-|       FR FF        |
-|FF     *  F  FR  F  |
-| * F  * * R        F|
-|     F  R     *     |
-|        R     RR    |
-|      F    FR F    R|
-|FRFF  R *          R|
-|       F   RR   RR  |
+|                    |
+|   *          *F *  |
+|     F F  F         |
+|       F *      *   |
+|     *   * F   F F  |
+|       FF  RRFF  F F|
+|FF     *     RR    R|
+| * F  * *     R F  R|
+|     F RR  RR *RR  R|
+|       FR     F   R |
+|      R  F      F RR|
+|FRFF  R *       R  R|
+|       F F  F RRRR  |
 |   F            RRRR|
 | F R  R   F*  RR R R|
 | F   *RRFR  RRRR R R|
@@ -21432,19 +21409,19 @@ Generation 892
 
 Generation 893
 ----------------------
-|        R  F  R  R  |
-|   *          *  *  |
-|        FRR    F  F |
-|        R*  F   *   |
-|     *   *    F     |
-|F       FF    R     |
-|  F    *RF FF   F  F|
-| *    * *  R        |
-|   F  F  R    *     |
-|      F  R   RF R   |
-|FR F              R |
-| F     F*  FR   R   |
-|   F         R    RR|
+|                    |
+|   *      F   *  *  |
+|        F      F    |
+|      F  *      *   |
+|     * F *F   F   F |
+|F               F   |
+|  F    *F  RRFFR  RF|
+| *    * *   RR F  R |
+|   F  FF RR   *  RR |
+|               F   R|
+|FR F R  F           |
+| F     F*   F RRF R |
+|   F      F     R RR|
 |      R       RR R  |
 |  F R  R   * R  R R |
 |  F F* F  FR    R R |
@@ -21456,19 +21433,19 @@ Generation 893
 
 Generation 894
 ----------------------
-|             R    R |
-|   *    FR F  *  *  |
-|                   F|
-|         *R    F*   |
-|     *  F*   F      |
-| F        F    R   F|
-|   F   *F      F    |
-| * F  * * R F       |
-|     F    R  R*     |
-|FR   F  R           |
-|              F R  R|
-|  FF  F * F  R     R|
-|      R        R R  |
+|          F         |
+|   *          *  *  |
+|       F            |
+|       F *     F*   |
+|     *F  * F F      |
+| F          RF F    |
+|   F   * F     F R  |
+| * F  * *  R  F  R F|
+|     F      RR*    R|
+|FR   R F RR     F R |
+|       F    F R F   |
+|  FF  F *          R|
+|      R  F     R R  |
 |             R  R   |
 |   FF R    *   R   R|
 |     *F          R  |
@@ -21480,19 +21457,19 @@ Generation 894
 
 Generation 895
 ----------------------
-|                   R|
-|   *   F  F  R*  * F|
 |                    |
-|        F* R    *   |
-| F   *   *  F      F|
-|   F    F  F  R     |
-|       *      F     |
-| *    * *R   F      |
-|F  F  F    R  *     |
-|  R F  R        R   |
-|                  R |
-|     F  *F    F     |
-|  FF   R     R  R  R|
+|   *   F  F   *  *  |
+|               F    |
+|         *      *   |
+| F   * F *  F       |
+|   F       F  F     |
+|       *  FR  F F   |
+| *    * *         F |
+|F  FF    R R  *   R |
+|  R R   F  RFR   F R|
+|      F        F   R|
+|     F  *     R     |
+|  FF   RF    R  R   |
 |               R   R|
 |  F  FF    *  R     |
 |  F  *    F R       |
@@ -21504,20 +21481,20 @@ Generation 895
 
 Generation 896
 ----------------------
-|             R    RF|
-|   *  F      R*  *  |
-|        F F         |
-|         * RF   *  F|
-|     *  F*          |
-|             RF     |
-|       *            |
-|F*    * *R  F       |
-|    F    R R  * R   |
-|  R   FR   R    R   |
-|  R      F       RR |
-|  F F   *    F     R|
-|    F  R     R RR  R|
-|     FFR      RR  RR|
+|                    |
+|   *          *  *  |
+|                    |
+|         *      *   |
+|     *   *          |
+|       F     F      |
+|       *   FR    F  |
+|F*    * *R          |
+|        FRRR  *   FR|
+|  RFF     RR F    FR|
+|  R  F       RF    R|
+|  F F   *    RR    R|
+|    F RF     R RR  R|
+|     FF       RR   R|
 | F        F* RR     |
 |   F *      R       |
 | *          R   *RR |
@@ -21528,20 +21505,20 @@ Generation 896
 
 Generation 897
 ----------------------
-|            R     F |
-|   * F    F   *  *R |
-|             R      |
-|        F* F    *   |
-|     * F * R        |
-|            RF      |
-|       * R          |
-| *  F * *  F        |
-|F      R      *R    |
-|   R F   F       RR |
-|   R       R F  R  R|
-|   F   R*       R   |
+|                    |
+|   *          *  *  |
+|                    |
+|         *      *   |
+|     *   *          |
+|      F             |
+|       * R  FF  F   |
+| *    * * R R      R|
+|F   F    F  R *    F|
+| R       R  F F    R|
+|   FF       R     F |
+|   F  R *   R   R R |
 |     FF       R   R |
-|    F   R    R  R   |
+|    F        R  R   |
 |F        F *R  R   R|
 |     *     R      R |
 | * F       R R  *  R|
@@ -21552,21 +21529,21 @@ Generation 897
 
 Generation 898
 ----------------------
-|          F  R     F|
-|   *F        R*  * R|
 |                    |
-|       F *F     *   |
-|     *   *  R       |
-|         R RF       |
-|       *            |
-| *    *R* F         |
-|   R          *   R |
-|    F   F    F RR   |
-|    R  R       R  R |
-|  F   F *  R     R  |
-|             R   R  |
-|            R      R|
-|    F   F  *    R   |
+|   *          *  *  |
+|                    |
+|         *      *   |
+|     *   *          |
+|         R  F       |
+|       *       F    |
+| *    * *    F    RF|
+|     F    FR  *     |
+|F  F      R  F    F |
+|           RF   R   |
+|  F FFF *  R       R|
+|             R     R|
+|         F  R      R|
+|    F      *    R   |
 |F    *    R R  R    |
 | *          R   * R |
 |      * F    RR     |
@@ -21576,21 +21553,21 @@ Generation 898
 
 Generation 899
 ----------------------
-|    F    F  R     F |
+|                    |
 |   *          *  *  |
-|       F     R     R|
+|                    |
 |         *      *   |
-|     *   *FR        |
+|     *   *          |
 |          RF        |
-|       *            |
-| *    * *F        R |
-|    F  R     F*R    |
-|       F            |
-|     RF    R  R R   |
-|        *       R R |
-|            R     RR|
-|    F   F  R    R   |
-|           *   R    |
+|       *      F    F|
+| *    * * F      R  |
+|    F        F*     |
+| F       R RF   R  F|
+|   F FF   R        R|
+|        * R         |
+|            R     R |
+|    F      R    R   |
+|           *   R   R|
 | F   *   R   R    R |
 | *         R    *   |
 |R     *F    R     R |
@@ -21600,21 +21577,21 @@ Generation 899
 
 Generation 900
 ----------------------
-|        FF RR    FF |
+|                    |
 |   *          *  *  |
-|             R    RR|
-|         * R R  *   |
-|     *   *FR        |
-|          FF        |
-|       * FR       R |
-| *    * *F        R |
-|   FF RF    FF*RR   |
-|       F   R        |
-|    RFF    R RR RR  |
-|        *      RR RR|
-|    F   F  RR   RRRR|
-|    F   F RR   RR   |
-|           *   R  R |
+|                    |
+|         *      *   |
+|     *   *          |
+|         RFF       F|
+|       *  F  FF    F|
+| *    * * F     RR  |
+|   FF       FF* R   |
+| FFF  F  RRFF   R  F|
+|   FFFF   RR       F|
+|        *RR        R|
+|    F      RR   R RR|
+|    F     RR   RR   |
+|           *   R  RR|
 |     *  RR  RR    R |
 | *         RR   *   |
 |RR    *F   RRRR   R |
@@ -21624,21 +21601,21 @@ Generation 900
 
 Generation 901
 ----------------------
-|          F  R  F  F|
-|   *         R*  *  |
-|                 R  |
-|         *F     *  R|
-|     *   *  RR      |
-|         F        R |
-|       *   F        |
-| *  F *F* F     R   |
-|  F        F  *   R |
-|     FF   R  FRRRR  |
-|   R        R      R|
-|        *   R R  R  |
-|         FR    R    |
-|   F     F  R    RRR|
-|         R *  R RR  |
+|                    |
+|   *          *  *  |
+|                    |
+|         *      *   |
+|     *   *         F|
+|         F  F       |
+|       * F       RF |
+| *  F * *   F FR    |
+|  F   F  RF   *  R F|
+|    F     F  F      |
+| FF    F R  F   R F |
+|     F  *  RR     R |
+|          R    R R  |
+|   F     R  R     RR|
+|         R *  R R   |
 |     * R   R  R    R|
 | *     F  R  R  *   |
 |  R   *        R R  |
@@ -21648,22 +21625,22 @@ Generation 901
 
 Generation 902
 ----------------------
-|         F    R     |
-|   *        R *  * F|
-|                R   |
-|         *   R  * R |
-|     *   *FR      R |
-|          F         |
-|    F  *        R   |
-| *    * *  F        |
-| F   F F  F   * RR  |
-|       F    F      R|
-|           R  RR    |
-|   R    *    R R  R |
-|          F   R   R |
-|    F     F     R   |
-|          R*RR    RR|
-|     *RF    R  RR R |
+|                    |
+|   *          *  *  |
+|                    |
+|         *      *   |
+|     *   *          |
+|        F        R  |
+|    F  *    F      F|
+| *    * *F     F    |
+|           F  *R    |
+| F       F  F    R F|
+|   FF      F   R   F|
+|      FF* R  R R   R|
+|         R          |
+|    F   R        R  |
+|          R*RR R   R|
+|     *RF    R  R  R |
 | *R      R      *   |
 |      *    R RR R   |
 | *           R R  R |
@@ -21672,22 +21649,22 @@ Generation 902
 
 Generation 903
 ----------------------
-|        F      R    |
-|   *       R  *  *  |
-|               R   F|
-|         *F     *R  |
-|     *   *   R     R|
-|    F      F    R   |
-|       *   F        |
-| *    * * F      R  |
-|F   F F       *R   R|
-|        F  F        |
-|   R      R  R  R   |
-|        * F   R    R|
-|             R R R  |
-|   F        R  R  R |
-|       F  F*        |
-|     *    RR RR  R R|
+|                    |
+|   *          *  *  |
+|                    |
+|         *      *   |
+|     *   *       R  |
+|    F  F    F      F|
+|       * F     F    |
+| *    * *           |
+| F       F  F *  R F|
+|   F       F   R    |
+|     F F  F       F |
+|        *R          |
+|      F R    R R R R|
+|   F   R    R       |
+|       F R *    R R |
+|     *     R RR  R  |
 | *    R R    RR *   |
 |  R   *        R    |
 | * R       R  R     |
@@ -21696,23 +21673,23 @@ Generation 903
 
 Generation 904
 ----------------------
-|       F       RR   |
-|   *      RR  *R * F|
-|               R    |
-|         * F R  *R  |
-|    F*   *   R  RRRR|
-|            F   R   |
-|       *  F         |
-| *    * *       RR R|
-|   F F  F     *R   R|
-|F  R      F    R    |
-|   R     RF  RR RR R|
-|        *    RRR R R|
-|            RR R R  |
-|  F    F    R  R  R |
-|           *  RR  R |
-|     *    FRRRR RR R|
-| *    RRR RR RR *  R|
+|                    |
+|   *          *  *  |
+|                    |
+|         *      *R  |
+|    F* F *  F    R F|
+|               F    |
+|       *            |
+| *    * *F       R F|
+|  F        F  *  R  |
+|  F    F  F   RR    |
+|         F       F  |
+|        *R   R   R  |
+|       RRR  RR R R R|
+|  F   FF    R  R   R|
+|         R *  R RRR |
+|     *   RRRRRR RR  |
+| *    RRR    RR *   |
 |  RR  *    R RRR    |
 | *RR       R RR   R |
 |RR            * RRR |
@@ -21720,23 +21697,23 @@ Generation 904
 
 Generation 905
 ----------------------
-|      F   R   R  R F|
-|   *        R * R*  |
-|                RR  |
-|    F    *  F   * R |
-|     *   *    RR    |
-|          F  F   R R|
-|       *        R  R|
-| *    * *         R |
-|  F   FF      * R R |
-|    R    F    R R   |
-|  R     R  FR  R  R |
-|        *   R     R |
-|       F      R   RR|
-| F         R RR RR  |
-|           * R   R R|
-|     *R    F   R    |
-| * R     R  R  R* R |
+|                    |
+|   *          *  *  |
+|                 R  |
+|    F    *  F   *  F|
+|     *F  *     F    |
+|                 R  |
+|       *            |
+| *    * *         F |
+| F     F FF   * R   |
+|   F     F   R  R   |
+|        F       F   |
+|        * R R R   R |
+|      F         R R |
+| F      FR R RR RRR |
+|           * R     R|
+|     *R        R  R |
+| * R     RRRR  R*   |
 | R    *R  R R R     |
 |R*          R  R R R|
 |  RR          *R   R|
@@ -21744,23 +21721,23 @@ Generation 905
 
 Generation 906
 ----------------------
-|     F     R R  R F |
+|                    |
 |   *          *  *  |
-|            F  R  R |
-|         *     R*   |
-|     *   *F  F    R |
-|                R R |
-|       *       R  R |
-| *    * *          R|
-|              *R    |
-|       F         RR |
-|   RR  R     RR     |
-|        *  F   R   R|
-|            R  R R  |
-|          R R  R  R |
-|           *R   R R |
-|   R *      F R     |
-| *    R   R   R *R  |
+|                  R |
+|         *      *   |
+|     *   *          |
+|                R   |
+|       *            |
+| *    * *F          |
+|              *R  F |
+|          F R    R  |
+|            R       |
+|        *       F  R|
+|     F   RR   R  R  |
+|          R R      R|
+|        F  *R R RRR |
+|   R *   RRR  R     |
+| *    R      RR * R |
 |R     *  R   R R R R|
 | *R    R   R  R     |
 |R   R         * R R |
@@ -21768,2257 +21745,2257 @@ Generation 906
 
 Generation 907
 ----------------------
-|          R        F|
-|   *        FR* R*  |
-|              R     |
+|                    |
+|   *          *  *  |
+|                    |
 |         *      * R |
-|     *   *  F  R   R|
-|          F    R R  |
-|       *      R    R|
-| *    * *         R |
-|              *   R |
-|              RRR   |
-|      R     R      R|
-|   RR   *   F R     |
-|              R R   |
-|           R    R  R|
-|   R       * R R R  |
-|     *    R  F      |
-| *     R R   R R* RR|
-|      *             |
-|R*    R   R  R R R  |
+|     *   *          |
+|               R    |
+|       *            |
+| *    * * F         |
+|            R *  F  |
+|               R    |
+|                   R|
+|        *RR R R     |
+|    F           F   |
+|         R   R  R R |
+|   R     F * R R    |
+|     *      RR   RR |
+| *     R RR R  R*R R|
+|      *       R     |
+|R*    R   R  R R    |
 | RRR          *R   R|
 ----------------------
 
 Generation 908
 ----------------------
-|         RR     R   |
-|   *         F* R* F|
-|             RR   R |
-|         *      * RR|
-|     *   * F  RR   R|
-|               RRRR |
-|       *     RR   RR|
-| *    * *        RR |
-|              *   RR|
-|              RRR  R|
-|   R RR    RF RRR  R|
-|   RRR  *    RR     |
-|              RRR  R|
-|   R       RR  RRR R|
-|   R      R* RRR R  |
-|     *   RR      R R|
-| *     R R   FRR*RRR|
-|      *R            |
-|R*R   R  RR  R RRR  |
-|RRRRR R      R*RRRRR|
+|                    |
+|   *          *  *  |
+|                  R |
+|         *      * R |
+|     *   *          |
+|              RR    |
+|       *            |
+| *    * *        F  |
+|           RR *     |
+|              RR   R|
+|              R    R|
+|        *RRRR R     |
+|   F     R  RR      |
+|   R    RF   R RFRR |
+|   R       *RRRR  R |
+|     *    R RR  RRRR|
+| *     RRRRRRRRR*RRR|
+|      *R      R     |
+|R*R   R  RR  RRRR   |
+|RRRRR R      R*RR RR|
 ----------------------
 
 Generation 909
 ----------------------
-|        R  R     R  |
-|   *          *R *  |
-|            RF R   F|
+|                    |
+|   *          *  *  |
+|                   R|
 |         *      *R  |
-|     *   *F  R  RRR |
-|             R     R|
-|       *       RRR  |
-| *    * *       R  R|
-|              *R    |
-|   R  R      R   RR |
-|    R     R  F   RR |
-|      R *   R  RR   |
-|   RR      RR    RR |
-|          R   R     |
-|         R *R   R  R|
-|   R *        RR  R |
-| *      R R     *   |
-|R R   * R R  F RRR R|
-| * R   RR     R   RR|
-|RRR  R      R *RRR  |
+|     *   *    R     |
+|                R   |
+|       *         F  |
+| *    * *  R        |
+|             R*    R|
+|             R      |
+|         R R   R  R |
+|        *    R R    |
+|  F     R R   RR R  |
+|    R  R    R R  F R|
+|         FR* R   R R|
+|   R *  R  R  RR  R |
+| *    R         *   |
+|R R   * RRRRRR RRRRR|
+| * R   RR   R R    R|
+|RRR  R      R *R R  |
 ----------------------
 
 Generation 910
 ----------------------
-|       R  R       R |
-|   *          * R* F|
-|           R FF    F|
-|         *      * R |
-|     *   *F R  R   R|
-|          F   RRRR  |
-|       *            |
-| *    * *      R RR |
-|      R       *   R |
-|    R        FRRR   |
-|   R       R F  R   |
-|   R    *  R  R  RR |
-|     RR   R   R R   |
-|         R  R      R|
-|           *   R    |
-|  R  *  R   RR      |
-| *R      R      * R |
-|      *  R R FR   R |
-|R*R  R       F RR   |
-| R R   RR    R*   RR|
+|                    |
+|   *          *  * R|
+|                    |
+|         *      *   |
+|     *   *   R   R  |
+|                    |
+|       *        FF  |
+| *    * * R  R     R|
+|              *     |
+|         R          |
+|             R  R  R|
+|        *  R  R     |
+| FF    R R   R  R   |
+|        R    R R FF |
+|    R   FF *R  R    |
+|  R  *    R  R   R R|
+| *R    RR R RR  * RR|
+|      *       R     |
+|R*R  R   R R R  RR  |
+| R R   RR    R* R  R|
 ----------------------
 
 Generation 911
 ----------------------
-|      R  R      R   |
-|   *          *  *F |
-|          R    F    |
-|         *F  F  *R F|
-|     *   *    R     |
-|            RR      |
-|       *  F    RRR  |
-| *    * *          R|
-|       R      *R R R|
-|   R        F    R  |
-|  R         R F  RR |
-|    RR  * R  R  R   |
-|       R R     R   R|
-|           R    R   |
-|  R        *  R     |
-|     *   R          |
-| * R    R   RF  *R  |
-|R R   *   R        R|
-| *    RR   R  F    R|
-|  R      R  R *RRR  |
+|                   R|
+|   *          *  *  |
+|                    |
+|         *      *   |
+|     *   *  R   R   |
+|                 F  |
+|       *       F   R|
+| *    * *R          |
+|         R   R*     |
+|                R  R|
+|           R  R     |
+|  F     *    R      |
+|        R   R       |
+|    R    R  R R F   |
+|  R    F   *    R FR|
+|     * R F  R       |
+| * R     R R    *R  |
+|R R   *      R RRR R|
+| *    RR  R R      R|
+|  R      R  R *R    |
 ----------------------
 
 Generation 912
 ----------------------
-|     RR RR      RRF |
-|   *          *F *  |
-|         RF         |
-|         *  F   *RF |
-|     *   *    RR    |
-|            RR      |
-|       *    RRRRRRR |
-| *    * *       RRRR|
-|       R      *RRR R|
-|  RR   R        RRRR|
-| RR  R    R FF   RR |
-|   RRR  *RR RR  RR R|
-|       R R     RR  R|
-|       R  RR   RR   |
-| RR        * RR     |
-|     *  RR  R       |
-| * R   RR   F   *R  |
-|RRRR  *R  RR     RRR|
-| *R  RRR RRRR  FR  R|
-| RR      R  R *RRRRR|
+|                   R|
+|   *          *  * R|
+|                    |
+|         *      *   |
+|     *   * RR   R   |
+|               FF  R|
+|       *           R|
+| *    * *RR         |
+|         R  RR* R  R|
+|         R R    R  R|
+|  F        R RR     |
+|        *   RR      |
+|    R   R  RR       |
+|    R   RRR RRR    R|
+| RR        *  RRF  F|
+|     * FF   R    R  |
+| * R     RRRR   *R  |
+|RRRR  *R   R RRRRRRR|
+| *R  RRR RRRR  RRR R|
+| RR      R  RR*RR  R|
 ----------------------
 
 Generation 913
 ----------------------
-|    R  R         F  |
-|   *    RRF   * F*  |
-|        R        R  |
-|         * F  R *  F|
-|     *   *   R  R   |
-|           R  R RRR |
-|       *           R|
-| *    *R*   RR R R  |
-|   R          * R R |
-| R   R         R R  |
-|R  R   R R      R  R|
-|  R   R *  RFFRR  R |
-|    R   R RR  R  RR |
-| R    R  R   R      |
-|   R     R *R  RR   |
-|     * R            |
-| *R R R  R R    * RR|
-| R  R * RR  F   R   |
-|R* RR   R        RR |
-|R  R  RR  RR  *FR  R|
+|                  R |
+|   *          *  *  |
+|                   R|
+|         * R    *   |
+|     *   *   R  FR R|
+|              F     |
+|       * R        R |
+| *    * *       R   |
+|        R RR  *   R |
+|  F       R  RR     |
+|            R   R  R|
+|        *  R  R     |
+|     R   RR  R     R|
+| R R   R   R   R   F|
+|   R      R*R       |
+|     *    RR  RRF   |
+| *R R  FF    R R* RR|
+| R  R *  RR R   RR  |
+|R* RR   R    RR R R |
+|R  R  RR  RR  *R RR |
 ----------------------
 
 Generation 914
 ----------------------
-|   R  R R F       F |
-|   *          *  *  |
-|       R R      F   |
-|         *F     * F |
-|     *   *    RR  R |
-|            RR      |
-|       *     R  RRR |
-| * R  * *  R  R   R |
-|       R      *  R  |
-|R   R    R      R  R|
-|              RR  R |
-|R  R   R* R   F  R  |
-|  R  RR  R  F  R    |
-|R       R   R  R  R |
-|          R*     R  |
-|   RR*R    R       R|
-| * R R  R       *R  |
-|R  R R*          R  |
-| *    R  RR F   R  R|
-| RR R   R   R * F R |
+|                    |
+|   *          *  *R |
+|                    |
+|         *R     *  R|
+|     *   *       FR |
+|         R   F      |
+|       *        R  R|
+| *    * *           |
+|  F    R R    *  R  |
+|         R RR  R   R|
+|           R   R    |
+|        * R        R|
+|              R    F|
+|R R  R  RRR RR  R   |
+|    R    R *  RR    |
+|    R* F       F   R|
+| * R     FRR    *R  |
+|R  R R*    R R R    |
+| *    RR  R R  R R R|
+| RR R   R   R * R  R|
 ----------------------
 
 Generation 915
 ----------------------
-|  R  R     F     F  |
-|   *    R     *  *  |
-|      R   F    F    |
-|         *     R*F  |
-|     *   *   R     R|
-|                R R |
-|   R   *   RR R     |
-| *    * *    R   R R|
-|        RR    * R  R|
-|   R          RR    |
-|R  R                |
-| RR   R *R        R |
-|R       R     F  R  |
-|     RRR    FR  R  R|
-|   R     R *      RR|
-|     *              |
-| *R R R    R    * R |
-| R    * R R F   R RR|
-| * R R  R         R |
-|R  R R R   R  *  F  |
+|                  R |
+|   *          *  *  |
+|          R        R|
+|         *      * R |
+|     *   *   F  F   |
+|                R  R|
+|       * R          |
+| *F   * *           |
+|        R RR  * R  R|
+|        R     R     |
+|          R R   R  R|
+|        *R    R    F|
+|R    R   R  R       |
+|   R   R   R  RR    |
+|   R   F   *   FR  R|
+|   R *   FR         |
+| *   R      RR  *   |
+| R    *R    R   RR  |
+| * R       R  R   R |
+|R  R RRR  RR  *  RR |
 ----------------------
 
 Generation 916
 ----------------------
-| RR RR  R F       F |
-|   *    R     *  *  |
-|     RR  F          |
-|         *   RRF*   |
-|     *   *   R  RFRR|
-|   R        R   R R |
-|   R   *  RRRRR   R |
-| *    * *   RR  RRRR|
-|   R   RRR    *RR  R|
-|   R     R    RR   R|
-|RR R  R       R   R |
-|RRRR  R *R       RR |
-|R    RRRRR     FRR  |
-|   R RRR     F  R RR|
-|   R   R R * R   RRR|
-|  R  *   R         R|
-| *RRR RR   R    * RR|
-|RR R  * RRRF    RRRR|
-|R* RRR RR RR     FRR|
-|R RRRRRR   R  *     |
+|                  RR|
+|   *          *  * R|
+|         RR       RR|
+|         *   F  * R |
+|     *   *         R|
+|                FR R|
+|       * R          |
+| *    * *RR        R|
+|       RR RRR *RR  R|
+|       RR    RR    R|
+|         RR RRR RR F|
+|R    R  *RR   R     |
+|R    R   RRRR R     |
+|   RR RF   R  RFR  R|
+|   RR      *    R  R|
+|   RR*    FR        |
+| *   RRR   RRR  *   |
+|RR R  *R   RRR  RRR |
+|R* R  R   RR RR R R |
+|R RRRRRRR RRR * RRRR|
 ----------------------
 
 Generation 917
 ----------------------
-|R  R     F          |
-|   *RRR       *  *F |
-|    R   F    R      |
-|         *      * R |
-|   R *   *  R RF    |
-|             RR  F R|
-|       * R  R   RR R|
-| * R  * *  R  RR    |
-|          R   *  RR |
-|R   R  RR    R  R   |
-|  R  R   R       R R|
-|R   RR R*     R R   |
-| RR R R       F   RR|
-|  R     RR       R  |
-|  R RRR    * F  R  R|
-|   RR*RR     R    R |
-|R*       RRFR   *R R|
-|  R R *R       R  RR|
-|R*R   R  R  R   F   |
-| R RRR  R R R *   RR|
+|                   R|
+|   *          *  *R |
+|        R  R F      |
+|         *      *  R|
+|     *   *        R |
+|                 F  |
+|       *  R      R R|
+| *    * *  RR       |
+|      R  R   R*  RR |
+|          RR   RR R |
+|       RR  R   R  F |
+| R  R   *R R R      |
+| R R  RFR    R F   R|
+|     R    R RR   R  |
+|  R  R     *      R |
+|     *R     R   R   |
+|R* RR   R F   R *R  |
+|  R   * R R   RR   R|
+|R*R RR R    R    R R|
+| R R  R  R R R*R  R |
 ----------------------
 
 Generation 918
 ----------------------
-|    R R F         F |
-|R  *         R*  *  |
-|   R R F            |
-|   R     *      *   |
-|     *   *   R    R |
-|         R  R  FF R |
-|       *   R  RR  R |
-| *R   * * R      R R|
-|       R R    *    R|
-|         R  R    R  |
-|R  RR         R R   |
-| R    R *          R|
-|   R R   R   F   R  |
-|   R R R     F  R   |
-|   R   R   *   R  R |
-|  R  *   R FR R    R|
-| *R R R         * R |
-|R     *  RR     FR  |
-| *  RR R   R      RR|
-|R R   RR   R R*     |
+|                  R |
+|   *         F*  * R|
+|       R           R|
+|         * R    *   |
+|     *   *       F  |
+|                   R|
+|       *   RR       |
+| *    * * R      R  |
+|          R R * R  R|
+|      R  R  R R    R|
+|    R    R  R   R  F|
+|R  R   F* R R      R|
+|  R  R    R R F     |
+|    R   R       R   |
+|   R  R    *RR  R  R|
+|   R *              |
+| *R  RRR F   R  *   |
+|R   R *  R      RRR |
+| * R  R  R R  R   R |
+|R R    R  R R * R  R|
 ----------------------
 
 Generation 919
 ----------------------
-|       F            |
-| R *R       R *  *  |
-|  R   F             |
-|    R    *      *   |
-|     *   *  R      R|
-|        R  R  F  F  |
-|  R    *  R  R     R|
-| *    * *R     R    |
-|        R     *  RR |
-|          RR    R   |
-| R                 R|
-|   RRR  *     R     |
-| R  R   R     F R   |
-|    R R     F  R    |
-|  R     R  *R R     |
-| R   *    F  R    R |
-| * R   R RR     *  R|
-|    R * R        FR |
-|R*R     R R  R      |
-| R  RR  R   R *    R|
+|                   R|
+|   *        F *  *  |
+|      R    R      R |
+|         *      *   |
+|     *   *      F  R|
+|            R       |
+|       *  R         |
+| *    * *R          |
+|         R R  *  RR |
+|    R  R   R R  R R |
+|   R   F  R  R    F |
+|  R     *R R        |
+|R   R        F     R|
+|   R   R  R RR R   R|
+|  R        *     R  |
+|  R R*R             |
+| *  R   F   R   *R  |
+|   R  *R  R    R   R|
+|R*R    R  R  R     R|
+| R    R  R   R*R    |
 ----------------------
 
 Generation 920
 ----------------------
-|    R FF    R       |
-| RR*R       R *  *  |
-| RR  FF             |
-|    R    *      *  R|
-|    R*  R* RR      R|
-|        R RR  F  FF |
-| RR    * RR  RF   RR|
-| *    * *R   R RR R |
-|       RRR R  * RRR |
-|         RRR    R  R|
-| R RR              R|
-| R RRR  *    RF     |
-| R RRR  RR    FRR   |
-|    RRR     F RR    |
-| RR   R RR *FRR   R |
-|RR   *    F RR    RR|
-| * RR  RRRF     * RR|
-|  RRR *RR R      FF |
-|R*R R  RRRR  R      |
-|RR  RRR RR RRR*   RR|
+|                   R|
+|   *       FF *  * R|
+|     RR    R     RR |
+|         *      *  R|
+|     *   *  R   FF R|
+|            R       |
+|       * RR         |
+| *    * *RR         |
+|    R    RRR  * RRRR|
+|   RR RF   RRR  R FR|
+|  RR   F RR  RR   F |
+|  R     *R RR      R|
+|RR RR        F     R|
+|  RR  RR  RRRFRR  RR|
+| RR R     R* R   R  |
+|  RRR*RR         R  |
+| *  RR  F  RR   *RR |
+|  RR  *RF RR  RR  RR|
+|R*R   RR RR RR     R|
+|RR   RR RR  RR*RR  R|
 ----------------------
 
 Generation 921
 ----------------------
-| RR  F       R      |
-|   *   F     R*  *  |
-|R  RF  F           R|
-|        R*  R   *   |
-|     *   *R   F   F |
-|    R    R  R       |
-|R  R   *R  RR  F F  |
-| *    * * RR     R R|
-|      R   R  R*R   R|
-|    R   R   R    R  |
-|  R  R   RR       R |
-|  R R   *   R  FR   |
-|  R R R             |
-|  RR   RRR   FF R   |
-|R    R    R* F R   R|
-|  R R*R R  F  R  R  |
-|R*R   R         *F  |
-|RR   R*R RF  R     F|
-| * R RR R  RR      R|
-|R RR   R  R  R*  R  |
+|                  R |
+|   * R    F   *  *  |
+|       R    F   R  R|
+|         *  R   *   |
+|     *   *        F |
+|          R     F   |
+|       *R   R       |
+| *    * *R R    R RR|
+|   R   FR   RR*     |
+|  R  R    R      F  |
+|    R   F  RR      F|
+|RR RR   * R  FR     |
+|  R   R    R   R  R |
+| R  R   RR       R  |
+|R  R   R   *RFR    R|
+| R  R*    R R     R |
+| *    RF  R   R *  R|
+|RR  RR*  R  R   RR  |
+| * R R  F  R  RR  R |
+|R R    R  RR R*  RR |
 ----------------------
 
 Generation 922
 ----------------------
-|    F         R     |
-| RR*  F     R *  * R|
-|   F        R       |
-|R  R   F *      *   |
-|     *   *   F   F  |
-|R       R RR     F  |
-|    R  * RR         |
-| * R  * *   RR F  R |
-|     R     R  *     |
-|  R  R         RR  R|
-|    R   R   R   R  R|
-|   R    *RR   F     |
-| R   R  R     F     |
-|    R R   R F      R|
-|  R   R R  *  F R   |
-|RR   *    F    RRF  |
-| *  RR R      R *  F|
-|  RRR * R   R       |
-|R*R    R  F      R  |
-|    RRR  R  R *    R|
+|          F        R|
+|   *R         * R* R|
+|           F        |
+|       R *   R  *   |
+|     *   *R      F  |
+|                    |
+|       * R R    F   |
+| * R  *F* R  R      |
+|  R       RR  *   RR|
+|    R   F  R    F   |
+|RR R         F    F |
+|  R  R  *  R   R    |
+| R   R  R R      R  |
+|R         R R   R  R|
+|    R      *   R    |
+|R RR * F   R F      |
+|R*  RR   R   R  * R |
+|  R   * F      R  R |
+|R*R R     R RR  R   |
+|   R  R     R * R  R|
 ----------------------
 
 Generation 923
 ----------------------
-| R F           R   R|
-|   *   F   R  *  *  |
-|  F    F     R      |
-| R       *      *   |
-|R  R *   *  F     F |
-|    R  R R      F   |
-|   R   *   R R F    |
-| *    * *R R     R  |
-|    R       R *    R|
-|   RR R     R    R  |
-|   R     R     R RR |
-|        *  R F      |
-|R   R    R     F   R|
-|   R R  R  F        |
-| R     R   *     F  |
-|  R R*   F    F R  F|
-|R* R    R      R*   |
-|RR   R*R   R        |
-| * RRRR           RR|
-|   R   RR FR  *     |
+|    R    F      R R |
+|   *          *  *  |
+|       R  F        R|
+|         *R     *   |
+|     *   *   R  F   |
+|                F   |
+|   R   *  R         |
+| *R   * *         R |
+|       F    RR*     |
+|RR R   F  R R  F   R|
+|  R        R  FR    |
+| R  R   *         F |
+|R     R  R      R  R|
+|    R      R   R    |
+|R R    F   *  R     |
+| R  R*      F       |
+| *      F     R *R  |
+|RR  RR*     R      R|
+| * R           R   R|
+|  R  R    RR R*R    |
 ----------------------
 
 Generation 924
 ----------------------
-| RF           RR   R|
-|   *    F RR  *  * R|
-| F    F      R      |
-|RR       *   R  *   |
-|R  RR*   * F    F  F|
-|   RR RR R     F    |
-|   R   * R RRR      |
-| *    * *RRR R  RR  |
-|   RR       RR*   RR|
-|  RRRRR    RR  R RR |
-|   RR R  R     R RR |
-|        *R RF    R R|
-|R  RR   RR         R|
-|R RR RRRR F    F    |
-| RR R  R   *    F  F|
-|RRR R*  F      FR   |
-|R* R   RR      R*   |
-|RRRRRR*R  RR       R|
-|R* RRRRRR        RRR|
-|  RRRRRRR  FR *     |
+|    RR  F       RRR |
+|   *   R      *  *  |
+|       R          RR|
+|         *FR R  *   |
+|     *   *   R F    |
+|   R           F    |
+|   R   * RR       R |
+| *R   * *    R    R |
+|RRR   F    RRR*    R|
+|RRRR    F RRR      R|
+| RR       RR   FR   |
+|RR  R   *R         F|
+|R   R RR R     RR  R|
+|R   R  F  RR  RR    |
+|RRR R      * RR     |
+| R  R*              |
+|R*     F    F RR*R  |
+|RRRRRR*     R    RRR|
+| * R R    R   RR   R|
+| RR RR    RRRR*RR  R|
 ----------------------
 
 Generation 925
 ----------------------
-|RF         R R    R |
-|   *  F  F   R*R *  |
-|F                  R|
-|  R R    *      *   |
-| RR  * R *F  R F  F |
-|  R  R    R R       |
-|    R  *R R   R  R  |
-| *  R * *   R RR  R |
-|  R  R   RR   *R R  |
-| R RR  R  R  R     R|
-|  R  R    R F   R  R|
-|R     R * R    R    |
-|  R  R R   R   F RR |
-| R  R    F         F|
-|R  R  R F  *        |
-| R R *          FR  |
-|R*R RRR  RR   RF*  R|
-|RR R  * R   R     R |
-| *R RRRR   F    R   |
-|RR RRRRR R   R*    R|
+|       F         R R|
+|   *RRR       * R*  |
+|        R        R  |
+|         * F  R *  R|
+|     *   * RR   F   |
+|  R      R    F   R |
+|    R  *   R        |
+|R* R  * *   R       |
+| R R F    R   *   R |
+| RR      F R R      |
+|R  RR    R  R   F  F|
+|  R   R * RR    R   |
+| R   R FR RR  R  RR |
+| R R     R   R  R   |
+|   R R     *   R    |
+|R RR *      F R     |
+| * R RF         * RR|
+| R    *    R  RR    |
+|R*R R      RRR  RRR |
+|R  R  R  R    *R RR |
 ----------------------
 
 Generation 926
 ----------------------
-|F     F     R R     |
-|F  *    F   R *  *R |
-|  R R          R    |
-| R     R *     F*  R|
-|   R *   *       F  |
-| R  R      R RR  R  |
-|   R   * R  R       |
-| *   R* *R   R  R   |
-| R         R  * R R |
-|R    R  R  RF    RR |
-|R  RR    R     R    |
-|       R*  R     R R|
-| R    R   R        F|
-|R  R R  F           |
-|    R  F   *     R  |
-|R   R*    R    F   R|
-| * R   RR     F * R |
-|  R RR*R      R     |
-|R* R  R R   F  R    |
-|  R RRR R   R *   R |
+|    R           R R |
+|   *          *  * R|
+|     RRR        R   |
+|         *F     * R |
+|  R  *   *    F  FR |
+|          RRR       |
+|R  R   *    R       |
+| *R   * *  R        |
+|  R F    F    *  R  |
+|R   R       R      F|
+|  R     R RR   F    |
+|R       *   R    R  |
+|R R   F  R  RR  R  R|
+|  R  R  R   R       |
+|  R R      *F   R   |
+| R  R*         R   R|
+| *R  F        RR*R  |
+|R R  R*   R  R   R  |
+| * R           R   R|
+| RR  R  R  RRR* R  R|
 ----------------------
 
 Generation 927
 ----------------------
-| F   F       R R  R |
-|   *R  F     R*  *  |
-|F      R        R  R|
-|  R      *      *   |
-| R  R*   *    R     |
-|   R        R     R |
-|  R    *R  R        |
-| *  R * * RR     R  |
-|R    R       R*R   R|
-| R R   R   F        |
-| R   R    RR  R  RRR|
-|      R * R        F|
-|R    R           R  |
-|       F            |
-|   R  F    *   F  RR|
-|   R *   R    F   R |
-|R*  RRR         *   |
-|R  R  * R   F  R    |
-| *R  R R R    R   R |
-| R R   R   R  *     |
+|     R           R  |
+|   * RR       *  *  |
+|          F    R   R|
+|  R    R *    F *F  |
+|     *   * R       R|
+|         R   R      |
+|  R    *   R        |
+|R* R  * *           |
+|   F    F     * R  F|
+|     R     R        |
+|R      R      F     |
+| RR     * RR R     R|
+| R R F  R  R     R  |
+| R     R   R    R   |
+| R R       * F     R|
+|  RR *        R     |
+| *  F        R  * R |
+| R R  *    R   R  R |
+| *R  R     RRRR   R |
+|R  RR  R      *  RR |
 ----------------------
 
 Generation 928
 ----------------------
-|             RRRR RR|
-| F *R       RR* R* R|
-|  R R  FR       R  R|
-|FRR      *      *   |
-| R RR*   *  R RR    |
-|  RR        R     R |
-| RR    *RRRR      R |
-| *  RR* *RRR R  RR R|
-|R   RR     R R*R   R|
-|RRRR  RR       R R R|
-|RR   RR  RRFRRR  RRR|
-|R    RR * RR     RF |
-|R    R           R  |
-|      F        F   R|
-|  RR F     *  F  RRR|
-|R  RR*  RR        RR|
-|R* RRRRRR   F   *   |
-|RRRR R* R     RR    |
-| *R  R RRR R RR  RR |
-|RRRRRRRR R R  *     |
+|     RR          RR |
+|   *RRRR      *R * R|
+|  R      F    FR   R|
+|  R    RR*      *   |
+|     *   * R     FRR|
+|        RR R RR     |
+|RRR    *   R        |
+|R* FR * *          F|
+|              *RR   |
+|     RRRF RR        |
+|RR     R  R  F     R|
+|RRRR F  * RRRR   R R|
+| RRR   RR  RR   RR  |
+|RR R  RR  RR    R  R|
+| RRR       *  F    R|
+| RRR *       RR     |
+| * F         R  * RR|
+|RRRR  *    RRRRR  RR|
+|R*R RR     RRRRR RR |
+|R RRRRRR   RR * RRRR|
 ----------------------
 
 Generation 929
 ----------------------
-|            R R  R R|
-|   * R     R  *R *R |
-| F      F    R   RR |
-| F  R   R*      *   |
-|  R  *   * R      R |
-| R  R   RRR  RRR    |
-|R  R R *    RR  R  R|
-|R* R  * *   R     R |
-| R       RR R * RRR |
-|R   RR    R R     R |
-|R R R  RR   F  RR   |
-| R  R   *R  RR  R  R|
-| R    F        F  FR|
-|              F   R |
-| R  F      *    R  R|
-| RR  *RR  R F    R  |
-|R*R  R   R     R*  R|
-| R  R *R   R R   R  |
-|R* RR R   R R  R   R|
-| RR  R  R R R *     |
+|    R  R       RR  R|
+|   *     F    *  *  |
+| R  RRR      F    R |
+|   R  R  *     R* R |
+|     *  R*  R     F |
+|RRR    R  R R      R|
+|    R  *    RRR    F|
+| *    * *           |
+|R  F R R   R  *  R  |
+|R        R     R    |
+|  RR FR F  RF     R |
+| R      *R    R R   |
+|R   R R  RR  R     R|
+|  R RR  R   R    R  |
+|R   R      * F    R |
+|R   R*            RR|
+|R*F        RR RR*   |
+| R  R *      R   R  |
+|R* R  RR  R R R R  R|
+| R  RR    R  R*R RR |
 ----------------------
 
 Generation 930
 ----------------------
-|           R R R  R |
-|   *R       RR*  * R|
-|FF  R  FF           |
-| F       * R    *RR |
-| F   *  R*    R  R  |
-|R    R      R   R  R|
-| RR R  * RRR  RR  R |
-| *  R * *    R   R  |
-|R   R      R  *R   R|
-|      R  R R R R R  |
-|   R     R FF    R  |
-|R  R   R* R    F  F |
-|  R  FF     RR F  F |
-|                   R|
-|R RFF RR   *F  R  R |
-|R    *      F  R  R |
-| *  R     R     *   |
-|R RR  *  RR R   R  R|
-| *R  R R   R        |
-|R   R  R   R R*R    |
+|     R  R           |
+| R * R       F*RR* R|
+|   R   R     F     R|
+|  R  R   *  R R *  R|
+|R R  * R *R       F |
+|      R      R    FF|
+| R R   *   R   R   F|
+| *    *R*  R        |
+| R F          *     |
+| R F FR F       RR  |
+| R   F  F RFF   R  R|
+|  R R   * R        R|
+|  R  R        R     |
+|R  R     R   F  R   |
+| R R R  R  *RF     R|
+| R   *      R  R    |
+| *F R     R  R  * RR|
+|R F   *R  R R   R  R|
+| *  RR     R   R  R |
+|R  R  R    RR * R   |
 ----------------------
 
 Generation 931
 ----------------------
-|          R R   R  R|
-|F  * R F      *  *R |
-|  F  R     RRR   RR |
-|  F     F*    R *   |
-|F    *   *        RR|
-|         RRR   R    |
-|R    R *     R      |
-| *RR  * *  R      RR|
-|     R   R  RR* RR  |
-|R      R   FF   R   |
-|    R  R          F |
-|  R   F *R  R F     |
-|R   F         F     |
-|R      R    F     F |
-|  F  F     *  R  R  |
-|  R  *       F  R  R|
-|R*       R      *  R|
-| R  R * R  R     R  |
-|R* R  R R R  R R    |
-| R R    R   R *     |
+| R  R  R     F R   R|
+|   *  R       *  *  |
+|  R   R         R R |
+| R  R    *   F  *   |
+| R R *  R*   R     F|
+|       R  R      F  |
+|  R    *  R   R   F |
+| *    * *   R       |
+|R F   RR      *     |
+|  F F  F  R    R    |
+|R        F   F R RR |
+|   R F  *  F  R     |
+| R  R    R         R|
+| R  R   R   F  R   R|
+|  R   R    *   R    |
+|  F  *       F     R|
+| *     R R  R   *   |
+|    R *    R     RR |
+|R*F       R   R    R|
+| R  RR R  R  R*R  R |
 ----------------------
 
 Generation 932
 ----------------------
-|         RR R  RR RR|
-|   * RF     R *  *RR|
-|FF  RR  F RRRRR  RR |
-|   F     *  R R *RRR|
-|     *   *R      RRR|
-|F       RRRR  RR    |
-|RRR  R *   R R      |
-| *RR R* *R RRR   RRR|
-|   R R   R FFR*RRR R|
-|RR    RR       RRR  |
-|  R RRFRRR       F  |
-|  R     *R  RF      |
-|RR F        F  F    |
-|RR    RR            |
-|    F      * FR  RF |
-|  FR *   R     RRRRR|
-|R*  R    R      *  R|
-|RR  R *RR RR   R RRR|
-|R* RR RRRRR  R R    |
-|RRRR  R RR RRR*     |
+|RR RR RR       R   R|
+|   * RR       *R * R|
+| RR   RR        RRR |
+|RR  R    *      *  F|
+| RRRR*  R*   FR     |
+|   R   RR RR      F |
+| RR    * RR  RR  F  |
+|R*    *R*   R       |
+|RF  FRRF    R *     |
+|   F      R    RR   |
+|R         F   FR RR |
+|R  RF   *R  F R  RRR|
+|RR RR   RR  F      R|
+| RR RR  R     RR  RR|
+| RF  RR    *   RR   |
+|     *   R  F     RR|
+| *  R  R R RR   * R |
+|  F R *R  RR  R RRR |
+|R*  R  R RR   R   RR|
+|RR  RRRR  RRRR*RRRR |
 ----------------------
 
 Generation 933
 ----------------------
-|     R  R  R RR  R R|
-|F  * F     R  *  *R |
-|   F     F  R  RR  R|
-| F   R   *RR R  *RR |
-|     *  R* R  R R   |
-| FR          R  R RR|
-|   R  R* RR R    R R|
-|R*  R * * RF  RRR   |
-| RR   RR     F*   R |
-|   R RF RR   R    R |
-|RR        R  F RF   |
-|R  RRR R* RRF       |
-|  F   R       F     |
-|  R     R     R     |
-|R          *F   R  F|
-|R  FF*  R     R     |
-| * R R R  RR    *RR |
-|R RR  *  R   R  R   |
-|R*R  R  R  RR R   RR|
-|RR  RR R  R  R*     |
+|  R  R        R   R |
+|RRR*R  R      * R*  |
+|R   R              F|
+|  RR  RRR*      *R  |
+|R    * R * R        |
+|    R    R   FR  F  |
+|R  R   *R  RR  RF   |
+| *  F *F*           |
+|F         R   *RR   |
+|R    RR     R F   R |
+|   F     F      R  R|
+| R F    *    F R    |
+|  R  R R   F   R RR |
+|R FR   R R   R      |
+|R   R  R   *  R    R|
+|     *  R  F    RR  |
+| *   R  R R  RR *R R|
+|R  F  * RR  R  R   R|
+| *   RR R  RRR RRR  |
+|R RR    RR    *    R|
 ----------------------
 
 Generation 934
 ----------------------
-|      RR    R  R  R |
-| F *F       RR*  * R|
-|  F       FR  R  RR |
-|  F R   R*  R R *   |
-|     *   *  RR R R R|
-|F  R     R  R    R  |
-|R   RR *   F  R     |
-| * R  *R*    F     R|
-|   R R   RR   *RRR  |
-|RR  R  F    RF     R|
-|    R  R R  F  F    |
-| RF   R *      R    |
-|     R    RR F      |
-|   R           R   F|
-| R F    R  *   R    |
-| R   * R   RF    R  |
-|R*R F R  R    R *  R|
-|      * R   R    RRR|
-|R* RR  R  R  R      |
-|R R   R  R  R *     |
+|RR  R        R     R|
+|   *    R     *R * F|
+| RRR RRRR           |
+|RR       * R    *   |
+| R   *R  *       F  |
+|R       R   F  R    |
+|    F  * RR         |
+| * R  * *      RF   |
+|      RF R    *   R |
+|FR  R    F   F      |
+|    F       R  R  R |
+|  F     *  F  F   R |
+|RRF     R       R   |
+|    RRR R   R      R|
+|   R    R  *   RR   |
+|R    * R  F   R   RR|
+| *    RR R  R   * R |
+|    F *R   R  R   R |
+|R*R R  R RR   R     |
+|    R RR  R R *RRRR |
 ----------------------
 
 Generation 935
 ----------------------
-|    F        R     R|
-|   *  RR   R  *R *R |
-| F      R      RR   |
-|   F R   *FR R R*  R|
-|F    *   * R    R R |
-|     R    R  R  R   |
-| R R   *  F        R|
-| *R   * *R    F R   |
-|    R  F   R F*     |
-|   R       RF  F RR |
-|RR   R  R R         |
-| F   R  *  R    R   |
-| R  R    R  F      F|
-|  R     R     R     |
-|  F    R   *    R   |
-|R R  *       FR     |
-| * R F  R  R    *RR |
-|R     *R   R    R   |
-| *    R       R   RR|
-| R RRR  R RR  *     |
+|   R        R     RF|
+|RRR*  R  R    *  *  |
+|R   R    R R   R    |
+|  RR   R *      *   |
+|R R  *   *      F   |
+|      RR   F        |
+|   F   *       R    |
+| *    * *RR   R  FR |
+|        FF    *     |
+| F RF R     F       |
+| R         F  F  R  |
+|RF      *          R|
+|   FRR   R         R|
+| R     R   R   RR   |
+|  R   RR   *     R R|
+| R   *R  F   R   R  |
+| *      R       *  R|
+|R RF  * R R RR     R|
+| *   RR    R   RRR  |
+|   R R  RR R  *    R|
 ----------------------
 
 Generation 936
 ----------------------
-|     FR      RR   RR|
-|   *  RRR RR  *RR*RR|
-|        RR    RRRR R|
-|FF   RR  * FRRRR*  R|
-|     *   *RR   RR RR|
-| R R RR  RR  RRRR  R|
-| R R   * F         R|
-| *R   * *R R F  R   |
-|  RRR      R  * R   |
-| RRR   F  RF  F  RR |
-|RR  RR RRRR      RR |
-|F    RR *R RF   R  F|
-| RRRR   RR      R   |
-| RR    RR     R     |
-|       R   *  R RR  |
-|R F  *        FR RR |
-|R*RRF  RR RR    *RR |
-|RR R  *R   RR  RR  R|
-| *  RRRR  R   RR RRR|
-|RRRRRRRRR RRR *     |
+|R RRR    R RR    RF |
+|RRR*  R  R R  *R *  |
+|RRR RRR  RRR   R    |
+|R RR   RR*      *   |
+|RRRR *   *          |
+|   F  RRR F    RF   |
+|      R* R     R  R |
+| *    * *FRR RR   F |
+|       F    F *     |
+|  RF  R    F        |
+|RFR   R      F   R  |
+|F       *R       RRR|
+|    FRR  R     R   R|
+| RR R  RR RR   RRR R|
+| RR  RRRR  *     RRR|
+| R   *RRF   RR   R R|
+| *R    RR       *R R|
+|RRF  R* RRR RR    RR|
+| * R RR R RRRRRRRRR |
+|   RRRR RRRR  * R RR|
 ----------------------
 
 Generation 937
 ----------------------
-|       R   RR  RRR R|
-|   * F   R    *  * R|
-|     RR   R  R RR R |
-|        R*F    R*RR |
-|FF   *   *  RRR  R R|
-|  R     R  R      R |
-|R   RRR*  FR FRRR R |
-| * RR * * R    R    |
-| R        R   *  R  |
-|R   R   FR   F     R|
-|  RR  R    F    R  F|
-| RR     * RF        |
-|F    RRR   R  R     |
-|   R     R      R   |
-| RR     R  *   R  R |
-| F R *  R      FR  R|
-|R*    R  R  R  R*  R|
-|  R FR* R     R  RR |
-|R*RR  R R  RR   R   |
-| R  RRRR R   R*R   R|
+| R R R  R R  R RR  F|
+|R R*R  R  R R *  *  |
+|R  R   RR     R     |
+| R   R   * R    *   |
+|    R* RR*     R    |
+|RRF  R   F        R |
+|     R *   R    F   |
+| *    * * F F  R   F|
+|      F   R   *     |
+|RF               R  |
+|   F     R  F      R|
+|    F R *      R    |
+|FR     R  RR     RR |
+|   R RR  R        R |
+|R  RR  R R *R  RR  R|
+|  R  * F      R   R |
+| *   RR  R   R  * R |
+| F R  *R   R  R RR  |
+|R*  R  R R         R|
+|  R  R R  R RR*R R  |
 ----------------------
 
 Generation 938
 ----------------------
-|      R           R |
-|   *  F R  RRR*RR*R |
-|        R  R     R  |
-|     R   *   RR *  R|
-|  F  *   *FR   R  R |
-|F    RR   F    R R  |
-| R R   *R   F       |
-| *R  R* *  R  R R R |
-|              *     |
-| R        R F    RRF|
-| R  R  RF   F  R    |
-|   R R  * F         |
-| F        R RR      |
-| R  R RRR      R    |
-|       R   *    R  R|
-|  F  *   R    F   R |
-| *   R       RR * R |
-|RR    *R R R   RR  R|
-| *  FR   R   R R    |
-|R R   R R   R * R R |
+|R   R RR R  R       |
+|   *       R  *RR* F|
+|  R RR      RR      |
+|R R R  RR*R    R*   |
+|R F  *   *        R |
+|    R   F           |
+| R    R*       F   F|
+| *    * *  F  R     |
+|R      F      *     |
+|F        RR     R  R|
+|    F      F        |
+|   F   R*  R  R  R  |
+|      R  R         R|
+|FRR     R   R  R R  |
+|     RR R R*     R  |
+|   R *             R|
+| *R    F      R *R  |
+|F   RR* RR  RR      |
+| * R    R R RR  RRR |
+|R  R  R       * R R |
 ----------------------
 
 Generation 939
 ----------------------
-|       R   R R R   R|
-|   *   F      *  *  |
-|         R  RR  R RR|
-|  F   R  *F    R* R |
-|     *   *       R  |
-| F     RR  F        |
-|  R  R *   F   R    |
-| *  R * *    R   R  |
-| RR           *    F|
-|    R      F        |
-|   R   F     FR  RR |
-| F     R*F   R      |
-|     RRR   R        |
-|   R            R   |
-| R    R R  *   R  R |
-| F   *       F   R  |
-| *  R    R     R*  R|
-|  R F *   R  R    R |
-|R*    RRR  RR R R R |
-| R     R      *  R  |
+| R   R  R  R   R    |
+|  R*RRRR      *  *  |
+|       R  RR    R  F|
+| R   R   *  RRR * R |
+| F   *  F*          |
+| R R  R            F|
+|       *   F  F     |
+|R*    * *    R      |
+|        F R   *    R|
+|    F   R      R    |
+|F  F      F         |
+|      R *   RR     R|
+|FR      R        R  |
+|       R   R    R   |
+|  RRR  R R *   R  RR|
+|     *        R     |
+| *   R       R  *   |
+| FRR  *F  RR    RRR |
+| *R   R             |
+| R  R   R R RR*R R  |
 ----------------------
 
 Generation 940
 ----------------------
-|       FR RR R RR  R|
-|   *   F     R* R* R|
-|  F   R RR RRR RRRRR|
-|  F   R  *FF   R*RRR|
-|     *   *       R  |
-| F    RRRR FF  R    |
-| FR  R *  FF   R    |
-| *  RR* *   RR  RR F|
-| RRRR         *    F|
-| R RR     FF  R  R  |
-|   R   F     FF  RRR|
-|FF    RF*F   RR     |
-|    RRRRRF R    R   |
-| RRR  R    R   RR   |
-| F   RR RR *   R RR |
-| F   *   R  FF  RR  |
-| * RF    R     R* RR|
-|  R F *R  R RRRR RR |
-|R*R  RRRR RRRRR RRRR|
-|RR    RRR     *  R  |
+| RR RRRRR RR   RR   |
+| RR*RRRRR R   * R*  |
+|     R RR RRR   R FF|
+| FR RR  F*  RRR * R |
+| F   *  F*   RR    F|
+| RRR  R    F       F|
+|R     R*   F FF     |
+|R*    * *   RR     R|
+|    F   F RR  *    R|
+|   FF  RF     RR    |
+|FF F  R  FF  R     R|
+|      R *  RRR   R R|
+|FFR    RR  R    RR  |
+|   RR RR   R   RR  R|
+|  RRR  RRR *  RR RRR|
+|  R  *   R   RR     |
+| *R  RR   R  R  *   |
+| FFR  *F  RRR   RRR |
+| *RR  RFR   RR  RRR |
+|RRRRR   RRR RR*RRR  |
 ----------------------
 
 Generation 941
 ----------------------
-|      F  R  R R  RR |
-|   *  R   RRR *R *R |
-| F     F  FF  R RR R|
-|   F     *   R  *R  |
-|     *RR *  F  R  RR|
-|  F  R    F      R  |
-|F      *R    R  R   |
-| *RR  * *  F   R  F |
-|R    R     F  *  RF |
-|R R    F F   F    R |
-|  R R    F     FR   |
-|     R  *  R       R|
-|FF R  RF     RRR    |
-|     R RRF  R     R |
-|  FRR  R  R*    R   |
-|  F F*    R    R  R |
-| *R    RR   FFR *R  |
-|RR   F* R  R    R  R|
-| * R  RR       R R  |
-|R R  R R RRRRR*   RR|
+|R  R RRR R    R  R  |
+|   * R R R RR *R *  |
+| FR R R  R   R   F  |
+|   R  RF *RR   R*  F|
+|  FR *R  *  R  R  F |
+|R       F F         |
+| RR  R *    F      F|
+| *    * *  F  F     |
+|R  F F   F    *   R |
+|FF    R  FFR R  R   |
+|  F FR     R      R |
+|F R    R*     R R   |
+|   R  R  RR R  R   R|
+| FR  R  R   R R  RR |
+|     RR   R* R  R   |
+| R R *R   R    R   R|
+| * RR    R R  R *R  |
+|F     * FR   R R   R|
+|R*F R    R R  RR R R|
+| RRR RRF   R R* R R |
 ----------------------
 
 Generation 942
 ----------------------
-|     F  R RR R RR  R|
-| F *   F   F R*  * R|
-|         F     R  R |
-|  F      *    RR* RR|
-|     *  R*F  F   R  |
-|      R      R  R   |
-|  FR   * R     R    |
-|F*    * * F   R  F  |
-| R          F *     |
-| R R R  F   F    RF |
-| R R      F      R  |
-| F R  R * R  R F  R |
-|     R  F         R |
-|F FRR R       RR    |
-|    FRR  F *R  R    |
-|     *     R  R     |
-|R*F      R    F * R |
-|  R   *R R  F RR RR |
-|R*   F    RRRR    RR|
-| R RR R R     *R    |
+|    R   R R RR R  R |
+|RFR*R R R R  R*  *  |
+|   R   F  R       FF|
+|  F  R   *  R R *   |
+|    R*   *F  R  RF  |
+| R   RR            F|
+|   R   *F  F        |
+| * F  * * F  F      |
+|FF    F   F   *  R  |
+|        F   R       |
+|   F      F     R  R|
+| F R RR * R    R   R|
+|     R  R  R  R   R |
+|    R        R  R   |
+| FR R  RRR *   R   R|
+|  R  * R R R  R     |
+| *   R       R  *   |
+| F R  *   R R   RRR |
+| * R  R F   RR  R R |
+|R F R   F R R *  R R|
 ----------------------
 
 Generation 943
 ----------------------
-| F  F  F    R R  RR |
-|   *      F   *  *  |
-|        F    RR  R R|
-| F      R*   F  *R  |
-|     *   *     RR   |
-|   R   R  F   RR    |
-|       *  F   R     |
-| *F   * *           |
-|F  R R     F  *  F  |
-|  R    F     F      |
-|R R               F |
-|  F  R  * FR     R  |
-|   RR  F     RRF   R|
-| F FFR R            |
-|       R  F*  R     |
-|R F  *    R RRF     |
-| *     R  R     *  R|
-|R     * R    F     R|
-| *RR    R     RR R  |
-|  R  F R  RRR *   RR|
+| F   R   R R  R R  R|
+|   *   F R  R *  *  |
+|R F R      R R   F  |
+|    R    *   R  *  F|
+| R R *   *  R   F  F|
+|   R    F F     R   |
+|     RR*            |
+|F*    * *F          |
+|     F     F F* R   |
+| F     F   R    R   |
+|  F  R         R  R |
+|  F     * FR  R   R |
+|    R RR    RR     R|
+|  RR    R      R   R|
+|     RR   R*  R     |
+| F   *    R  R      |
+| *    RR    R   *R  |
+|  F   *    R   R   R|
+| *  R  F   R  R  R R|
+| F R     F R  * R   |
 ----------------------
 
 Generation 944
 ----------------------
-|   F  F     RRR RRR |
-|   *        RR*  *R |
-|          F  RR  RRR|
-|F       F*    FR*R R|
-|     *  R*    RRRR  |
-|  RR   RR  F  RRR   |
-|       * F    RR    |
-|F*   R* *        F  |
-|  FR R        *     |
-|  RR  F    F  F     |
-|RRF              F  |
-|R  RRR  *  F    RR  |
-|   FFR     RRRF   RR|
-|  F  RRF      R     |
-|       R   * RF     |
-|RF   * R  FRRR     R|
-|R*     R  RRRR  *  R|
-|R R   *RR         RR|
-| *RRR  RRRRRRFRRRRRR|
-|  RR  FR  RRR *  RRR|
+|F    RR  RRRRRRRR  R|
+|R  *    FR RR *  * R|
+|RF  RR     R RR F   |
+| R RR    *  RR  * F |
+| RRR *  F* RR       |
+|   RRRR         F  F|
+|F    RR*        R   |
+| *   F* *           |
+|         F    * RR  |
+|  F   F    FRF RR   |
+|   F R        RR RR |
+| F   R  *  F  R   RR|
+|   RR RRR  RRR     R|
+|  RR RRRR   RRRR  RR|
+|  RR RR  RR* RR     |
+|F    * R RR RR      |
+| *   RRR   RR   *RR |
+|      *F  RR  RR  RR|
+| *F RR     RR R RR R|
+|  FR      FR  * RR R|
 ----------------------
 
 Generation 945
 ----------------------
-|  F  F     R R R R R|
-|   *      FR R* R* R|
-|            R  RR   |
-|         *     F* R |
-|F R  * RF* F R RR  R|
-|    R        R R R  |
-|     R *F       RF  |
-| *    * *     RR    |
-|F   R F    F  *     |
-|RRF R               |
-|   FRR        F F   |
-| R  F   *   F  R  R |
-|R F   RF  R      R  |
-|             RF    R|
-|RF   RR    *R      R|
-|     *  R  F  F     |
-|R*R   R         * R |
-|   RR *R RRRRRR RR R|
-|R*R   F           RR|
-| R  R   RR R F*RR RR|
+| F  R  RF  RR R  RR |
+| F *RR    R  R*R *  |
+|   R        R  F   R|
+|R R      * R  R *  F|
+|R   R* F *R  R      |
+|     R R         FF |
+|   RR R*         R  |
+|F*  F * *       RR  |
+|          FF  *R    |
+| F   F        F   R |
+| F  F       R   R  R|
+|    R RR*   F  R R  |
+|  R  R   RR   RR  R |
+| R  R R   RR R      |
+|    R  RR  *R  R   R|
+|  RR *R    R  R   R |
+|F*  R   RRR  R  *  R|
+|    R *  R  RR  RR  |
+| * F  RF  F    R  R |
+| F          R *R  R |
 ----------------------
 
 Generation 946
 ----------------------
-|    F     F R R R R |
-|   *        R *R *R |
-|           R   F R  |
-|        F*      *   |
-| F   *R  *  F R   R |
-|     R        R RFR |
-|    R  * F    R     |
-| *  R * *       R   |
-|  F  F        *     |
-|F    R              |
-|RR  F       F  F    |
-|R F   RF*     F     |
-|         R    F   R |
-| F   R      R    RR |
-|        R  *        |
-|R R  *R     F      R|
-| *  R  R  R R F *R  |
-|R R   * R      R  R |
-| *     FR  R F RRR R|
-|R RR      R   *  R R|
+|  FR R F  R  R  R   |
+|F  *   R   RR * R*RR|
+|R R R      R        |
+|         *R    F*   |
+|  RR *   *    R     |
+|R  R  R   R  R      |
+|    FR *         FF |
+| *    * * F    R    |
+|            F *  RR |
+|  F            F    |
+|F  F        FR R  R |
+|     R  *R    R   R |
+| R    RR   R R  RR  |
+|R  R R R    R      R|
+|   R RR  RR*        |
+| R   *  RRR R  R    |
+| * R        R R * R |
+|F    R* R FR   R  R |
+| *   R       R  R   |
+|F  F   F     R* R  R|
 ----------------------
 
 Generation 947
 ----------------------
-|   F     F   R R   R|
-|   *       R  *  *  |
-|        F R     F R |
-|         *      *   |
-|F    *   *     R F  |
-|    R R     FR      |
-|   R   *  F    RR R |
-| *F  F* *        R  |
-|              *     |
-| R  F R     F       |
-|F     R       F     |
-| F      *    F      |
-|RF   R FR      F   R|
-|        R  R        |
-|           *     RR |
-| R   * R  R  F    R |
-|R*      R  R   F* R |
-|   RR *F        R  R|
-| * R     RR   F   R |
-| R            *   R |
+|    R F  R RR    R R|
+|   *R   R     *R *  |
+|FR        R R     R |
+|  R      *    F *   |
+|R   R*   *R  R      |
+|  R FR R   R     F  |
+|       *       R    |
+| *    * *         F |
+|              * R   |
+|   F        FR      |
+|  F      R    RF R  |
+|F       *    R   R R|
+|R    R  R   R  R   R|
+|  R   R R RR        |
+|R   R   R  *   R    |
+|R    *       RR     |
+|F*  RR   RFR    *R  |
+|      *R           R|
+| *    RF   RR  R   R|
+| FF         R *R    |
 ----------------------
 
 Generation 948
 ----------------------
-|    F   F    RRR   R|
-|   *      RR  *  * R|
-|         FR      FR |
-|F        *      *F  |
-|    R*   *     R    |
-|   RR R      F RR   |
-|   R  R* F   RRRRRR |
-| *  F * *       RR  |
-|  F         F *     |
-|FRR  FR             |
-|      RR     F      |
-|F    R  *   F      R|
-|F    R  FR         R|
-|R      RR RR   F R  |
-| R        R*     RRR|
-| R   * RR R F     RR|
-|R*     FR  R    * RR|
-|R RRR *   RR   FR RR|
-| *RRR   RRR    F RR |
-|RR            *   RR|
+|   RRF  RR RR  R RRR|
+|   *RR  R  RR *R * R|
+| RR      RR RR   RR |
+|FRR      *   F  *   |
+|R  RF*   *RR R      |
+|  R  RRR  RR   R  F |
+|  R  R *       R  F |
+| *    * *           |
+|             R*RR   |
+|             F      |
+| F       R   RR FR  |
+|     R  *R  RR   RRR|
+|F    R RR  RR  R   R|
+|R R   R RRRRR  R   R|
+|RRR RRR RRR* R R    |
+|FR   *   R   RRR    |
+| *  RRR  F R    *R  |
+|    R *FR  R     RRR|
+| *F  RR    RRRRR   R|
+|F          RRR*RR  R|
 ----------------------
 
 Generation 949
 ----------------------
-|           RR R   R |
-|   *     F    *R *  |
-|F          R    F  R|
-|    R    *      * F |
-|   R *   *      R   |
-|     R        F  RR |
-|    FR *F   R   R   |
-| *    * *   F  R  R |
-|FF            *     |
-|       R            |
-|  R  F             R|
-| F    RR*R F        |
-| F  R  F   R   F RR |
-| R    R  R        RR|
-|R      RRR *    R   |
-|R R  *   R F     R R|
-| * R  F  RR     *R R|
-| R   R*  R  R F  R  |
-|R*   R R   R    F  R|
-|  RR     R    *  R  |
+|  R F  R  R  RR R  R|
+|  R*  R  RR  R* R*R |
+|F   R   R  R  R R  R|
+|         *R F   * R |
+| RR  * R *  R       |
+|   RF    R  R R  F  |
+| R  R R*        R  F|
+| *    * *       R   |
+|            R *     |
+|              FR    |
+|F         R R     RR|
+|F     R * RR  RRF   |
+|  R R    RR  R   RR |
+| R  RR R   R R  R   |
+|F  R   R R *R R    R|
+|  R R*R R RR    R   |
+| *           RR * RR|
+|     R*  F  RRR     |
+| *  R  F  R     RRR |
+| FF       R RR*R RR |
 ----------------------
 
 Generation 950
 ----------------------
-|             R      |
-|F  *    FF RR *  *R |
-|F   R          FF   |
-|   R     * R    * FF|
-|     *   *    F  RR |
-|    F         F R   |
-|    F R*FF  FR R    |
-| *    * *   F R     |
-|FFF           *   R |
-|F       R          R|
-|   R FFR R          |
-| FF     * FF     R  |
-|FF   RFF    R      R|
-|  R     R           |
-| R        R*   R RRR|
-| R R * RR FF      R |
-| *R  FF R     F * R |
-|R   R *   R   F F  R|
-| *R   R     R   F R |
-|R   R  RR  R  *   R |
+| R FF R  R  R  R    |
+|F  *    R  RR *R * R|
+|F RR   R     R R  R |
+| R     R * FF   *  R|
+|   R *   *RR  R   R |
+|    F     R  R      |
+|R  RFR *       R  FF|
+| *    * *        R  |
+|             R*     |
+|          R   FFR  R|
+|FF         R     R  |
+|FF      *R   R  FF  |
+| R R  RR   RR  R   R|
+|F     R  RR R R     |
+|F   R   R  *   RR   |
+|   R * R R   R R   R|
+| *R        RR  R*R  |
+|    R *  F     R R  |
+| *FR   F F  RR R   R|
+|  F    F   R  * R  R|
 ----------------------
 
 Generation 951
 ----------------------
-|            R R   R |
-| F *R  F  F   * F*  |
-| F R       R        |
-|         *     F*F  |
-|     *   *   F  R  F|
-|   F  R F    R F    |
-|     F *      R     |
-|F*F   * *    F    R |
-|              *    R|
-| F    FR            |
-|FFF F   R FF        |
-|F       *          R|
-|     F           R  |
-| F R R F  R R    RR |
-|R  R   R   *  R     |
-|  R  *   F  F    R R|
-| *  F  F     F  *  R|
-| RRR  *    RR  F  R |
-| * R R R         F  |
-| R   R   RR   *  R  |
+|  F  F  R    RR     |
+| FR*   R  R   * R*  |
+| F    R     F R    R|
+|   R    R*F   RR* R |
+| R  F*   *   R      |
+|         R R        |
+|  R  FR*      R  F  |
+|R*    * *          F|
+|            R * RR R|
+|F          R F      |
+|          R    FRF  |
+|  F   RR* R R      R|
+|F R R    R   R  F   |
+| F  R  RR  R R R    |
+| F R   R   *  R    R|
+|     *      R   R   |
+| *       FR  RR * R |
+|  FR  *F     R  R R |
+| *      F  R  R   R |
+|   F    F R   *  RR |
 ----------------------
 
 Generation 952
 ----------------------
-|            RRR   RR|
-|   *R F    F  *F *  |
-|  FRR      R        |
-|         *      *   |
-|     *  F*     FRFF |
-|  F   R      FF     |
-|F F   F*     FR   R |
-| *    * *         RR|
-|              *    R|
-|F F    FR  F        |
-|     F  RF         R|
-| F      *          R|
-|            R   RR  |
-|  FRRFF   R R   RRRR|
-|R RR   RR R* RR     |
-|R R  *  F    F  RRRR|
-| *R         F   *  R|
-|RRRRF *F   RR F   RR|
-| * RRR R  RRR     F |
-|RR  RR  RRR   * RR  |
+|    F  RR    RRR    |
+|  F*  RR  R  R*RR* R|
+|  F  RR   F  FR   RR|
+| R RF  RR*   RRR* R |
+| R   *   *   RRR    |
+|      R RRRR        |
+|RRR   F*     RR     |
+|R*    * *       RF  |
+|F          RR * RRRF|
+|          RR  F    R|
+|         RR     F  R|
+|     RRR*RRRR   F  R|
+| FF RR RRR RRRR     |
+|   RR RRR  RRRRR   R|
+|  FR   RR  * RR    R|
+|     *      RRR RR  |
+| *     F  F RRR * RR|
+|   F  *   RR RR RRRR|
+| * F   F   R RR  RR |
+|         FR   * RRRR|
 ----------------------
 
 Generation 953
 ----------------------
-|               F    |
-|  F* F      FR*  *RR|
-|     R    R         |
-|   R     *      *   |
-|     *R  *   FF     |
-| F    F F       RFF |
-| F F   *    F FR   R|
-| *    * *        R  |
-|           F  *   R |
-| F       F          |
-| F  F  F          R |
-|        *       R   |
-|   R      R  R    RR|
-|RF      R  R   R    |
-| R  RFF    *R    RRR|
-| R R * F  R   FR    |
-|R* R       F    * R |
-| R    * F R  F   R  |
-|R*R F R  R   R   R F|
-|  RR  RR   R  *R    |
+|   F  R  RR R R R  R|
+| F * R  R F R *  *R |
+| F  F  R    F  RR   |
+|R     R  *  R R *  R|
+|  RR *R R*  R     R |
+|RRR   FR      RR    |
+|       * RRRR       |
+|F*    * *   R  R  F |
+|          R   *     |
+|         R  R  FFRRF|
+|     R RR  R      R |
+|    R   *R   RR     |
+|F  F  R R R R   F  R|
+|  F  R R RR  RR     |
+|    R R  R *R  R RR |
+|   R *     R R R  RR|
+| * F  F    F R R*R  |
+|      *  R  R  R  R |
+| *      F   R  RR  R|
+|   F    F  R  *R RR |
 ----------------------
 
 Generation 954
 ----------------------
-|              F   R |
-| F *F         *  *  |
-|      R    RFR     R|
-|  R      *      *   |
-|     *FR *       F  |
-|F            FFR   F|
-|  F    *F  F   F    |
-| * F  * *  F   R  R |
-| F            *  R  |
-|        F           |
-|   F            R  R|
-| F R   F*          R|
-|R        R       R  |
-|F    F    R  R  RR R|
-|  RR   FR  * R      |
-|R R  *F           R |
-| *  R     F   FR*R  |
-|R     *  F  F      F|
-| * R F        R     |
-|RR  RR  R R   * RR  |
+|    FR     R R   RR |
+|  F*F    F   R*  * R|
+|F       R  F     R R|
+|   R R R *   R R*   |
+|RR   *FR *   RR  R  |
+|   R    R  R    R   |
+|FR     *R    R      |
+| *    * * R  RR     |
+|         R    * F F |
+|     R  R     F     |
+|    R    R  R R  R F|
+|   F   R* RRR      R|
+|  F  R       R   F  |
+|F   R   R  R     R  |
+|   R   R   * RR R  R|
+|  RF *F  RRF  R     |
+| *            R * RR|
+|      * F    RR RR R|
+| * F       R  R   R |
+|         FR   * R   |
 ----------------------
 
 Generation 955
 ----------------------
-| F             F   R|
-|   *        FR*  * R|
-|    F               |
-| R    F  * R    *   |
-|     *   *   F RF  F|
-|       RF      F    |
-|F      *  F   F     |
-| *F   * *   F    R  |
-|  F           *RR   |
-|       F        R   |
-|  F    F          R |
-|R F     *           |
-|     F  R       R  R|
-|  R        RR  R  R |
-|F     F  R *  R     |
-| R R *    F   F  R  |
-| *       F      *  F|
-|    R *    F   R    |
-|R*R   F R    R   R  |
-|  RR  R  R    *R    |
+|  F  F    R R   R  R|
+|   * F  F     *  *  |
+|   R      F  R R  R |
+|F   R   R*    R *R  |
+|     * F *  R   R   |
+|FR     R R     R    |
+|  RR   * R R  R     |
+| *    * *R     R  F |
+|     R  R    R*     |
+|    R  R     F  F   |
+|   F   R  RR R R  F |
+|  F     *           |
+|    R      RR   F  R|
+| F R   R     RR R RR|
+|  RF  F  R *        |
+| R   *    F  R     R|
+| *        R  R R*   |
+|      *F       R  R |
+| *F       R    R   R|
+|          FR  *R  R |
 ----------------------
 
 Generation 956
 ----------------------
-|F                 RR|
-|   *         F*F *RR|
-|     FF      R      |
-|RR       * RRF R*  F|
-|     *   *     F    |
-|      RF            |
-|       * F   F      |
-| *    * *      RRR  |
-| F            *RRR  |
-|      F        RR   |
-|R       F        RR |
-|RF   F  *           |
-|        RR     RR RR|
-|  R       RRR RR  R |
-|  R  F   R *RRF   R |
-|FR RR*   F      RR F|
-| *  R           *   |
-|    R *   F   RR    |
-|R*RR    RR   R   R  |
-|RRRRR FRRR   R*RRR  |
+|   F  F  RR R  RR  R|
+|   *        R *R * R|
+|   RRF  FF   RRR RR |
+| F  R   R*   RR *R  |
+|    R*   * RR   RR  |
+| FR   RFRR R  RR    |
+|  RRR  * RRR RR   F |
+| *   R* *R   R RR   |
+|    RR RRR   R*     |
+|   FR RR  R    F    |
+|       RR RRRFRR F  |
+|        *  R       R|
+|   RR      RRR     R|
+|  RF  FR     RRRFRRR|
+| FR      R *       R|
+|RR   *   R  RR R  RR|
+| *        FR RRR*   |
+|  F   * F     RR  R |
+| *       RF    RR RR|
+|           RR *RRRR |
 ----------------------
 
 Generation 957
 ----------------------
-| F               R R|
-|   * F        *  *  |
-| R     F    RF F  RF|
-|         *      *   |
-|R    *   * RR F     |
-|      F             |
-|      R*F   F  RRR  |
-| *    * *           |
-|              *RR   |
-|R    F           RR |
-| F   F F       RR   |
-|        *       R R |
-|R          R  R     |
-| R      RR   RF RR R|
-| R RF    FR*        |
-|  R  *      RR R  F |
-|F*   R        R *   |
-|R RR  * R    R  R   |
-| *  R  R  F    RR R |
-|RRRR F  R R R *   R |
+|  F     R  R RR  RR |
+|   *R   F    R* R*  |
+| FR F     F R R R  R|
+|   R   R *  R  R* R |
+|     *   *R  RR     |
+|   RR F   R RR  RRF |
+| F   RR*R   R  R    |
+| *RRR * * RR  R  R  |
+|   F  R   R R *     |
+|     R  RR RR F     |
+|    R R     F   F  R|
+|    R   * R R  R    |
+|  R       R   RR RR |
+| F   F  R        F R|
+|   F      R* RR   R |
+|  R  *  R  R  R  R  |
+|R*          R  R*  R|
+| F    *   FR R  R  R|
+| *      F  F  R  R  |
+|             R*RR  R|
 ----------------------
 
 Generation 958
 ----------------------
-|                  R |
-| F *F        F*  * F|
-|           R     R  |
-|       F * R   F*   |
-| R   *F  *   F      |
-|               R    |
-|     R *            |
-| *    * *      RRR  |
-|R             *   R |
-| F  F           R   |
-|                 R  |
-|R      F*  R   R R  |
-|        R    R   RR |
-|R        FR R  F  R |
-|  RF       *R       |
-|     *    R   R     |
-| *R   R      R  * F |
-|FR    *     R  R RR |
-|R*RR    R  F        |
-| R  F  R   R R* R  R|
+|    R  R  R R  RR   |
+| F *        R *  *RR|
+|   F    F  F   R    |
+|  R   R  *   RR *   |
+|    R*   * RR   R F |
+|  R        R        |
+|  FRR F* RRR RR  R  |
+| *    * *      R  R |
+|    FR   R R  *     |
+|    R  R  R  F      |
+|   R   R  RF   F  R |
+|     R  *  R  R  RR |
+| F           R  R   |
+|    F     R  R    F |
+|        R  *   R   R|
+|   F *    R  R    RR|
+| *R       F  R  *   |
+|F     *     R  R RR |
+| *     F     R RR   |
+|           FR *   R |
 ----------------------
 
 Generation 959
 ----------------------
-| F           F      |
-|   *          *  *F |
-|       F  R     R   |
-|         *  R   *   |
-|R    *   *  F  F    |
-|      F             |
-|      R*       R    |
-|R*    * *     R   R |
-| F            * R   |
-|               R    |
-|R          R   R  R |
-|        *         R |
-|         FR R   R   |
-|           R     R  |
-|RRF        * R F    |
-|     *   R   R    F |
-|F* R R      R   *   |
-|  R   * R  F    R   |
-| *  F  R     R RR RR|
-|R R         R *     |
+| F R  R  R   RR  R R|
+|   *    F  F  *  *  |
+|    F         R   R |
+| R  RR   *  R   *   |
+|     *   *R      F  |
+| R    F   R R R     |
+|       *    R  R  R |
+| *FRF * *R R     R  |
+|        R   RF*     |
+|   R RR  R          |
+|  R     R F   F  R  |
+|        * R  R  R   |
+|F    R      R     R |
+|   F    R  R  R R   |
+|           *  R   F |
+|     *   RF R       |
+|F* F          RR* RR|
+|      *    R    R   |
+| *    F       R     |
+|            FR* RR  |
 ----------------------
 
 Generation 960
 ----------------------
-| FF          FF   F |
-|   *   F      *  *F |
-|       F RR    RR   |
-|R        * RF   *   |
-|R    *   *  F  F    |
-|      F        F    |
-|R    RF*       R  R |
-|R*    * *    RR   R |
-|FF            *RR   |
-|R          R  RR  R |
-|R          R   RR R |
-|        * R       R |
-|         FFRR  RR R |
-| R        RR   F RR |
-|RFF        *RR F  F |
-|F    *  RR   RR   F |
-|F* RRR  R  FR   *   |
-|  RR  *RR  F    RR R|
-|R*R FF R    RRRRRRRR|
-|RRR         RR* R   |
+| FFRRRR FR   RRR RRR|
+|   *    F FF R*  * R|
+|    F         RR RR |
+|RR  FRR  *  R   *F  |
+|    R*   *RRR    F  |
+| RR   F  RR RRRR    |
+|      F* R RR RR RR |
+| *FFF * *R RR   RR  |
+|   R    RR  FF*     |
+|  RR RR  RR R       |
+| RR  RRRR F  FF  R  |
+|     R  *RF RR  RR  |
+|F    R  R  RR   R RR|
+|F FF    R RR RR R   |
+|           *  RR  F |
+|     *  RFF R  R  FR|
+|F* F        RRRR* RR|
+|F  F  *   RR   RR   |
+| *   FF      RRRR   |
+|            FF* RRR |
 ----------------------
 
 Generation 961
 ----------------------
-|F  F        F  F   F|
-|   *      R   * R*  |
-|        F   F R   F |
-| R       *R     *   |
-| R   *   *      F   |
-|R    F      F F   R |
-|    RF *        R   |
-|F*    * *   R  RR   |
-|              *   R |
-| F        R  R  R   |
-| R        R R R    R|
-|        *  RR   RR  |
-|           F  R  R R|
-|RF       F  R   F  R|
-|   F     R *  F  F  |
-| F  R* R   F       F|
-| *R    R R   RR *R R|
-|FR  FF*     FRRR  R |
-| * R    R       R   |
-|RR R   R   R R*R R R|
+|F  F   F   FR R R  R|
+|   *FR   F    *R *R |
+|     RR     RR  R  R|
+|  R      *R   RR* F |
+|RR  F*   *   RRR  F |
+|   RRF  R  R      R |
+|   F F *R R  R  R   |
+| *    * * R  RRR  R |
+|  F FR    RF  *     |
+| R  R  RR  R F   R  |
+|R  RR    F          |
+|F     RR*  R  FR  R |
+|  F R    RF  R   R  |
+|    F    R  R  R   R|
+|F        F *R   R  F|
+|F    * R      R R  F|
+| *  F     F    R*   |
+|  F   *     RRR  RRR|
+|F*  F  F    FF   R  |
+|              *R   R|
 ----------------------
 
 Generation 962
 ----------------------
-|    F     R     F   |
-|F  *        F *  * F|
-|       F     F     F|
-|R        *      *   |
-|R R  *   *R   F  FR |
-|    F               |
-|F  R  F*    F  R    |
-| *    * *     R  R  |
-|              *  R  |
-|F        R  R      R|
-|  R        R   RR   |
-|        * RF R    RR|
-|R            R  F R |
-|F       F        FR |
-|          R*R  F    |
-|F  F *R     FR    F |
-| * R    R      R* R |
-|  R   *  R         R|
-|F*  FF R    FRRR    |
-|  R         R * R R |
+|    F F     FR R    |
+|F  *  R F   R *  * R|
+|              RR RF |
+| R  FR   *   R  *  R|
+|  R  *   *R     RF  |
+|R R F  R    R R    R|
+|    F  * R  R RR    |
+| *    * *  FR       |
+| F   F  RR    *R  R |
+|R    RR     F   R   |
+|FRR   R        R    |
+|    R   *FF         |
+|   F   R      F   R |
+|        RF R R  RRRF|
+| F  F      *     R  |
+| F   *R     R    RF |
+| *F  F   F  RRR * R |
+|      *         R   |
+| * F          F   RR|
+|F      F    F * R R |
 ----------------------
 
 Generation 963
 ----------------------
-|F    F     R     F F|
-|   *       F  *  *  |
-|      F       F   F |
-| RR      *    F * R |
-| R   *   * R    F   |
-|   F  F     F       |
-|  R    *      R     |
-|F*    * *    R  R   |
-|         R    *   RR|
-|           R   R    |
-|F         R      R R|
-|R R     *R  F    R  |
-|F             R    R|
-|       F    R   F   |
-|   F     R * R    F |
-|     *       F F    |
-|F*  R R  R      *  R|
-|F  RF * R   F R   R |
-| *    F           R |
-| R         R R*R R  |
+|F    F     F  R     |
+|   *   F     R*  *  |
+|     R          R  F|
+|     F   *    R *   |
+| R   *   * R RR F   |
+| R F  R      R  R R |
+|     F *  RF R      |
+| *    * *     RR  R |
+|    F     R F * R   |
+|FF     RR      R    |
+|     R R F    R     |
+| RR  R  *           |
+|    F   R F  F   R  |
+|    F  R  F         |
+|F          *    R FF|
+|  F  *     R        |
+| *    F F       *R R|
+|  F   *     RRFR  R |
+| *          F       |
+| F      F     *  R R|
 ----------------------
 
 Generation 964
 ----------------------
-|           FR     F |
-|F  *          *  * F|
-|     F       F      |
-|RRR      *   F  * FR|
-|RRR  *   * R   F    |
-|  F        F        |
-|FRR   F*     RR     |
-| *    * *R  RR  R  R|
-|         R    * RRRR|
-|          RR  RR R  |
-|  R      RR      RRR|
-|FRR     *R       R  |
-|         R  F RRFR R|
-|   F  F     RR     R|
-|         R * F   F  |
-|F    *   R      F   |
-| * RF RRRR  F   * RR|
-| FRR  * R     R  RR |
-| *     F   R  R  RRR|
-|RR         RRR*RRR  |
+|    F     F  RR     |
+|F  *  F     RR* R* F|
+|     FR         R   |
+|         *   RR *   |
+|RR   *   * R RR     |
+| RF   R    FRRR FRR |
+|      F*  R  RR   R |
+| *    * * R  RRRR R |
+|F  F      RF  *RR   |
+|     RRRR     RR    |
+| F   RRRF    RR     |
+| RRR R  *    F   R  |
+|     F RR  F     R  |
+|   F  RR F         F|
+|  F        *    RF  |
+|     *    RR     R  |
+| *     F    R   *RRR|
+|      *     RR F  R |
+| *F     F    F R RR |
+|              *  RRR|
 ----------------------
 
 Generation 965
 ----------------------
-|            FR      |
-|   *          *  *F |
-|FR  F         F    F|
-|   R     *  F   *  F|
-|   R *   * FR F     |
-|FF    F       R     |
-|   R   * R  R   R  R|
-| *    * *  R  R  RR |
-|          RR  *     |
-|         R   R  R RR|
-|FR R    R  R    R   |
-|        * R   R F RR|
-|  RF         F    R |
-|     F   R R   R F  |
-|           *F      R|
-| F   *R R R F  F  R |
-| *R             *R  |
-|  F F *F R R R     R|
-|R*R         RR RR   |
-|  R       R   *   RR|
+|   F     F  R  R   F|
+|   * F     R  *R *  |
+|F   F  R     R   R  |
+|R        *     R*   |
+|  F  *R  * FR  R R  |
+|      F      R F   R|
+| R     * R  R  R   R|
+|F*    * *R    R  R  |
+|  F  RRR  F  R*R R  |
+|         RR  R  R   |
+|F  RR    F  RF R    |
+|      RR*       R   |
+| RRF  R  FF       RF|
+|  F  F  R           |
+|           *    F   |
+|     *   R  R   R R |
+| *    F    R R F*   |
+|      *    R     R R|
+| *          F   R  R|
+|        F     *RR R |
 ----------------------
 
 Generation 966
 ----------------------
-|           F  R   F |
-|   *          *  * F|
-| F F           F    |
-| RR      * F    * F |
-|F   R*   *          |
-|         R  R  R   R|
-| F     *   R   R  R |
-| * R  * * R  R  R   |
-|         R  R * R   |
-|F       R   R    R  |
-|  R    R       RF RR|
-|   F    *  R        |
-|          R   F  R R|
-|  R F   R R     F   |
-|        R  * F    R |
-|     *     F  F     |
-| *FR  R   R     * R |
-|      * F   R   RRR |
-| * RF      R  R   RR|
-|R  R       R  *     |
+|    F      R    R   |
+|   *F       RR*  * F|
+|   F           R  R |
+| R     R * FR R *   |
+| F   *FR *      R   |
+| R          R   FRR |
+|       *R  R  R     |
+| *   R* *    R  R  R|
+|         F    * R R |
+|F  R  RRRF RRF      |
+|     RR         R   |
+| RR     * F    R   F|
+|     F RF        R  |
+|                    |
+|        R  *R  F    |
+|     *F   R    F R  |
+| *        R     * R |
+|      *     FR  R R |
+| *             R  R |
+|              *  R R|
 ----------------------
 
 Generation 967
 ----------------------
-|          F    R   F|
-|   *          *  *F |
-|  F        F  F     |
-|         *      *F  |
-| FRR *   *         R|
-|        R  R  R     |
-|  FR   *  R     R   |
-| *    * *R     R  R |
-|F       R  R R*  R  |
-|       R     R  F   |
-|      R    R        |
-|  F     *     FR  RR|
-|        R  R    F   |
-|   F     R         R|
-|           *  F     |
-|  F  *  R F  F    R |
-| *  R  R        *R R|
-|      *F   R   R   R|
-| *R       R  R      |
-| R  F       R *   RR|
+|          R  R      |
+|   *          * R*F |
+|  F F      FR R     |
+|  R     R*   R  * R |
+|F    * F *       R  |
+|  R    RR  R   F    |
+|     R *  R       R |
+| *    * *     RR  R |
+|F      RF    F*  R  |
+|     R    F     R   |
+| R R   RR   R  R    |
+|   R    *F          |
+|    F           R   |
+|       RF           |
+|      F    *  F     |
+|     *     RR   F   |
+| *       R   R  *R R|
+|      *    F     R  |
+| *            R  R R|
+|              *     |
 ----------------------
 
 Generation 968
 ----------------------
-|         F     R    |
-|   *       F  *R *  |
-| F               FF |
-|         *      *  R|
-|  FR *  R*         R|
-|  RR    R RR  R     |
-|   FR  * RR   R RRR |
-|F*    * *R   R RRRR |
-|       RRR R R*  R  |
-|      RR   RRR      |
-|  F  RR    R   R  R |
-|        *      F  RR|
-|        RR R   F   R|
-|  F      RRR       R|
-|          F* F    R |
-|     * RR   F     RR|
-| * RR  FR       *RRR|
-|  R   *   RR  RR  RR|
-| *R F    RR  R    RR|
-|RR         RRR*   RR|
+|         RR RR  R   |
+|   *        R * R*  |
+|     F  R   FRR   F |
+|  FR    R*  RR  *RR |
+|     *   *       R  |
+|F R   RFR RR  F     |
+|  R  R *RRR   R   RR|
+|F*   R* *     RR RR |
+|       F      *RRR  |
+|     RRR     F RR   |
+| RRR   RRFF RR R    |
+| R RF   *           |
+|       R       RR   |
+|       F            |
+|     F     * F      |
+|     *   RRRRR   F R|
+| *       R   R  *R R|
+|      *   F   R RR  |
+| *            R  RRR|
+|              *     |
 ----------------------
 
 Generation 969
 ----------------------
-|        F  F  R     |
-|   *          * R*  |
-|F               F  F|
-|        R*      *   |
-|    R*   * R  R   R |
-| RF R    R      RRR |
-|    F  *R  R   R    |
-| *    * * RR  R  R  |
-|F     R     R * R R |
-|  F  R  RRR   RR  R |
-|    R  R  R R      R|
-|        *       FR  |
-|          R R F   R |
-| F      R   R       |
-|       R F *F      R|
-|   R *   R       R  |
-| *R  RF  R R  R * RR|
-|      *  R   R  RR R|
-|R* F    R  RR    R R|
-|  R          R*  R R|
+|        R  R     R  |
+|   *    R  R R*R *  |
+|               R F  |
+|       R * RF R *   |
+|  FR *   * R    R R |
+| F    F  R   F    R |
+|      R*R  R   R R  |
+| *R   * *R   R  R  R|
+|F    RF       *R  R |
+|  R     RF  R F  R  |
+|R   FRR    F    R   |
+|R      R*    R  R   |
+|   R   F      R     |
+|                    |
+|         R *F    F R|
+|     *        R     |
+| *        FRR R * R |
+|      *      R R  R |
+| *             RR   |
+|              *    R|
 ----------------------
 
 Generation 970
 ----------------------
-|             R  R   |
-|   *          *  * F|
-|F                  F|
-|F      R * R    *   |
-| RFR *   *   R  R  R|
-|  F  R  R          R|
-|   FF  * RR   R  R  |
-| *    * *R     R  R |
-|  F  R    RR R*R R  |
-|  F R  R           R|
-|   R     R R  R F R |
-|       R*   R   F R |
-|         R   FF  R  |
-|FF           R     R|
-|        FF *        |
-|  R  * RR  R      RR|
-| *    FF  R  R  *   |
-|     R* R   R     R |
-| *FF   R  R     R R |
-|R           R * R R |
+|       R    R     R |
+|   *     R  R * R*  |
+|              R  F  |
+|      R  *R F   *F  |
+| FF R*F  *  F RR   R|
+|FF    F R   FF   R  |
+|  R  R * R      R   |
+| *    * * RR  RR  R |
+|  R  FF       *  R  |
+|     R RFF    FFR   |
+| R FF  R   FF  R    |
+| R R  RF*     R  R  |
+|       F     R      |
+|         R       F R|
+|           *     F  |
+|     *     R R      |
+| *       FF  R R*  R|
+|      *     R R  R  |
+| *               R  |
+|              *R  R |
 ----------------------
 
 Generation 971
 ----------------------
-|            R  R   F|
-|F  *          *  *  |
-|       R   R      F |
-| F       *      *   |
-|   F *   *  R    RR |
-|   FF  R            |
-|       *R         RR|
-| *    * * R   R  R  |
-| F  R         * R   |
-|   R      RR R R  R |
-|  F    R  R      F  |
-|        *    FF    R|
-| F     RR       F  R|
-|         F    R     |
-|F      F   *       R|
-| R   *F   R R       |
-| *      R   R   * R |
-|  F R *F   R        |
-| *  F R        R   R|
-| R        RR  *R R  |
+|      R  R   R  R   |
+|   *       R  *  *R |
+|             R  F   |
+|    R FR *   F  *  R|
+|F  F *   *R  F   F  |
+|  F    R      FRR   |
+|      F*  R         |
+| *R   * *   RR   R  |
+|    F  FF     *FR   |
+| R    R   F         |
+|  F   RF      F R   |
+|    F   *  FFR      |
+| R    F  R  R    F R|
+|                    |
+|           *    F   |
+|     *    F R      R|
+| *      F     R *   |
+|      *    R   RR   |
+| *             R  R |
+|              *  R  |
 ----------------------
 
 Generation 972
 ----------------------
-|F          RR RR    |
-|   *   R   R  *  * F|
-|       R   R        |
-|F  F     *      * F |
-|     *   * RR   RRR |
-|  F   RR           R|
-|    F  *RRR      RRR|
-| *    * * R  RR RR  |
-|F  RR     R   *RR   |
-|  FR   R  RRRRRR  R |
-|       R  R   F   F |
-| F     R* R F     RR|
-|       RR      F   R|
-|       FF     R    R|
-| F        R*  R   RR|
-| R   *    RRR       |
-| *    FFR   RR  * RR|
-|   FR *   RR       R|
-| *   FR   R   RR   R|
-|RR        RRR *RRR  |
+|     RR RR   RR RRR |
+|   *      RR  *  *R |
+|       R    RF F   R|
+|F   R  F *      *F R|
+|    F*   *RR        |
+|      FR     F FR   |
+|  F    * RR R  RR   |
+| *R   * *   RRR RR  |
+|  RF  F       * F   |
+| RF  RR F       R   |
+|     RF   F  F  RR  |
+| R      *R   F   F R|
+| R  F  F R FRR     R|
+|                    |
+|          F*     F R|
+|     *      R      R|
+| *     F    R RR*   |
+|      *   RR  RRRR  |
+| *            RR RR |
+|              * RR  |
 ----------------------
 
 Generation 973
 ----------------------
-| F        R  R      |
-|   *  R     R *R *F |
-|F       R           |
-|         * R    *  F|
-|   F * R *   R     R|
-| F   R  R R     RRR |
-|       *        R   |
-| *  F * *R  R  R  RR|
-|  F        R R*  RR |
-|    R   RR    F R   |
-| F    R    RR      F|
-|      R *  F     R  |
-|      R FR    F   R |
-|      F   R       R |
-|F          *     R  |
-|  R  *F RR   RR    R|
-| * FR      R    *   |
-|      *F R  RRR   R |
-|R*  F  R   R    RRR |
-|  R      R   R*R    |
+|    R  R   RR  R R R|
+|   *   RRR    * R*  |
+|F          RF   F R |
+|     R   *RR    *   |
+|   F * F *     F F R|
+|  F  F   R  R    R  |
+|       *   R FR  R  |
+| * F  * *  R   RF   |
+| R   F        *     |
+| F    FF       R    |
+| R  R    F  F     RR|
+|    F   *   F   F   |
+|      F   F       R |
+| R        F  R      |
+|           *R     F |
+|     *        RR    |
+| *    F   R     *R R|
+|      *     RR R  R |
+| *           R  R   |
+|              *R  R |
 ----------------------
 
 Generation 974
 ----------------------
-|F     R  R  R       |
-|F  *          *  *  |
-|       R    R  R  F |
-|       R *R     * F |
-|     *   *R     R R |
-|F   R        R     R|
-|    F  *R   R  R RR |
-| *    * *  R  R     |
-| F      RR    * R  R|
-| F        RR F    RF|
-|    RR          R   |
-|       R*   F     R |
-|     RF  FR  F     R|
-|F                R  |
-|        R  *  R     |
-|    R* F  RRR     R |
-| *F         R   * R |
-|      * F        R  |
-| * F  R      RRR    |
-|R  R    R  RR * R R |
+|   R    R       R R |
+|F  *  R    RF *R * R|
+|     R   RR      F R|
+|   F   F *     F*  R|
+|  F  *   * R        |
+|    F     RR  R RF  |
+|       *    F   F R |
+| *F   * *     R     |
+|  R        R  *     |
+|F   RF   F      R  R|
+|  R F FF   F    FR  |
+|        *    F      |
+|     F   F       R  |
+|R          FR       |
+|           *  R    F|
+|     *          R  R|
+| *   F   R  R   * R |
+|      *       R R   |
+| *          R  R    |
+|              * RR  |
 ----------------------
 
 Generation 975
 ----------------------
-| F   R  R  R        |
-|   *        R *  *  |
-|F     R       R     |
-|        R* R    *F  |
-|     *   * R R     R|
-| F RF   R   R   R R |
-|       *   R  R     |
-| *    * *    R   RR |
-|F         R   *   RF|
-|  F     R   F   RR  |
-|                    |
-|    RRF * R  F   R R|
-|F       F   F    R  |
-|     R  R           |
-|    R  F  R*        |
-|     *       RR  R  |
-| *         R R  *R R|
-|  F   *F     RR     |
-| *F  R     R      R |
-| R  R  R     R*R R  |
+|  R            R R R|
+|   *   RR RF  *  *  |
+|   F  RFR         F |
+|  F      *R   F *   |
+|     *   *R      F R|
+|   F     R  F  RF   |
+|       *            |
+| *    * *    R    R |
+|  FR F   F  R * R  R|
+|   RF F         F   |
+|F       F F         |
+|  R     *        R  |
+|R   F   F   RF  R   |
+|          F         |
+|           *    R F |
+|     *        R   R |
+| *      R       *  R|
+|      *     R  R    |
+| *            R  R  |
+|              *R    |
 ----------------------
 
 Generation 976
 ----------------------
-|    RR RR RRR       |
-|   *        R *  *  |
-|     RR       R     |
-|F      RR*RR RR *   |
-|     *  R* RRR  RFRR|
-|  FF    R  RR   R R |
-|       *   R RR  RR |
-| *    * *   RR   RR |
-|        R RRF *  RF |
-|F       R       RR  |
-|    R     R     RR R|
-|F   RF  * R F    RRR|
-|     R     F    RR  |
-|     RR FRR         |
-|    RR    R*        |
-|     *      RRR RR  |
-| *     F   R RR *RRR|
-|   F  *    RRRRR    |
-| *   R     R     RR |
-|RRFRRRRR    RR*RRR  |
+| RR     R      RRRRR|
+|   *  RFRRF   *  * R|
+|  F  RR R R   F  F  |
+|        R*R     *   |
+|     *   *R F     FR|
+|  F     RRR   RF    |
+|       *          R |
+| * R F* *F  RR  R RR|
+|   R       RR * F  R|
+|  FF    F           |
+|  R   F  F          |
+|F R     *   R   RR  |
+|R      F    F  RR   |
+|                    |
+|           *  R RF  |
+|     *        R   RR|
+| *     RR   R   * RR|
+|      *     R RR    |
+| *           RR  R  |
+|              *RRR  |
 ----------------------
 
 Generation 977
 ----------------------
-|      R  R   R      |
-|   *RRR   RR  *  *  |
-|    R   R  R R R    |
-|      R  *  R   * R |
-|   F * R *R   RR    |
-| F     R  R  RR  F R|
-|       *    R   R  R|
-| *    * *  RF R R  R|
-|         R    * R   |
-| F  R    RRR   R  F |
-|F    F            R |
-|   R    *  F    R   |
-|    R    RF    R  RR|
-|    R    F R     R  |
-|      R    * R   R  |
-|    R*    R    R  R |
-| *    F     R  R*   |
-|     R*   R      R R|
-|R* FR RR    RRRRR  R|
-| F   R     R  *   R |
+|R  R     R    R  R R|
+|  F* R  FF    * R*R |
+|    R  R R R F  F  R|
+|       R * R    *   |
+|     *   * F   F    |
+| F     R     R    FR|
+|       * FR  R  R  R|
+| *R   * *  R    FR  |
+|  F  F    R  R*   R |
+|      F  F          |
+|   F        R       |
+| F      *   F  R    |
+| R    F          R  |
+|               R    |
+|           * R     R|
+|     * R       RRF  |
+| *       R R   R*   |
+|      *      R   RRR|
+| *          R  RR   |
+|              *   R |
 ----------------------
 
 Generation 978
 ----------------------
-|    RR  R     R     |
-|   *   R    RR*  *  |
-|   R R R  R R       |
-|   F     *     R*   |
-|     *R R* R R    R |
-|F     R  R  R  RF R |
-|       *   R      R |
-| *    * * R  F   RR |
-|          R   *R  F |
-|F       R   R   R   |
-|    F           R  R|
-|  R R   *RF    R   R|
-|                 R  |
-|          F  R  R   |
-|    R  R   *      R |
-|     *        R     |
-| *   F    R  R  * R |
-|    R *R     RRRR R |
-| *   R     R      R |
-|F  FR     R   *    R|
+|    R    FR  R  R R |
+|R  *R  F   R  *  * R|
+|   R  R   R    F  R |
+|        R*RF   F*   |
+|     *   *        FR|
+|      R  FR R   R   |
+|  R    *      R F   |
+| *    * * R        R|
+| F       F  R *  R  |
+|     F      R       |
+|            F       |
+|  FF    *     R     |
+|  R  F              |
+|             R  RR  |
+|           *    R R |
+|     *R    R  R     |
+| *              *FR |
+|      *  R  R  RR   |
+| *         R  R   RR|
+|              *     |
 ----------------------
 
 Generation 979
 ----------------------
-|       R     R R    |
-|   *RRR    R  *  *  |
-|  RF  R R  R   R    |
-|      R R*R     *   |
-|     *   *  R      R|
-|     R  R  R  R  F  |
-|F      *  R      R R|
-| *    * *R        FR|
-|           R F*     |
-|    F  R   R   R R  |
-|         R     R  R |
-| R   R  *F          |
-|             R  R  R|
-|    R      F   R    |
-|      R    *        |
-|     *    R  R    R |
-| *    FR    R  R*  R|
-|   R  *          R  |
-| *    R   R  RR R  R|
-| F  FR   R    *     |
+|     R    FR       R|
+| R *      R  R* R*R |
+|  R R  F   F  F     |
+|      RR *      * F |
+|     *   *R    FR   |
+|       RF  R    F  R|
+|       *            |
+| *R   * *F    R   R |
+|  F        R  * R   |
+|           RF       |
+|                    |
+|        *    R      |
+| RFF         R   R  |
+|               R    |
+|      R    *     R  |
+|     *    R  R   FR |
+| *       R      *  R|
+|      *    R  R   R |
+| *        R  R  R   |
+|              *    R|
 ----------------------
 
 Generation 980
 ----------------------
-|    R RR    RR R    |
-|   *RRR    RR *R *  |
-| RFF RRRR RR   R    |
-|      R R*R     *  R|
-|     *R R*RRR      R|
-|    RR  R RR  R  F R|
-|FF     * RR   R  FFR|
-| *    * *R        FR|
-|    F    RRR F*    R|
-|    F RR   RRF RRRR |
-|        RF    RR RR |
-|RR  RR  *F   R      |
-|    R        R RR RR|
-|    R      FF RR    |
-|     RR   R*      R |
-|     * R  R RR    RR|
-| *    FF   RR RR*  R|
-|  RR  *          RR |
-| *    R  RR RRRRRRRR|
-|FF  FFR RR    *     |
+|     RR   FRRR  R  R|
+| RR*      FF R* R*RR|
+| RR RR F   F FF   F |
+|      RF *R     * F |
+|     *RR *R    FFR  |
+|      RFF RR    F  R|
+|  R    *          RR|
+| *F   * *F    RR  R |
+|  F      FRR  *RR   |
+|          RFF       |
+|                    |
+|        *    RR  R  |
+|RFFFF       RR   R  |
+|              RR    |
+|     RR   R*    RR  |
+|     *   RR RR   FFR|
+| *       R      *  R|
+|      *   RR  R   R |
+| *       RR  RR RRR |
+|             R*   RR|
 ----------------------
 
 Generation 981
 ----------------------
-|     R     R  R     |
-|  F*   RR R  R* R*  |
-|R   F R     R      R|
-|     R R * RR  R*   |
-|     * R *R   R   R |
-|F  R  R  R  R     F |
-|  F    *R  R    F  R|
-| *    * * R   R    R|
-|   F   RR   F *R RF |
-|     F  RF         R|
-|     R     RRF  R  R|
-|   R    * F R  RR   |
-|RR   R        R  R  |
-|          F  F  R  R|
-|    R  R   * R     R|
-|     *F    R     R  |
-| *R     F R  R  *RR |
-|    R *   R   RRR  R|
-|F*   F RR  R        |
-|  FF   R  R  R*R RRR|
+| RR R  R   F  R  RR |
+|   * R   F  R *R *  |
+|R  R  F        F   F|
+|     R  F* F   F*F  |
+|     *RFR* R     F R|
+|     R   F       FR |
+|   R   *       R    |
+| * F  * * F  R     R|
+|   F        F *     |
+|         F     RR   |
+|           F RR  R  |
+|RFF F   *           |
+|           R   R    |
+|   F      R  R   R  |
+|    R  R R * R R  RR|
+|     *     R        |
+| *        RR  R *FF |
+|      *  R      R  R|
+| *      R  RR  R   R|
+|            R *  R  |
 ----------------------
 
 Generation 982
 ----------------------
-|  F R   R R  R      |
-|   *  R     R *R * R|
-|       R   R   R    |
-|R   F   R*R  R  *   |
-|     *R  *   R     R|
-|    R   R R        F|
-|F      * R  R RF    |
-| * F  *R*  R      R |
-|         FR   *     |
-|    F      RFF R RF |
-|      R R      R    |
-|  R     *  F  R  R R|
-|  R       F  F      |
-|R    R           RR |
-|   R       *  R R   |
-|  R  * F  R     R  R|
-| *       F      *  R|
-|      *R   R R   R  |
-| *F F         RR  RR|
-|F   F R RR RR * R   |
+|          F  R  R   |
+| RR*R  RF     * R*RF|
+|  R    F    R F     |
+|R   R  F *F   F * F |
+|     *   *  R     F |
+|   R  R F           |
+|     R *         FR |
+| *  F * *     RR  R |
+|  F       F  F*R    |
+|        F     R  R  |
+|RF  F       F       |
+|   F    *  R   R    |
+|          R         |
+|         R  R   R  R|
+|   F       *  R  R  |
+|     * R  R    R    |
+| *       R  RR  *   |
+|      * R        FF |
+| *     R  R  R   R  |
+|             R*R   R|
 ----------------------
 
 Generation 983
 ----------------------
-|   F     R  R  R   R|
-|   *   R   R  *  *  |
-|      R R R     R   |
-| R   F   *  R   *   |
-|     *   *R   R   R |
-|   R  RR   RR R     |
-| F F   *  RR  F    F|
-| *    * *        R  |
-|       RF  R  *  R  |
-|   F            R  F|
-|         R FFFR     |
-| R    R * F  F      |
-|   R R           R R|
-|                    |
-|R R    F   *     RRR|
-| R   *   F    RR    |
-| *           R  *RR |
-|  F   * R     R     |
-| * F     R R    R   |
-| F   F R     R*   RR|
+| RR R  R F  R    R F|
+|   *   F    R *R *  |
+| R      F      F  F |
+| R   RF  *     F*   |
+|     *   *F         |
+|       F    R     F |
+|   R  R*       R    |
+| *F  F* * F  F   F  |
+|              *  R  |
+|R      F       R    |
+|  FF       F   R    |
+|        * R         |
+|         R         R|
+|           R   R    |
+|  F    R   *   R  R |
+|     *   R   RR     |
+| *      R  R    *   |
+|      *R        F   |
+| *    R     R  R  FR|
+|          R R *     |
 ----------------------
 
 Generation 984
 ----------------------
-|    F   RR RR RR   R|
-|   *  RR  RR  *  * R|
-|     FR RRR    RR   |
-|RR       *  R   *   |
-|     *   *RRRRR   RR|
-| F FR RRR RRRRFR   F|
-|      R*  RRR       |
-| *    * *       RR  |
-|      RF   R  * RRRF|
-|  F        F    R   |
-|      R  R    F     |
-|RR   RR *F  F F  R R|
-|   R R           R R|
-|   R   F         R R|
-|RRR        *     RRR|
-| R   *  F    RRR RR |
-| *      R    RRR*RR |
-|   F  * R  R  R     |
-| *F      R R  R RRRR|
-|    F  RRR  RR*   RR|
+| RR RR FF  RR    RF |
+| RR*        RR*FR*  |
+|RR       F       F  |
+| RR RF   *    F *   |
+|     *   * FR       |
+|   R  F     R  R    |
+|   R FR*  F    R  F |
+| *    * *   F       |
+|  F           *  FR |
+|R  F  F       RR    |
+|RF        F    RR   |
+|        *RR        R|
+|         R     R   R|
+|       R  RR   R    |
+| F     R   * R R RR |
+|     *  RR   RRR    |
+| *     RR  R    *   |
+|      *R   R   F   R|
+| *   RRR   RR  R   F|
+|          RRRR*     |
 ----------------------
 
 Generation 985
 ----------------------
-|          R  R    R |
-|   *FF  RR  R *RR*  |
-|       R   RR R    R|
-|  R     R*RR RR *  R|
-|R  FR* R *  R       |
-|     R   R RRF    F |
-| F   R *     R R R  |
-| *    * * RR   R  RF|
-|      F    FR *R    |
-| F    R       F  R  |
-| R   R R  R     R  R|
-|   R    *  F      R |
-|R   R RF F    F R R |
-|RR                R |
-|   R       * RRRR   |
-|  R  * F        R  R|
-| * F     R  R R *  R|
-|      *  R  RR R RRR|
-| *     RR R  R R    |
-|  FF      RR  * RR R|
+|R  R  F  FR  R  R  F|
+|R  *RR     R  * F*  |
+|  R     F       F   |
+|    F    *  R  F*   |
+| RR R*   *          |
+|  R       FF  R   F |
+|    F F*        R   |
+| *    * *  F        |
+|   F          *R  F |
+| FF  F       R    R |
+|         F    R    R|
+|R       *      RR   |
+|          RR      R |
+|      R  R   R  R   |
+|F       RR *  R     |
+|     * R   R    RRR |
+| *    R  R   RRF*  R|
+|      * R   R       |
+| *  R     R  R  R   |
+|      RR R RR *    F|
 ----------------------
 
 Generation 986
 ----------------------
-|    F    R  R   R   |
-|   *  F    R  *  *RR|
-|        RRR  R R    |
-|       R *  R  R* R |
-|  F  *   * R        |
-|R   R     R F    F  |
-|      R*  R R   R  F|
-| *    * *  FR R  R  |
-|       F      * R   |
-|F    R         FR  R|
-|  R   R    F   R  R |
-|  R    F*           |
-| R   R       F   R  |
-|      R  F     R R  |
-|R          *     R  |
-|   F *F      RR  RR |
-| *R     R  R R R* R |
-|      * R R   R R   |
-| *    R  R  R   R  R|
-|    F    R  R *R  R |
+| R  R       R  RF   |
+| R *  F  FR R *  * F|
+|   RF       R  F    |
+| R       *      *   |
+|   R *   *    R   F |
+| R                  |
+|   F F *  FF   R    |
+| *    * * F    R    |
+|              *  F  |
+|F   F    F  R      R|
+|R              R  R |
+|        *  R     R  |
+|      R  R       R  |
+|F       R   R       |
+|       R  R*   RR   |
+|     *R     RR     R|
+| *   R        F *R  |
+|      *  R   RR     |
+| * R  R R  RR  R    |
+|        R R   *   F |
 ----------------------
 
 Generation 987
 ----------------------
-|     F  R  R     R R|
-|   *   FRR    *  *  |
-|       R   R  R R R |
-|  F      *R  R  *R  |
-|     *   *  F  R    |
-| R R  R  R      F  F|
-|       *   F R      |
-| *    * *    R      |
-|     R  F   R *F R R|
+|R    R   F   RR  F  |
+|   *F  F   R  *  *  |
+| RR           F    F|
+|         *  R R * F |
+| R  R*   *          |
 |                    |
-| R        F     R   |
-|   R  F *         R |
-|R   R    F  F     R |
-|       R          R |
-| R F       * R RR   |
-|     *         R   R|
-| *    FR    R   *R R|
-|  R   *  R R R R   R|
-| *   R  R  R   R RR |
-|     F    RR  *     |
+|  F   F*    F R     |
+| *    * *       R   |
+|         FF   * F  R|
+|           R        |
+|FR         R  R  R  |
+|      R *         R |
+|F       R           |
+|       R   R     R  |
+|      R  R * R     R|
+|     *     R  FRR   |
+| *  R R  R      *   |
+|      *     R    R  |
+| *R  R   R    R   F |
+|       R   RR *     |
 ----------------------
 
 Generation 988
 ----------------------
-|    F  RR RR     RRR|
-|   *    RRRR  * R* R|
-|  F    FR  R  R RRR |
-|         *RRFRR *R  |
-|     *   *     R R  |
-| RRR  R RR F   F    |
-|      R*     RR     |
-| *   R* *   RR   R R|
-|     R     RR *  R R|
-|        F      F    |
-| R    F  F      RR  |
-|RR RR   *F       RR |
-|R  RR      F     RR |
-|   F  RR       RR R |
-| R         * R RR R |
-| R   *       R RRRRR|
-| *     F   RR   *RRR|
-|  R   *R RRRRRRR  RR|
-| *R RF  RRRRR  RRRR |
-|          RRR *     |
+|R   FR    F  RRR  F |
+|RR *  F   RR R*  * F|
+| RRR              F |
+| R       *  RRF *   |
+| R RR*   *  R       |
+|                    |
+| F   F *     FR     |
+| *    * *      RF  R|
+|        F     *    R|
+|          FR        |
+| F    R    RRRR  RR |
+| R    R *        RR |
+|       RR  R        |
+|      RR   R     RRR|
+|     RR  R * R  R  R|
+|     *   RRR R FR   |
+| * RR RR R  R  R*   |
+|      *     R    RF |
+| *R  R   R  RRR     |
+|  R  RRR RRRR *     |
 ----------------------
 
 Generation 989
 ----------------------
-|      R  R  R   R  R|
-|  F*   F    R *R *R |
-|         RR  R R R R|
-|         * F    * R |
-|   R *R  *RF  R     |
-|       R  R   F  R  |
-| RR  R *    R      R|
-| *    * *  R  R   R |
-|    R     R  R* R R |
-| R    F  F      F   |
-|R  R    F         R |
-|  R  R  * F     R  R|
-| RRF R R  F    RR  R|
-|     R           R  |
-|  R        *  R  R R|
-|  R  *      R   R R |
-| *    F  RR  R R* RR|
-| R    * R  RR   RR  |
-| * RF     RR RR    R|
-|         R R R*  R  |
+| R F     F  R R    F|
+|  R* F   R  R *R *F |
+|R            R      |
+|  RRR    * R   F*   |
+|  R  *   * R        |
+|              R     |
+|F   F  *    F      R|
+| *    * *     RF    |
+|       F   R  *   R |
+|            R     R |
+|F    R    F    RR   |
+|       R*  R R      |
+| R    R  R       RRR|
+|     R  RR  R       |
+|    R  R   *  R  RR |
+|    R*RRR   R    R  |
+| *R     R RR  RF*   |
+|  R  R*    R  R RF  |
+| *    RR  RR        |
+| R  R   R    R*     |
 ----------------------
 
 Generation 990
 ----------------------
-|     R  R  R     RR |
-| FF*   FFR   R* R* R|
-|                  R |
-|   R  R  *FF   R*   |
-|     *   *FF RF   R |
-| R   RR  R    F R  R|
-|   R   *   R      R |
-| *    * * R  R      |
-|     RF  F  R *R    |
-|R     F  F      F R |
-|  R  R FF       F  R|
-| R F   R*      R  R |
-|   F  R       R     |
-|  R R           R  R|
-|           *R  RR R |
-|     *F  R     R R R|
-| *R   F    R    *R  |
-|R     *   R  R     R|
-| *RFF   RR  R  RR   |
-|          R R * R   |
+|  FF       R R R    |
+| R *FF    R  R*  *  |
+| RR R               |
+|         *  R FF*   |
+| R R *   *R   R     |
+|                   R|
+|F  FF  *   FF R     |
+|F*    *F*  R  FF    |
+|       F      *    R|
+|F    R         R R  |
+|F         F R    R  |
+|      R * F   R    R|
+|     R  R           |
+| R  R  R         RR |
+|   R  R RR *R  R   R|
+|     *     R        |
+| * RRR R     R F*F  |
+|   R  *R  R    F F  |
+| *   R      R   R   |
+|R    R R    R *     |
 ----------------------
 
 Generation 991
 ----------------------
-|    R   FRR     R  R|
-|F  *  F   R R *R *R |
-|  FR      FF   R    |
-|     R   *    F * R |
-| R   *   *  F      R|
-|        R F    F    |
-|  R  RR*  R         |
-| *    * *F        R |
-|R      F     R*     |
-|     F  F F R  F   R|
-|      F        F  R |
-|  F   R *     R  R  |
-| R     R            |
-|   F           R  R |
-|           *  R  R  |
-|  R  * F    R   R R |
-| *     F R  RR  *  R|
-|  RF  *  R RR  RRR  |
-|R*   F R            |
-|         R R  *R    |
+|    F     R R   R   |
+|R F*       R  *  *  |
+|R  RFF       R      |
+|         *   F  *   |
+|R   R*   *     F   R|
+|F         R         |
+|     F *  F  F      |
+| *    * *   RF  F  R|
+|     R  F     *     |
+| F          R   R   |
+| F       F     R  RR|
+|     R  *  F R      |
+| R  R  R         R  |
+|   R               R|
+|  R    R   *  R     |
+|    R*R RRR R       |
+| *R   R     R F * F |
+|  R  R* R  RR   F   |
+| *  R               |
+| R    R    R  *     |
 ----------------------
 
 Generation 992
 ----------------------
-|   RR    FRRR  RR  R|
-|   *     RFFR *RR*RR|
-|   FRRF       FRR R |
-| R   R   *      * RR|
-| R   *  R* F       R|
-|     RR R     F     |
-| RR  RR* FF       R |
-|R*    * *         R |
-|R       F   RR*     |
-|      FF    RR  F RR|
-|          F   F  RR |
-| F    FR*     R RR  |
-| R     R            |
-|  F    R      RR  R |
-|  R        * RR  RR |
-|  R  *F     RR RRRRR|
-| *      FR RRR R*  R|
-| RF   *R RRRRR RRR  |
-|R*     R        RR  |
-|R    F  RR RR *RR   |
+|R  F     RR R  RR   |
+|R  *      RRR *  *  |
+|R FF         FR     |
+|R  RRF   *      *  R|
+|FR  R*   *         R|
+|          FR   F    |
+|       *    F      R|
+| *   F* *  RF      R|
+|     R F    R * F   |
+|F           R  RR  R|
+|               R RRR|
+| F  RR  *F  FR   R  |
+| R RR  R         R R|
+|  RR   R           R|
+| RR   RRR  * RR     |
+|   RR*R RRR RR      |
+| *RR RR RRRRR  F*  F|
+| RR RR* R RRRR      |
+| *  RR          F   |
+|RR   RR    RR *     |
 ----------------------
 
 Generation 993
 ----------------------
-|  R  R    FF RR  RR |
-|   *RR        *RR*  |
-| R       R  R  F R R|
-|   F  F R*     R*R  |
-|     *   *F       R |
-| R  R  R FF  F      |
-|R  RR R*         R  |
-| *    * *   RR     R|
-| R       F    *    R|
-|     F    FR  F  R  |
-| F     F        F  R|
-|        *      R  R |
-|  F   F        R  R |
-|             R      |
-|   R   R   *R  RR  R|
-|     *     R  R     |
-| *F   FF  R R R *RR |
-|R     *       R R   |
-| *      RRRRR  R    |
-| R  F  R     R*  R  |
+| RF     R  R RR  R  |
+| R *     R    *  *  |
+| F  F       F  R   R|
+|FR    F  *      *   |
+|  RR *   * R   F  R |
+|    R    F          |
+|       *   F      R |
+| *  F * * R  F      |
+|      F      R*F   R|
+|           R      R |
+|FF   R          R   |
+|   R   R* FF      RR|
+|  R  R       R    R |
+| R  R R R     R  R  |
+|R  R     R *R      R|
+|  R  * R   R  RF    |
+| *  R  R  R  R  *   |
+|R  R R*  R         F|
+|R*R   R    RRR      |
+|  R R  R     R* F   |
 ----------------------
 
 Generation 994
 ----------------------
-| R  R R  F  F  RR   |
-| R *         R*  *RR|
-|     R  R  R      R |
-|  F    F *    RF*   |
-|    R* R * F     R  |
-|R  R    F  FF    R  |
-|     R *            |
-| *  R * *         R |
-|  R       F RR*     |
-| F  F    F   F  F  R|
-|           R      R |
-|       F*     R  R  |
-| F   F          R  R|
-|            R   R  R|
-|           *  R     |
-|  FR * F  R RR   R  |
-| *       R   R  *  R|
-|      *  R RR    R  |
-|R*     R      R  R  |
-|R  F  R   R R *R    |
+|RF     R  R    R  R |
+|RF *    R    R*  * R|
+|F  F       F        |
+|  R      * R   F*   |
+| R  R*F  *       R  |
+|        F           |
+|    F  *           R|
+| *    * *  F  F    R|
+|     F    R   *   R |
+|     R      RR F    |
+|       R  F    R  R |
+| FR     *   F       |
+| R    R       R    R|
+|R    R   R   R  R  R|
+|    R   R  *        |
+|R  R *  R R RRF     |
+|R*R  RR  R      *  F|
+|    R * R    R      |
+| * R R R  R         |
+|R  R  R     R *F    |
 ----------------------
 
 Generation 995
 ----------------------
-|R  R         FR  RRR|
-|  R*  R RF    *  *  |
-|      RF  R   R    R|
-| F  R    *      *   |
-|R    *  F*  F     R |
-|                R   |
-|   R  R*   F        |
-| *R  R* * F RR   R  |
-| F       F   F*     |
-|   F           F  R |
-|          R         |
-|        *    R    R |
-|F   F  F       R RR |
-|           R     R  |
-|       F   * R     R|
-| F  R*   R    R    R|
-| *      R   R R *R  |
-|R     *   R   R R   |
-| *    R   R    R  R |
-| RF  R     R  *     |
+|F     R  R   R     R|
+|F  *   R      *R *R |
+|    F     F         |
+| R  R    *  R   *   |
+|R    *   *     FR   |
+|    F FF            |
+|       *          R |
+| *    * * F    F  R |
+|    F         *    R|
+|      R             |
+|      R     FRRF    |
+|      R * F   R   R |
+|RFR  R   R   R    R |
+|    R          R    |
+|R  R   R   * R     R|
+| R   *R  R   F     F|
+| * RR   R   RR  *   |
+|R  R  *R            |
+| *  R R        F    |
+| R  RR    RR  *     |
 ----------------------
 
 Generation 996
 ----------------------
-|R  RR R       FRRRRR|
-|RRR*  RFF     *  *RR|
-|     RR  RR   RR  RR|
-|F   R    *      *   |
-|R   R* F * F    R RR|
-|   R            R   |
-|   R RR*    F       |
-| *R RR* *   RFR RR  |
-|  F           *     |
-|  F           F   R |
-|         RR       R |
-|        *   RR   RRR|
-|   F           R RR |
-|F      F  RR   RRRRR|
-| F  R      * R     R|
-|    R*  RR   RRR  RR|
-| *     RR  RRRR *R  |
-|RR    *  RR   RRRR  |
-| *   RR   RR   R RR |
-|RF  RR    RR  *     |
+| F   RR RR   RRR  RR|
+| F *  RR      *R *RR|
+|         F          |
+|RR  FR   *  R   *   |
+|R   F*   *  R   F   |
+|        F       R   |
+|      F*  F      RR |
+| *    * *       F RR|
+|   F          *   RR|
+|     RR      RR     |
+|     RR      FR     |
+|     RR *F   RRF  RR|
+|R FRRRR  R   R   RR |
+|R  RR  R      RR   R|
+|RR R   R   *RF     F|
+| R R *R RR  R       |
+| * RRRRRR   RRR *   |
+|RR RR *R       F    |
+| * RRRRR  R         |
+|RR RRRR   RRR *     |
 ----------------------
 
 Generation 997
 ----------------------
-| RR  R F       F RRR|
-|   * R    R   *RR*RR|
-|F R    RF           |
-|     R   *    RR* RR|
-| R   *F  *       R  |
-|  R R R          RRR|
-|    R  *     F   R  |
-| * R  * *  RF  R    |
-|   F R        *   R |
-|             F      |
-|             R   R R|
-|        *RRR   R  R |
-|  F    F   R    R  R|
-| F  R    R   R      |
-|F        R *  RRRRR |
-|   R * R   RR       |
-| *    R  R     R* RR|
-|  R   * R  R R    R |
-|R*  R  R R  R   R   |
-|  FR  R  R  R *     |
+|F   R  R    R R RR R|
+|F  * R  RF    * R*  |
+|R    R R    R     RR|
+|  R  F   *      *   |
+| R   *   *     F    |
+|    F    FF R    RR |
+|       *        R  R|
+| *    * *        F  |
+|  F  R       R*     |
+|       R       R  RR|
+|    R  R    F  F   R|
+|R  RR  R*   R    R  |
+|       R FR   R R  R|
+| RF  RR     RF  R  F|
+|  R R   RR *        |
+|R R R* R   R  R     |
+| *R   R  R      *   |
+|  R  R* R   RR      |
+|R*R R R    R        |
+|  R RR R R   R*     |
 ----------------------
 
 Generation 998
 ----------------------
-|      F   R     F RR|
-|FRR*          *  *  |
-|   R R F      RR  RR|
-|       R *      *   |
-|  R  *   *     R  RR|
-| R   RFR     F  R   |
-|   R   *    F     RR|
-| *RF  * *     R     |
-|           R  *  R  |
-|     R      F    R R|
-|          R   R     |
-|       F*   R R     |
-| F       R  R    RR |
-|F       R   R  R RR |
-|    R     R* R      |
-|  R  *R   R  R  R  R|
-| *R  R        R *R  |
-|      *  R  R      R|
-| * R    R R  R R    |
-|R  FRR RR    R*     |
+| F R  R      R R  R |
+| F *  R F   R *  *RR|
+|     FR R  R    R   |
+|R      R *     F*   |
+|  R  *   *        R |
+| R         F    R   |
+|    F  *    R  R  R |
+| *    * *         F |
+| F            *    R|
+|    RRR      R  R   |
+|R  R    R  F      R |
+|     RR *    R F  RR|
+| RF   R      F R   F|
+|         FRR     R  |
+| R   RRR   *        |
+| R R *R     R       |
+| * RRR      R R *   |
+|   RR *  R    R     |
+| * R   RR           |
+|R  R  R R  RR *     |
 ----------------------
 
 Generation 999
 ----------------------
-|FR   F     R     F  |
-|   *          *  *RR|
-|  R   F         R   |
-|  RR    R*    R * RR|
-| R   * R *   F  R   |
-|       F    F  R   R|
-|  RF R *         R  |
-| *    * *    R   R R|
-|  R  R      F *    R|
-|                    |
-|             R   R  |
-|      F * R  R R  R |
-|        R    R  R   |
-|    R  R  R  R      |
-|           *R  RRRRR|
-|   R *     R  R     |
-| * RR R  R      *   |
-|      *    R R   RR |
-| *RFRR R R    R     |
-| R       RR R *     |
+|  F    R      R    R|
+|   * F F   R  *  *  |
+| F     R RR    F  R |
+|  R      *      * R |
+|RR   *   *          |
+|    F       F  R    |
+|       *      R  R  |
+| *    * *           |
+|    RR       R*   F |
+|R              R  R |
+|  R  RRR  F    F   R|
+| RF    R*   R    R F|
+|     R   F R  F  R  |
+|      R             |
+|R   R     R*        |
+|  R R* R   R        |
+| *R   R  R   R  *   |
+|  R  R*RR      R    |
+| *R R R    R        |
+| R  R  R     R*     |
 ----------------------
 
 Generation 1000
 ----------------------
-|FFR FF    RR     FF |
-|   *          * R*RR|
-|  RR FF       R R RR|
-| RRR   RR*   FR * RR|
-| RR  *RF *  FF RR  R|
-|       F    F RR   R|
-| RFF R *        RR  |
-| *   R* *   FR   RRR|
-|  RR R      F *    R|
-|                   R|
-|          R RR   RR |
-|        * R RR RRRR |
-|    R  RR    RRRR   |
-|    R RR  R RR   R R|
-|   R      R*R RRRRRR|
-|   R *   RRRR R R R |
-| * RR RR R      *   |
-|   FR *R RRR RR  RR |
-| *RFRR R RR  RR  RR |
-|RRR RR  RRR RR*     |
+| FF    RR    RR    R|
+|   * FFF RRR  *F * R|
+| FF    FRRR    F RR |
+|  R      *      * RR|
+|RR   *   *  F       |
+|RR          F RR    |
+|       *     RR  R  |
+| *  R * *    R   R  |
+|R   RRR      R*R  F |
+|R R  R R       F  FR|
+| RF  RRR FF    F   R|
+| RF  RRR*F  R    RFF|
+|     R   F RR FFRR  |
+|    R R   RR        |
+|R   R R   R*        |
+|RRR R* RRRRR R      |
+| *RRR RR R   R  *   |
+|  RR R*RRR R  RR    |
+| *R RRRR   R        |
+|RRR RRRR    RR*     |
 ----------------------
 

@@ -53,4 +53,4 @@ def extract_first_table(input_file, output_file):
 
 
 # Example:
-extract_first_table("ecosystem_examples/allgen20x20", "ecosystem_examples/allgen20x20_v2")
+extract_first_table("ecosystem_examples/allgen100x100", "ecosystem_examples/allgen100x100_v2")
