@@ -25,6 +25,7 @@ Cell **copy_matrix(Cell **src, int rows, int cols);
 //   rows – number of rows in the matrix
 //   cols – number of columns in the matrix
 void print_ecosystem(Cell **M, int rows, int cols);
+void print_age(Cell **M, int rows, int cols);
 
 
 #endif // AUX_FUNC_H
