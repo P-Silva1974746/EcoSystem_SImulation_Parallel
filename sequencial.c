@@ -33,18 +33,24 @@ int main (int agrc, char *argv[]){
         int r,c;
         scanf("%d %d", &r, &c);
 
-        if (strcmp(type, "FOX") == 0) world[r][c].type = FOX;
-        else if (strcmp(type, "RABBIT") == 0) world[r][c].type = RABBIT;
-        else if (strcmp(type, "ROCK") == 0) world[r][c].type = ROCK;
+        if (strcmp(type, "ROCK") == 0) world[r][c].type = ROCK;
         else {
-            printf("Erro: entidade desconhecida '%s'.\n", type);
-            exit(EXIT_FAILURE);
+            // world[r][c].age = 0;
+            // world[r][c].hunger = 0;
+            if (strcmp(type, "RABBIT") == 0) world[r][c].type = RABBIT;
+            else if (strcmp(type, "FOX") == 0) world[r][c].type = FOX;
+            else {
+                printf("Erro: entidade desconhecida '%s'.\n", type);
+                exit(EXIT_FAILURE);
+            }
         }
     }
 
     //print da matriz inicial
-    //print_ecosystem(world, ROWS, COLS);
-    //printf("\n");
+    printf("Generation %d\n", 0);
+    print_ecosystem(world, ROWS, COLS);
+    //print_age(world, ROWS, COLS);
+    printf("\n");
 
     for(int g=0; g<N_GEN; g++){
         Cell **next = next_gen(world, ROWS,COLS, g, GEN_PROC_RABBITS, GEN_PROC_FOXES, GEN_FOOD_FOXES);
@@ -54,19 +60,22 @@ int main (int agrc, char *argv[]){
         //print da matriz a cada geraçao
         printf("Generation %d\n", g+1);
         print_ecosystem(world, ROWS, COLS);
+        // print_age(world, ROWS, COLS);
         printf("\n");
+        
+        
     }
 
     //imprimir o output pedido
 
-    int total_obj_count=0;
-    for (int i = 0; i < ROWS; i++)
-    {
-        for (int j = 0; j < COLS; j++)
-        {
-            if (world[i][j].type!=EMPTY) total_obj_count++;    
-        }  
-    }
+    // int total_obj_count=0;
+    // for (int i = 0; i < ROWS; i++)
+    // {
+    //     for (int j = 0; j < COLS; j++)
+    //     {
+    //         if (world[i][j].type!=EMPTY) total_obj_count++;    
+    //     }  
+    // }
     
     // printf("%d %d %d %d %d %d %d\n", GEN_PROC_RABBITS, GEN_PROC_FOXES, GEN_FOOD_FOXES, 0, ROWS, COLS, total_obj_count);
     // for (int i = 0; i < ROWS; i++)
