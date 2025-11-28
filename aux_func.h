@@ -12,6 +12,7 @@ typedef struct {
     CellType type;
     int age;
     int hunger;
+    int prev_hunger;
 } Cell;
 
 Cell **allocate_matrix(int rows, int cols);
@@ -27,6 +28,7 @@ Cell **copy_matrix(Cell **src, int rows, int cols);
 void print_ecosystem(Cell **M, int rows, int cols);
 void print_age(Cell **M, int rows, int cols);
 void print_hunger(Cell **M, int rows, int cols);
+void print_all(Cell **M, int rows, int cols);
 
 
 #endif // AUX_FUNC_H
