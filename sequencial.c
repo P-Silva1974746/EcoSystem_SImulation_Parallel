@@ -60,7 +60,8 @@ int main (int agrc, char *argv[]){
         //print da matriz a cada geraçao
         printf("Generation %d\n", g+1);
         print_ecosystem(world, ROWS, COLS);
-        // print_age(world, ROWS, COLS);
+        //print_age(world, ROWS, COLS);
+        //print_hunger(world, ROWS, COLS);
         printf("\n");
         
         
