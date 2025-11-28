@@ -62,6 +62,25 @@ void print_age(Cell **M, int rows, int cols){
     printf("\n");
 }
 
+void print_hunger(Cell **M, int rows, int cols){
+    for (int  i = 0; i < cols+2; i++)printf("-");
+    printf("\n");
+    for (int i = 0; i < rows; i++)
+    {
+        printf("|");
+        for (int  j = 0; j < cols; j++)
+        {   
+            if ((M[i][j]).type == EMPTY) printf(" ");
+            else if ((M[i][j]).type == ROCK) printf("*");
+            else if ((M[i][j]).type == RABBIT) printf("R");
+            else printf("%d", (M[i][j]).hunger);
+        }
+        printf("|\n"); 
+    }
+    for (int  i = 0; i < cols+2; i++)printf("-");
+    printf("\n");
+}
+
 void free_matrix(Cell **M) {
     if (!M) return;
     free(M[0]);
@@ -190,6 +209,10 @@ static void move_foxes(Cell **world, Cell **new_world, int rows, int cols, int g
                 //printf("After calculating adjacent col with a RABBIT in world\n");
                 //printf("CHOOSEN ADJACENT %d %d\n", new_x, new_y);
 
+                int age;
+                if(world[i][j].age >= GEN_PROC_FOXES && !(new_x==i && new_y==j)) age = 0;
+                else age = world[i][j].age;
+
                 //morre de fome
                 if(fox.hunger >= GEN_FOOD_FOXES && (new_x==i && new_y==j)) continue;
 
@@ -201,6 +224,15 @@ static void move_foxes(Cell **world, Cell **new_world, int rows, int cols, int g
                     //come o coelho
                     fox.hunger = 0;
 
+                    //procriação
+                    if(world[i][j].age >= GEN_PROC_FOXES){
+                        new_world[i][j].type = FOX;
+                        new_world[i][j].age = 0;
+                        new_world[i][j].hunger = 0;
+                    }
+
+
+
                     //TODO: perguntar ao professor o que acontece quando existir um conflito entre FOX's numa posicao onde tinha um RABBIT,
                     //      a fome pode ser ignorada uma vez que ela seria resetada de qualquer das formas dps da FOX comer o RABBIT independentemente
                     //      de qual for, assim sendo a unica coisa importante e a idade
@@ -208,20 +240,17 @@ static void move_foxes(Cell **world, Cell **new_world, int rows, int cols, int g
                         if(new_world[new_x][new_y].type==FOX){
 
                             // the current fox moving is younger than the one already in position so we skip the iteration and it dies
-                            if (fox.age < new_world[new_x][new_y].age) continue;
-                            else if(fox.age == new_world[new_x][new_y].age && fox.hunger > new_world[new_x][new_y].hunger) continue;
+                            if (age < new_world[new_x][new_y].age-1) continue;
+                            else if(age == new_world[new_x][new_y].age-1 && fox.hunger > new_world[new_x][new_y].hunger) continue;
                         }
                     
                     // move of the oldest fox
                     new_world[new_x][new_y] = fox;
 
-                    //procriação
-                    if(world[i][j].age >= GEN_PROC_FOXES){
-                        new_world[i][j].type = FOX;
-                        new_world[i][j].age = 0;
-                        new_world[i][j].hunger = 0;
-                        new_world[new_x][new_y].age = 0;
-                    }
+                    if(world[i][j].age >= GEN_PROC_FOXES ) new_world[new_x][new_y].age = 0;
+
+
+                    
                 } else {
                     //printf("Before calculating adjacent col with a EMPTY in world\n");
                     choose_adjacent(EMPTY,world, i, j, &new_x, &new_y, rows, cols, gen);
@@ -231,21 +260,22 @@ static void move_foxes(Cell **world, Cell **new_world, int rows, int cols, int g
 
                     if( !(new_x==i && new_y==j)){
 
-                        //conflito: mantém raposa mais velha ou com menos fome
-                        if(new_world[new_x][new_y].type==FOX){
-                            if (fox.age < new_world[new_x][new_y].age) continue;
-                            else if(fox.age == new_world[new_x][new_y].age && fox.hunger > new_world[new_x][new_y].hunger) continue;
-                        }
-
-                        new_world[new_x][new_y] = fox;
-
                         //prociação
                         if(world[i][j].age >= GEN_PROC_FOXES && !(new_x==i && new_y==j)){
                             new_world[i][j].type = FOX;
                             new_world[i][j].age = 0;
                             new_world[i][j].hunger = 0;
-                            new_world[new_x][new_y].age = 0;
                         }
+
+                        //conflito: mantém raposa mais velha ou com menos fome
+                        if(new_world[new_x][new_y].type==FOX){
+                            if (age < new_world[new_x][new_y].age-1) continue;
+                            else if(age == new_world[new_x][new_y].age-1 && fox.hunger > new_world[new_x][new_y].hunger) continue;
+                        }
+
+                        new_world[new_x][new_y] = fox;
+
+                        if(world[i][j].age >= GEN_PROC_FOXES) new_world[new_x][new_y].age = 0;
 
                     } else {
                         //printf("There is nowhere to go \n");
