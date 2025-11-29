@@ -12,12 +12,11 @@ typedef struct {
     CellType type;
     int age;
     int hunger;
-    int prev_hunger;
 } Cell;
 
 Cell **allocate_matrix(int rows, int cols);
 void free_matrix(Cell **M);
-Cell **next_gen(Cell **world, int rows, int cols, int gen, int GEN_PROC_RABBITS, int GEN_PROC_FOXES, int GEN_FOOD_FOXES);
+Cell **next_gen(Cell **world, int rows, int cols, int gen, int GEN_PROC_RABBITS, int GEN_PROC_FOXES, int GEN_FOOD_FOXES, int *objs);
 Cell **copy_matrix(Cell **src, int rows, int cols);
 
 // Prints the ecosystem matrix M with a border.
