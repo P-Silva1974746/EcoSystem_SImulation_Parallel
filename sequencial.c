@@ -73,8 +73,8 @@ int main (int agrc, char *argv[]){
 
     clock_t f_time = clock();
     printf("Time for output: %f\n", ((double)(f_time-i_time))/CLOCKS_PER_SEC);
-    printf("Average time for move_foxes: %f\n", total_time_foxes/N_GEN);
-    printf("Average time for move_rabbits: %f\n", total_time_rabbits/N_GEN);
+    printf("Average time for move_foxes: %f\n", total_time_foxes/(N_GEN*CLOCKS_PER_SEC));
+    printf("Average time for move_rabbits: %f\n", total_time_rabbits/(N_GEN*CLOCKS_PER_SEC));
 
     //imprimir o output pedido
     
