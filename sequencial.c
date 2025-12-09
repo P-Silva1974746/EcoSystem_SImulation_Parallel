@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "aux_func.h"
 #include <string.h>
+#include <time.h>
 
 int main (int agrc, char *argv[]){
     int GEN_PROC_RABBITS, GEN_PROC_FOXES, GEN_FOOD_FOXES, N_GEN, ROWS, COLS, N;
@@ -50,9 +51,12 @@ int main (int agrc, char *argv[]){
     //print_all(world, ROWS, COLS);
     //printf("\n");
 
-    //int objs = N;
+    clock_t i_time = clock();
+    double total_time_rabbits = 0;
+    double total_time_foxes = 0;
+
     for(int g=0; g<N_GEN; g++){
-        Cell **next = next_gen(world, ROWS,COLS, g, GEN_PROC_RABBITS, GEN_PROC_FOXES, GEN_FOOD_FOXES, &N);
+        Cell **next = next_gen(world, ROWS,COLS, g, GEN_PROC_RABBITS, GEN_PROC_FOXES, GEN_FOOD_FOXES, &N, &total_time_foxes, &total_time_rabbits);
         free_matrix(world);
         world = next;
 
@@ -66,6 +70,11 @@ int main (int agrc, char *argv[]){
         
         
     }
+
+    clock_t f_time = clock();
+    printf("Time for output: %f\n", ((double)(f_time-i_time))/CLOCKS_PER_SEC);
+    printf("Average time for move_foxes: %f\n", total_time_foxes/N_GEN);
+    printf("Average time for move_rabbits: %f\n", total_time_rabbits/N_GEN);
 
     //imprimir o output pedido
     

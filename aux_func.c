@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "aux_func.h"
 #include <string.h>
+#include <time.h>
 
 Cell **allocate_matrix(int rows, int cols) {
     Cell **M = malloc(rows * sizeof(Cell *));
@@ -182,7 +183,8 @@ static void choose_adjacent(CellType target, Cell **world, int r, int c, int *n_
 }
 
 
-static void move_rabbits(Cell **world, Cell **tmp_world, Cell **new_world, int rows, int cols, int gen, int GEN_PROC_RABBITS, int *objs){
+static void move_rabbits(Cell **world, Cell **tmp_world, Cell **new_world, int rows, int cols, int gen, int GEN_PROC_RABBITS, int *objs, double *time){
+    clock_t i_time = clock();
     for(int i=0; i<rows; i++){
         for(int j=0; j<cols; j++){
             if(world[i][j].type==ROCK) tmp_world[i][j] = new_world[i][j] = world[i][j];
@@ -228,10 +230,13 @@ static void move_rabbits(Cell **world, Cell **tmp_world, Cell **new_world, int r
             }
         }
     }
+    clock_t f_time = clock();
+    *time++=((double)(f_time-i_time));
 }
 
-static void move_foxes(Cell **world, Cell **new_world, int rows, int cols, int gen, int GEN_PROC_FOXES, int GEN_FOOD_FOXES, int *objs){
+static void move_foxes(Cell **world, Cell **new_world, int rows, int cols, int gen, int GEN_PROC_FOXES, int GEN_FOOD_FOXES, int *objs, double *time){
     //printf("-----------CALCULATING GEN %d----------- \n", gen+1);
+    clock_t i_time = clock();
     for(int i=0;i<rows;i++){
         for(int j=0;j<cols;j++){
             if(world[i][j].type == FOX){
@@ -330,15 +335,17 @@ static void move_foxes(Cell **world, Cell **new_world, int rows, int cols, int g
             }
         }
     }
+    clock_t f_time = clock();
+    *time++=((double)(f_time-i_time));
 }
 
 //funçao principal - calcula a matriz inteira da proxima geraçao
-Cell **next_gen(Cell **world, int rows, int cols, int gen, int GEN_PROC_RABBITS, int GEN_PROC_FOXES, int GEN_FOOD_FOXES, int *objs){
+Cell **next_gen(Cell **world, int rows, int cols, int gen, int GEN_PROC_RABBITS, int GEN_PROC_FOXES, int GEN_FOOD_FOXES, int *objs, double *time_foxes, double *time_rabbits){
     Cell **world_after_rabbits_move = allocate_matrix(rows, cols);
     Cell **new_world = allocate_matrix(rows, cols);
     //printf("Before moving rabbits\n");
     //mover coelhos primeiro (aqui tambem copia todas as rochas)
-    move_rabbits(world, world_after_rabbits_move, new_world, rows, cols, gen, GEN_PROC_RABBITS, objs);
+    move_rabbits(world, world_after_rabbits_move, new_world, rows, cols, gen, GEN_PROC_RABBITS, objs, time_rabbits);
     //printf("After moving rabbits\n");
     
     //printf("After rabbits move\n");
@@ -347,7 +354,7 @@ Cell **next_gen(Cell **world, int rows, int cols, int gen, int GEN_PROC_RABBITS,
     
     //mover raposas depois
     //printf("Moving foxes\n");
-    move_foxes(world_after_rabbits_move, new_world, rows, cols, gen, GEN_PROC_FOXES, GEN_FOOD_FOXES, objs);
+    move_foxes(world_after_rabbits_move, new_world, rows, cols, gen, GEN_PROC_FOXES, GEN_FOOD_FOXES, objs, time_foxes);
     //printf("After moving foxes\n");
 
     free_matrix(world_after_rabbits_move);
