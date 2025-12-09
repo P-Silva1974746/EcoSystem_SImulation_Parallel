@@ -1,0 +1,326 @@
+NUM_WORKERS:
+
+		1:
+		
+			5x5:
+			< Time for output: 0.000109
+			< Average time for move_foxes: 0.000006
+			< Average time for move_rabbits: 0.000009
+			< Maximum number of threads 1
+			
+			10x10:
+			< Time for output: 0.002118
+			< Average time for move_foxes: 0.000007
+			< Average time for move_rabbits: 0.000010
+			< Maximum number of threads 1
+			
+			20x20:
+			< Time for output: 0.061571
+			< Average time for move_foxes: 0.000014
+			< Average time for move_rabbits: 0.000036
+			< Maximum number of threads 1
+			
+			100x100:
+			< Time for output: 10.215725
+			< Average time for move_foxes: 0.000081
+			< Average time for move_rabbits: 0.000778
+			< Maximum number of threads 1
+			
+			100x100_unlab01:
+			< Time for output: 8.042134
+			< Average time for move_foxes: 0.000173
+			< Average time for move_rabbits: 0.000468
+			< Maximum number of threads 1
+			
+			100x100_unbal02:
+			< Time for output: 9.942877
+			< Average time for move_foxes: 0.000084
+			< Average time for move_rabbits: 0.000747
+			< Maximum number of threads 1
+			
+			200x200:
+			< Time for output: 39.609188
+			< Average time for move_foxes: 0.000341
+			< Average time for move_rabbits: 0.002977
+			< Maximum number of threads 1
+			
+			
+		2:
+
+			5x5:
+			< Time for output: 0.000263
+			< Average time for move_foxes: 0.000006
+			< Average time for move_rabbits: 0.000035
+			< Maximum number of threads 2
+			
+			10x10:
+			< Time for output: 0.002616
+			< Average time for move_foxes: 0.000008
+			< Average time for move_rabbits: 0.000012
+			< Maximum number of threads 2
+			
+			20x20:
+			< Time for output: 0.055108
+			< Average time for move_foxes: 0.000012
+			< Average time for move_rabbits: 0.000028
+			< Maximum number of threads 2
+
+			100x100:
+			< Time for output: 7.134671
+			< Average time for move_foxes: 0.000050
+			< Average time for move_rabbits: 0.000493
+			< Maximum number of threads 2
+			
+			100x100_unbal01:
+			< Time for output: 6.151776
+			< Average time for move_foxes: 0.000112
+			< Average time for move_rabbits: 0.000320
+			< Maximum number of threads 2
+			
+			100x100_unbal02:
+			< Time for output: 7.473184
+			< Average time for move_foxes: 0.000056
+			< Average time for move_rabbits: 0.000514
+			< Maximum number of threads 2
+			
+			200x200:
+			< Time for output: 29.459213
+			< Average time for move_foxes: 0.000210
+			< Average time for move_rabbits: 0.002031
+			< Maximum number of threads 2
+		
+		
+		4:
+		
+			5x5:
+			< Time for output: 0.000500
+			< Average time for move_foxes: 0.000006
+			< Average time for move_rabbits: 0.000073
+			< Maximum number of threads 4
+			
+			10x10:
+			< Time for output: 0.002715
+			< Average time for move_foxes: 0.000008
+			< Average time for move_rabbits: 0.000014
+			< Maximum number of threads 4
+			
+			20x20:
+			< Time for output: 0.047844
+			< Average time for move_foxes: 0.000012
+			< Average time for move_rabbits: 0.000020
+			< Maximum number of threads 4
+			
+			100x100:
+			< Time for output: 5.439832
+			< Average time for move_foxes: 0.000032
+			< Average time for move_rabbits: 0.000329
+			< Maximum number of threads 4
+			
+			100x100_unbal01:
+			< Time for output: 4.539538
+			< Average time for move_foxes: 0.000086
+			< Average time for move_rabbits: 0.000190
+			< Maximum number of threads 4
+			
+			100x100_unbal02:
+			< Time for output: 5.215368
+			< Average time for move_foxes: 0.000037
+			< Average time for move_rabbits: 0.000306
+			< Maximum number of threads 4
+			
+			200x200:
+			< Time for output: 20.708845
+			< Average time for move_foxes: 0.000127
+			< Average time for move_rabbits: 0.001235
+			< Maximum number of threads 4
+			
+			
+		8:
+		
+			5x5:
+			< Time for output: 0.000932
+			< Average time for move_foxes: 0.000009
+			< Average time for move_rabbits: 0.000143
+			< Maximum number of threads 8
+
+			10x10:
+			< Time for output: 0.003459
+			< Average time for move_foxes: 0.000009
+			< Average time for move_rabbits: 0.000019
+			< Maximum number of threads 8
+
+			20x20:
+			< Time for output: 0.049824
+			< Average time for move_foxes: 0.000015
+			< Average time for move_rabbits: 0.000020
+			< Maximum number of threads 8
+
+			100x100:
+			< Time for output: 4.616095
+			< Average time for move_foxes: 0.000025
+			< Average time for move_rabbits: 0.000249
+			< Maximum number of threads 8
+			
+			100x100_unbal01:
+			< Time for output: 4.243098
+			< Average time for move_foxes: 0.000094
+			< Average time for move_rabbits: 0.000141
+			< Maximum number of threads 8
+
+			100x100_unbal02:
+			< Time for output: 4.525379
+			< Average time for move_foxes: 0.000027
+			< Average time for move_rabbits: 0.000239
+			< Maximum number of threads 8
+			
+			200x200:
+			< Time for output: 17.781714
+			< Average time for move_foxes: 0.000094
+			< Average time for move_rabbits: 0.000943
+			< Maximum number of threads 8
+			
+			
+		16:
+		
+			5x5:
+			< Time for output: 0.001807
+			< Average time for move_foxes: 0.000012
+			< Average time for move_rabbits: 0.000285
+			< Maximum number of threads 16
+
+			10x10:
+			< Time for output: 0.004817
+			< Average time for move_foxes: 0.000013
+			< Average time for move_rabbits: 0.000029
+			< Maximum number of threads 16
+			
+			20x20:
+			< Time for output: 0.055425
+			< Average time for move_foxes: 0.000018
+			< Average time for move_rabbits: 0.000022
+			< Maximum number of threads 16
+			
+			100x100:
+			< Time for output: 4.509151
+			< Average time for move_foxes: 0.000031
+			< Average time for move_rabbits: 0.000230
+			< Maximum number of threads 16
+			
+			100x100_unbal01:
+			< Time for output: 4.792775
+			< Average time for move_foxes: 0.000175
+			< Average time for move_rabbits: 0.000117
+			< Maximum number of threads 16
+			
+			100x100_unbal02:
+			< Time for output: 4.426284
+			< Average time for move_foxes: 0.000034
+			< Average time for move_rabbits: 0.000220
+			< Maximum number of threads 16
+
+			200x200:
+			< Time for output: 17.455141
+			< Average time for move_foxes: 0.000147
+			< Average time for move_rabbits: 0.000857
+			< Maximum number of threads 16
+			
+			
+		32:
+		
+			5x5:
+			< Time for output: 0.006312
+			< Average time for move_foxes: 0.000220
+			< Average time for move_rabbits: 0.000827
+			< Maximum number of threads 32
+
+			10x10:
+			< Time for output: 0.008817
+			< Average time for move_foxes: 0.000025
+			< Average time for move_rabbits: 0.000057
+			< Maximum number of threads 32
+			
+			20x20:
+			< Time for output: 0.072567
+			< Average time for move_foxes: 0.000028
+			< Average time for move_rabbits: 0.000030
+			< Maximum number of threads 32
+			
+			100x100:
+			< Time for output: 4.979203
+			< Average time for move_foxes: 0.000063
+			< Average time for move_rabbits: 0.000243
+			< Maximum number of threads 32
+			
+			100x100_unbal01:
+			< Time for output: 7.595659
+			< Average time for move_foxes: 0.000444
+			< Average time for move_rabbits: 0.000125
+			< Maximum number of threads 32
+
+			100x100_unbal02:
+			< Time for output: 4.926578
+			< Average time for move_foxes: 0.000059
+			< Average time for move_rabbits: 0.000228
+			< Maximum number of threads 32
+
+			200x200:
+			< Time for output: 19.593398
+			< Average time for move_foxes: 0.000350
+			< Average time for move_rabbits: 0.000862
+			< Maximum number of threads 32
+			
+			
+		64:
+		
+			5x5:
+			< Time for output: 0.013820
+			< Average time for move_foxes: 0.000478
+			< Average time for move_rabbits: 0.001817
+			< Maximum number of threads 64
+
+			10x10:
+			< Time for output: 0.416194
+			< Average time for move_foxes: 0.002026
+			< Average time for move_rabbits: 0.002130
+			< Maximum number of threads 64
+
+			20x20:
+			< Time for output: 0.107006
+			< Average time for move_foxes: 0.000043
+			< Average time for move_rabbits: 0.000048
+			< Maximum number of threads 64
+
+			100x100:
+			< Time for output: 5.864683
+			< Average time for move_foxes: 0.000103
+			< Average time for move_rabbits: 0.000251
+			< Maximum number of threads 64
+			
+			100x100_unbal01:
+			< Time for output: 12.563988
+			< Average time for move_foxes: 0.000872
+			< Average time for move_rabbits: 0.000163
+			< Maximum number of threads 64
+
+			100x100_unbal02:
+			< Time for output: 6.641087
+			< Average time for move_foxes: 0.000141
+			< Average time for move_rabbits: 0.000269
+			< Maximum number of threads 64
+			
+			200x200:
+			< Time for output: 26.577784
+			< Average time for move_foxes: 0.000792
+			< Average time for move_rabbits: 0.000850
+			< Maximum number of threads 64
+
+
+
+
+
+
+
+
+
+
+
