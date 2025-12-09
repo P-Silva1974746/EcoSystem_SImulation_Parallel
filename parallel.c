@@ -6,6 +6,7 @@
 
 int main (int agrc, char *argv[]){
     int GEN_PROC_RABBITS, GEN_PROC_FOXES, GEN_FOOD_FOXES, N_GEN, ROWS, COLS, N;
+    int NUM_WORKERS = 1;
     //recebe o input das variaveis
     if (scanf("%d %d %d %d %d %d %d",
             &GEN_PROC_RABBITS,
@@ -63,8 +64,13 @@ int main (int agrc, char *argv[]){
     omp_lock_t counter_lock;
     omp_init_lock(&counter_lock);
 
+    double i_time = omp_get_wtime();
+    double total_time_rabbits = 0;
+    double total_time_foxes = 0;
+
+    omp_set_num_threads(NUM_WORKERS);
     for(int g=0; g<N_GEN; g++){
-        Cell **next = next_gen(world, ROWS,COLS, g, GEN_PROC_RABBITS, GEN_PROC_FOXES, GEN_FOOD_FOXES, &N, locks, &counter_lock);
+        Cell **next = next_gen(world, ROWS,COLS, g, GEN_PROC_RABBITS, GEN_PROC_FOXES, GEN_FOOD_FOXES, &N, locks, &counter_lock, &total_time_foxes, &total_time_rabbits);
         free_matrix(world);
         world = next;
 
@@ -78,6 +84,14 @@ int main (int agrc, char *argv[]){
         
         
     }
+
+    double f_time = omp_get_wtime();
+    printf("Time for output: %f\n", f_time-i_time);
+    printf("Average time for move_foxes: %f\n", total_time_foxes/N_GEN);
+    printf("Average time for move_rabbits: %f\n", total_time_rabbits/N_GEN);
+    printf("Maximum number of threads %d\n", omp_get_max_threads());
+
+
 
     for (int i = 0; i < ROWS; i++) {
         for (int j = 0; j < COLS; j++) omp_destroy_lock(&locks[i][j]);
