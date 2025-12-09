@@ -185,9 +185,11 @@ static void choose_adjacent(CellType target, Cell **world, int r, int c, int *n_
 
 static void move_rabbits(Cell **world, Cell **tmp_world, Cell **new_world, int rows, int cols, int gen, int GEN_PROC_RABBITS, int *objs, omp_lock_t **locks, double *time){
     double i_time = omp_get_wtime();
+    // int t [rows*cols];
     #pragma omp parallel for collapse(2) schedule(static)
     for(int i=0; i<rows; i++){
         for(int j=0; j<cols; j++){
+            // t[i*cols+j] = omp_get_thread_num();
             if(world[i][j].type==ROCK) tmp_world[i][j] = new_world[i][j] = world[i][j];
             else if (world[i][j].type==FOX) tmp_world[i][j] = world[i][j];         
             else if(world[i][j].type == RABBIT){
@@ -245,6 +247,16 @@ static void move_rabbits(Cell **world, Cell **tmp_world, Cell **new_world, int r
 
     double f_time = omp_get_wtime();
     *time+=(f_time-i_time);
+// printing thread attribution order 
+//     for (int i = 0; i < rows; i++)
+//     {
+//         for (int  j = 0; j < cols; j++)
+//         {
+//             printf("%d ", t[i*cols+j]);
+//         }
+//         printf("\n");
+//     }
+    
 }
 
 static void move_foxes(Cell **world, Cell **new_world, int rows, int cols, int gen, int GEN_PROC_FOXES, int GEN_FOOD_FOXES, int *objs, omp_lock_t **locks, omp_lock_t *counter_lock, double *time){
