@@ -1,3 +1,51 @@
+SEQUENTIAL:
+
+			5x5:
+			< Time for output: 0.000065
+			< Average time for move_foxes: 0.333333
+			< Average time for move_rabbits: 0.333333
+
+
+			10x10:
+			< Time for output: 0.002047
+			< Average time for move_foxes: 0.040000
+			< Average time for move_rabbits: 0.070000
+
+
+			20x20:
+			< Time for output: 0.056871
+			< Average time for move_foxes: 0.007000
+			< Average time for move_rabbits: 0.021000
+
+
+			100x100:
+			< Time for output: 8.607321
+			< Average time for move_foxes: 0.008000
+			< Average time for move_rabbits: 0.079600
+
+
+			100x100_unbal01:
+			< Time for output: 6.925146
+			< Average time for move_foxes: 0.011700
+			< Average time for move_rabbits: 0.033600
+
+
+			100x100_unbal02:
+			< Time for output: 8.430140
+			< Average time for move_foxes: 0.010100
+			< Average time for move_rabbits: 0.073600
+
+			
+			200x200:
+			< Time for output: 33.882430
+			< Average time for move_foxes: 0.023900
+			< Average time for move_rabbits: 0.344000
+			
+
+
+
+
+
 NUM_WORKERS:
 
 		1:
