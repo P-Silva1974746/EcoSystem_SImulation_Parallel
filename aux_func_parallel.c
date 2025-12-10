@@ -303,14 +303,12 @@ static void move_foxes(Cell **world, Cell **new_world, int rows, int cols, int g
 
                     //procriação
                     if(world[i][j].age >= GEN_PROC_FOXES){                        
-                        omp_set_lock(&locks[i][j]);
                         new_world[i][j].type = FOX;
                         new_world[i][j].age = 0;
                         new_world[i][j].hunger = 0;
                         omp_set_lock(counter_lock);
                         (*objs)++;
                         omp_unset_lock(counter_lock);
-                        omp_unset_lock(&locks[i][j]);
                     }
 
                     // there should only be one thread acessing each new position at a time since they will possible write on it
@@ -358,14 +356,12 @@ static void move_foxes(Cell **world, Cell **new_world, int rows, int cols, int g
 
                         //procriação
                         if(world[i][j].age >= GEN_PROC_FOXES){
-                            omp_set_lock(&locks[i][j]);
                             new_world[i][j].type = FOX;
                             new_world[i][j].age = 0;
                             new_world[i][j].hunger = 0;
                             omp_set_lock(counter_lock);
                             (*objs)++;
                             omp_unset_lock(counter_lock);
-                            omp_unset_lock(&locks[i][j]);
                         }
 
                         // there should only be one thread acessing each new position at a time since they will possible write on it
