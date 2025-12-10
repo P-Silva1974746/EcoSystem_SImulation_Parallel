@@ -43,13 +43,6 @@ int main (int agrc, char *argv[]){
             }
     }
 
-    //print da matriz inicial
-    //printf("Generation %d\n", 0);
-    //print_ecosystem(world, ROWS, COLS);
-    //print_age(world, ROWS, COLS);
-    //print_hunger(world, ROWS, COLS);
-    //print_all(world, ROWS, COLS);
-    //printf("\n");
 
     double i_time = omp_get_wtime();
     double total_time_rabbits = 0;
@@ -58,17 +51,7 @@ int main (int agrc, char *argv[]){
     for(int g=0; g<N_GEN; g++){
         Cell **next = next_gen(world, ROWS,COLS, g, GEN_PROC_RABBITS, GEN_PROC_FOXES, GEN_FOOD_FOXES, &N, &total_time_foxes, &total_time_rabbits);
         free_matrix(world);
-        world = next;
-
-        //print da matriz a cada geraçao
-        //printf("Generation %d\n", g+1);
-        //print_ecosystem(world, ROWS, COLS);
-        // print_age(world, ROWS, COLS);
-        //print_hunger(world, ROWS, COLS);
-        //print_all(world, ROWS, COLS);
-        //printf("\n");
-        
-        
+        world = next;      
     }
 
     double f_time = omp_get_wtime();
@@ -77,7 +60,6 @@ int main (int agrc, char *argv[]){
     printf("Average time for move_rabbits: %f\n", total_time_rabbits/N_GEN);
 
     //imprimir o output pedido
-    
     printf("%d %d %d %d %d %d %d\n", GEN_PROC_RABBITS, GEN_PROC_FOXES, GEN_FOOD_FOXES, 0, ROWS, COLS, N);
     for (int i = 0; i < ROWS; i++)
     {
