@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "aux_func.h"
 #include <string.h>
-#include <time.h>
+#include <omp.h>
 
 int main (int agrc, char *argv[]){
     int GEN_PROC_RABBITS, GEN_PROC_FOXES, GEN_FOOD_FOXES, N_GEN, ROWS, COLS, N;
@@ -51,7 +51,7 @@ int main (int agrc, char *argv[]){
     //print_all(world, ROWS, COLS);
     //printf("\n");
 
-    clock_t i_time = clock();
+    double i_time = omp_get_wtime();
     double total_time_rabbits = 0;
     double total_time_foxes = 0;
 
@@ -71,10 +71,10 @@ int main (int agrc, char *argv[]){
         
     }
 
-    clock_t f_time = clock();
-    printf("Time for output: %f\n", ((double)(f_time-i_time))/CLOCKS_PER_SEC);
-    printf("Average time for move_foxes: %f\n", total_time_foxes/(N_GEN*CLOCKS_PER_SEC));
-    printf("Average time for move_rabbits: %f\n", total_time_rabbits/(N_GEN*CLOCKS_PER_SEC));
+    double f_time = omp_get_wtime();
+    printf("Time for output: %f\n", f_time-i_time);
+    printf("Average time for move_foxes: %f\n", total_time_foxes/N_GEN);
+    printf("Average time for move_rabbits: %f\n", total_time_rabbits/N_GEN);
 
     //imprimir o output pedido
     

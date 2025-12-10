@@ -1,40 +1,40 @@
 SEQUENTIAL:
 
 			5x5:
-			< Time for output: 0.000064
-			< Average time for move_foxes: 0.000000333
-			< Average time for move_rabbits: 0.000000333
+			< Time for output: 0.000036
+			< Average time for move_foxes: 0.000002
+			< Average time for move_rabbits: 0.000002
 
 			10x10:
-			< Time for output: 0.002004
-			< Average time for move_foxes: 0.00000004
-			< Average time for move_rabbits: 0.00000007
+			< Time for output: 0.001514
+			< Average time for move_foxes: 0.000004
+			< Average time for move_rabbits: 0.000007
 
 			20x20:
-			< Time for output: 0.056807
-			< Average time for move_foxes: 0.000000008
-			< Average time for move_rabbits: 0.00000002
+			< Time for output: 0.052709
+			< Average time for move_foxes: 0.000010
+			< Average time for move_rabbits: 0.000030
 
 			100x100:
-			< Time for output: 8.700534
-			< Average time for move_foxes: 0.000000008
-			< Average time for move_rabbits: 0.00000008
+			< Time for output: 8.622553
+			< Average time for move_foxes: 0.000068
+			< Average time for move_rabbits: 0.000632
 
 			100x100_unbal01:
-			< Time for output: 6.968967
-			< Average time for move_foxes: 0.000000012
-			< Average time for move_rabbits: 0.000000033
+			< Time for output: 6.937852
+			< Average time for move_foxes: 0.000141
+			< Average time for move_rabbits: 0.000390
 
 			100x100_unbal02:
-			< Time for output: 8.455791
-			< Average time for move_foxes: 0.00000001
-			< Average time for move_rabbits: 0.000000007
+			< Time for output: 8.434988
+			< Average time for move_foxes: 0.000071
+			< Average time for move_rabbits: 0.000611
 
 			200x200:
-			< Time for output: 34.130499
-			< Average time for move_foxes: 0.000000024
-			< Average time for move_rabbits: 0.000000347
-			
+			< Time for output: 34.002142
+			< Average time for move_foxes: 0.000287
+			< Average time for move_rabbits: 0.002468
+						
 			
 
 

@@ -1,5 +1,6 @@
 #ifndef AUX_FUNC_H
 #define AUX_FUNC_H
+#include<omp.h>
 
 typedef enum {
     EMPTY,

@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "aux_func.h"
 #include <string.h>
-#include <time.h>
+#include <omp.h>
 
 Cell **allocate_matrix(int rows, int cols) {
     Cell **M = malloc(rows * sizeof(Cell *));
@@ -184,7 +184,7 @@ static void choose_adjacent(CellType target, Cell **world, int r, int c, int *n_
 
 
 static void move_rabbits(Cell **world, Cell **tmp_world, Cell **new_world, int rows, int cols, int gen, int GEN_PROC_RABBITS, int *objs, double *time){
-    clock_t i_time = clock();
+    double i_time = omp_get_wtime();
     for(int i=0; i<rows; i++){
         for(int j=0; j<cols; j++){
             if(world[i][j].type==ROCK) tmp_world[i][j] = new_world[i][j] = world[i][j];
@@ -230,13 +230,13 @@ static void move_rabbits(Cell **world, Cell **tmp_world, Cell **new_world, int r
             }
         }
     }
-    clock_t f_time = clock();
-    *time++=((double)(f_time-i_time));
+    double f_time = omp_get_wtime();
+    *time+=(f_time-i_time);
 }
 
 static void move_foxes(Cell **world, Cell **new_world, int rows, int cols, int gen, int GEN_PROC_FOXES, int GEN_FOOD_FOXES, int *objs, double *time){
     //printf("-----------CALCULATING GEN %d----------- \n", gen+1);
-    clock_t i_time = clock();
+    double i_time = omp_get_wtime();
     for(int i=0;i<rows;i++){
         for(int j=0;j<cols;j++){
             if(world[i][j].type == FOX){
@@ -335,8 +335,8 @@ static void move_foxes(Cell **world, Cell **new_world, int rows, int cols, int g
             }
         }
     }
-    clock_t f_time = clock();
-    *time++=((double)(f_time-i_time));
+    double f_time = omp_get_wtime();
+    *time+=(f_time-i_time);
 }
 
 //funçao principal - calcula a matriz inteira da proxima geraçao
