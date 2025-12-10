@@ -145,7 +145,7 @@ void free_matrix(Cell **M) {
 Cell **copy_matrix(Cell **src, int rows, int cols) {
     Cell **dst = allocate_matrix(rows, cols);
 
-    // this copies an continous memory block it works as an copy since the alloca_matrix puts everything in the one contious block (data)
+    // copia um endereço de memoria continuo, funciona commo uma copia uma vez que a alloca_matrix coloca tudo num bloco de memoria continuo (data)
     memcpy(dst[0], src[0], rows * cols * sizeof(Cell));
 
     return dst;
@@ -193,17 +193,15 @@ static void move_rabbits(Cell **world, Cell **tmp_world, Cell **new_world, int r
             if(world[i][j].type==ROCK) tmp_world[i][j] = new_world[i][j] = world[i][j];
             else if (world[i][j].type==FOX) tmp_world[i][j] = world[i][j];         
             else if(world[i][j].type == RABBIT){
-                //printf("ITERATION %d %d\n", i,j);
+
                 int new_x, new_y;
                 choose_adjacent(EMPTY, world, i, j, &new_x, &new_y, rows, cols, gen);
-                //printf("CHOOSEN ADJACENT %d %d\n", new_x, new_y);
                 int age;
                 if(world[i][j].age >= GEN_PROC_RABBITS && !(new_x==i && new_y==j)) age = 0;
                 else age = world[i][j].age;
 
                 //procriação
                 if(world[i][j].age >= GEN_PROC_RABBITS && !(new_x==i && new_y==j)){
-                    //printf("Procreated\n");
                     #pragma omp atomic
                     (*objs)++;
                     tmp_world[i][j].type = new_world[i][j].type = RABBIT;
@@ -212,7 +210,7 @@ static void move_rabbits(Cell **world, Cell **tmp_world, Cell **new_world, int r
                 }
                 
 
-                // there should only be one thread acessing each new position at a time since they will possible write on it
+                // so deve existir uma thread a acessar cada nova posicao em cada momento, porque existe possibilidade que a thread vai escrever nessa posicao
                 omp_set_lock(&locks[new_x][new_y]);
 
                 //conflito: mantem o coelho mais velho
@@ -221,12 +219,12 @@ static void move_rabbits(Cell **world, Cell **tmp_world, Cell **new_world, int r
                     (*objs)--;
                     if(age <= (tmp_world[new_x][new_y].age-1)) {
                         omp_unset_lock(&locks[new_x][new_y]);
-                        continue; // in this case where it is younger than the one already in that position we  
-                                                                                // skip this iteration and it dies since it world[i][j] is not copied 
-                                                                                // to a position in new_world
-                                                                                // int the case where it is older we continue the iteration and overwrite
-                                                                                // the values in new_world[new_x][new_y] making so that the that was there
-                                                                                // dies
+                        continue; // neste caso e mais novo do que o que ja la esta  
+                                                                                // saltamos esta iteracao e ele morre, visto que world[i][j] nao e copiado 
+                                                                                // para uma nova posicao em new_world
+                                                                                // no caso one ele e o mais velho continua a iteracao e da overwrite
+                                                                                // dos valores em new_world[new_x][new_y] fazendo com que o que lá estava
+                                                                                // morra
                     }
                 }
                 
@@ -238,7 +236,7 @@ static void move_rabbits(Cell **world, Cell **tmp_world, Cell **new_world, int r
 
                 if(world[i][j].age >= GEN_PROC_RABBITS && !(new_x==i && new_y==j)) tmp_world[new_x][new_y].age = new_world[new_x][new_y].age = 0;
 
-                // after the last acess to the position (new_x, new_y) we can unset the lock
+                // depois do ultimo acesso a posicao (new_x, new_y) podemos dar deixar outras threads acederem
                 omp_unset_lock(&locks[new_x][new_y]);
  
             }
@@ -260,27 +258,21 @@ static void move_rabbits(Cell **world, Cell **tmp_world, Cell **new_world, int r
 }
 
 static void move_foxes(Cell **world, Cell **new_world, int rows, int cols, int gen, int GEN_PROC_FOXES, int GEN_FOOD_FOXES, int *objs, omp_lock_t **locks, omp_lock_t *counter_lock, double *time){
-    //printf("-----------CALCULATING GEN %d----------- \n", gen+1);
     double i_time = omp_get_wtime();
     #pragma omp parallel for collapse(2) schedule(static)
     for(int i=0;i<rows;i++){
         for(int j=0;j<cols;j++){
             if(world[i][j].type == FOX){
-                //printf("ITERATION %d %d\n", i,j);
                 Cell fox = world[i][j];
                 fox.age++;
                 fox.hunger++;
 
-                //printf("Age:%d Hunger:%d\n",fox.age, fox.hunger);
 
                 int age;
                 int new_x, new_y;
-                // chose one adjacent cell that has a RABBIT in the world, this is because all foxes move at the same time as such their percetion has 
-                // to be of the world before any fox moves conflicts will then be resolved
-                //printf("Before calculating adjacent col with a RABBIT in world\n");
+                // escolhe uma cecula adjacente que tenha um coelho na matriz world, isto porque todas as raposas se movem ao mesmo tempo, o que leva a que a sua percecao tenha 
+                // de ser aquela do world onde nenhuma raposa se meceu, so depois os conflitos vao ser resolvidos
                 choose_adjacent(RABBIT, world, i, j, &new_x, &new_y, rows, cols, gen);
-                //printf("After calculating adjacent col with a RABBIT in world\n");
-                //printf("CHOOSEN ADJACENT %d %d\n", new_x, new_y);
 
                 //morre de fome
                 if(fox.hunger >= GEN_FOOD_FOXES && (new_x==i && new_y==j)) {
@@ -290,13 +282,8 @@ static void move_foxes(Cell **world, Cell **new_world, int rows, int cols, int g
                     continue;
                 }
 
-                // if there is no adjacent cell of the type target choose_adjacent will just put the current coordenates in *new_x and *new_y
-                // so if they aren't the same it means there was one RABBIT adjacent  
-                if ( !(new_x==i && new_y==j)){
 
-                    //TODO: perguntar ao professor o que acontece quando existir um conflito entre FOX's numa posicao onde tinha um RABBIT,
-                    //      a fome pode ser ignorada uma vez que ela seria resetada de qualquer das formas dps da FOX comer o RABBIT independentemente
-                    //      de qual for, assim sendo a unica coisa importante e a idade
+                if ( !(new_x==i && new_y==j)){
 
                     if(world[i][j].age >= GEN_PROC_FOXES) age = 0;
                     else age = world[i][j].age;
@@ -311,7 +298,7 @@ static void move_foxes(Cell **world, Cell **new_world, int rows, int cols, int g
                         omp_unset_lock(counter_lock);
                     }
 
-                    // there should only be one thread acessing each new position at a time since they will possible write on it
+                    // so deve existir uma thread a acessar cada nova posicao em cada momento, porque existe possibilidade que a thread vai escrever nessa posicao
                     omp_set_lock(&locks[new_x][new_y]);
 
                     //conflito: mantém raposa mais velha ou com menos fome
@@ -319,7 +306,7 @@ static void move_foxes(Cell **world, Cell **new_world, int rows, int cols, int g
                         omp_set_lock(counter_lock);
                         (*objs)--;
                         omp_unset_lock(counter_lock);
-                        // the current fox moving is younger than the one already in position so we skip the iteration and it dies
+                        // a raposa a mover-se atualmente e mais nova que a que ja esta na posicao, assim sendo saltamos a iteracao e ela morre
                         if (age < new_world[new_x][new_y].age-1) {
                             omp_unset_lock(&locks[new_x][new_y]);
                             continue;
@@ -337,17 +324,13 @@ static void move_foxes(Cell **world, Cell **new_world, int rows, int cols, int g
                     omp_unset_lock(counter_lock);
                     if(world[i][j].age >= GEN_PROC_FOXES) fox.age = 0;
                     
-                    // move of the oldest fox
+                    // move a raposa mais velha
                     new_world[new_x][new_y] = fox;
 
                     omp_unset_lock(&locks[new_x][new_y]);
  
                 } else {
-                    //printf("Before calculating adjacent col with a EMPTY in world\n");
                     choose_adjacent(EMPTY,world, i, j, &new_x, &new_y, rows, cols, gen);
-                    //printf("After calculating adjacent col with a EMPTY in world\n");
-
-                    //printf("CHOOSEN ADJACENT %d %d\n", new_x, new_y);
 
                     if( !(new_x==i && new_y==j)){
 
@@ -364,7 +347,7 @@ static void move_foxes(Cell **world, Cell **new_world, int rows, int cols, int g
                             omp_unset_lock(counter_lock);
                         }
 
-                        // there should only be one thread acessing each new position at a time since they will possible write on it
+                        // so deve existir uma thread a acessar cada nova posicao em cada momento, porque existe possibilidade que a thread vai escrever nessa posicao
                         omp_set_lock(&locks[new_x][new_y]);
 
                         //conflito: mantém raposa mais velha ou com menos fome
@@ -388,7 +371,6 @@ static void move_foxes(Cell **world, Cell **new_world, int rows, int cols, int g
                         omp_unset_lock(&locks[new_x][new_y]);
 
                     } else {
-                        //printf("There is nowhere to go \n");
                         new_world[i][j] = fox; //fica no lugar
                     }
                 }
@@ -404,19 +386,12 @@ static void move_foxes(Cell **world, Cell **new_world, int rows, int cols, int g
 Cell **next_gen(Cell **world, int rows, int cols, int gen, int GEN_PROC_RABBITS, int GEN_PROC_FOXES, int GEN_FOOD_FOXES, int *objs, omp_lock_t **locks, omp_lock_t *counter_lock, double *time_foxes, double *time_rabbits){
     Cell **world_after_rabbits_move = allocate_matrix(rows, cols);
     Cell **new_world = allocate_matrix(rows, cols);
-    //printf("Before moving rabbits\n");
+
     //mover coelhos primeiro (aqui tambem copia todas as rochas)
     move_rabbits(world, world_after_rabbits_move, new_world, rows, cols, gen, GEN_PROC_RABBITS, objs, locks, time_rabbits);
-    //printf("After moving rabbits\n");
-    
-    //printf("After rabbits move\n");
-    //print_ecosystem(world_after_rabbits_move, rows,cols);
-    //printf("\n");
     
     //mover raposas depois
-    //printf("Moving foxes\n");
     move_foxes(world_after_rabbits_move, new_world, rows, cols, gen, GEN_PROC_FOXES, GEN_FOOD_FOXES, objs, locks, counter_lock, time_foxes);
-    //printf("After moving foxes\n");
 
     free_matrix(world_after_rabbits_move);
     return new_world;
